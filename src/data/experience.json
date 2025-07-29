@@ -1,0 +1,41 @@
+{
+  "lastUpdated": "2025-01-29T10:00:00Z",
+  "experience": [
+    {
+      "id": 1,
+      "title": "IT Support Specialist (Praktykant)",
+      "company": "TechCorp Sp. z o.o.",
+      "location": "Warszawa, Polska",
+      "startDate": "2024-09-01",
+      "endDate": null,
+      "current": true,
+      "description": "Wsparcie techniczne dla użytkowników końcowych, rozwiązywanie problemów z hardware i software, podstawowa administracja systemów Windows/Linux.",
+      "skills": ["Windows Server", "Linux", "Help Desk", "Troubleshooting"],
+      "type": "work"
+    },
+    {
+      "id": 2,
+      "title": "Freelancer - Wsparcie IT",
+      "company": "Działalność własna",
+      "location": "Praca zdalna",
+      "startDate": "2024-01-01",
+      "endDate": "2024-08-31",
+      "current": false,
+      "description": "Pomoc małym firmom w rozwiązywaniu problemów technicznych, instalacja i konfiguracja systemów, podstawowe zabezpieczenia.",
+      "skills": ["Customer Service", "Problem Solving", "Network Setup"],
+      "type": "work"
+    },
+    {
+      "id": 3,
+      "title": "Informatyka - Cyberbezpieczeństwo",
+      "company": "Politechnika Warszawska",
+      "location": "Warszawa, Polska",
+      "startDate": "2023-10-01",
+      "endDate": null,
+      "current": true,
+      "description": "Studia inżynierskie z fokusem na cyberbezpieczeństwo, sieci komputerowe, i programowanie. Uczestnictwo w projektach zespołowych.",
+      "skills": ["Python", "Networking", "Security Fundamentals", "Linux"],
+      "type": "education"
+    }
+  ]
+}

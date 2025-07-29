@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Mail, Send, Github, Linkedin, Twitter, Shield } from 'lucide-react';
+import { Mail, Send, Github, Linkedin, Shield } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -58,7 +58,7 @@ const Contact = () => {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/in/jakub-szych',
+      url: 'https://www.linkedin.com/in/jakub-szych/',
       color: 'hover:text-blue-600'
     },
     {
@@ -70,14 +70,18 @@ const Contact = () => {
     {
       name: 'TryHackMe',
       icon: Shield,
-      url: 'https://tryhackme.com/p/szyszek25',
+      url: 'https://tryhackme.com/p/jakubszych.dev',
       color: 'hover:text-red-600'
     },
     {
-      name: 'Twitter',
-      icon: Twitter,
-      url: 'https://twitter.com/jakub_szych',
-      color: 'hover:text-blue-400'
+      name: 'HackTheBox',
+      icon: () => (
+        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.996 0L1.681 6v12l10.315 6 10.309-6V6L11.996 0zM6.92 17.544c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zm8.158 0c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zM12 8.006c.332 0 .659.034.979.1L12 8.943l-.979-.837c.32-.066.647-.1.979-.1z"/>
+        </svg>
+      ),
+      url: 'https://app.hackthebox.com/profile/2477474',
+      color: 'hover:text-green-500'
     }
   ];
 

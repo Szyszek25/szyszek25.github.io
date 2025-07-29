@@ -69,7 +69,13 @@ npm run deploy
 
 ### LinkedIn Feed (opcjonalne)
 
-#### Metoda 1: RSS.app (zalecana)
+**⚠️ Uwaga**: Jeśli Twój profil LinkedIn jest prywatny, automatyczne pobieranie postów nie będzie działać. W takim przypadku możesz:
+
+1. **Używać mock danych** (jak obecnie) - edytuj `src/data/linkedin.json`
+2. **Wyłączyć sekcję LinkedIn** - usuń komponent z `App.jsx`
+3. **Ustawić profil jako publiczny** i skonfigurować RSS
+
+#### Metoda 1: RSS.app (dla publicznych profili)
 1. Idź na [rss.app](https://rss.app)
 2. Znajdź swój profil LinkedIn i skopiuj RSS URL
 3. Ustaw webhook lub API endpoint

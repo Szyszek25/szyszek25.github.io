@@ -3,67 +3,41 @@
   "posts": [
     {
       "id": 1,
-      "title": "Ukończyłem pierwszy moduł TryHackMe Pre-Security! 🔒",
-      "summary": "Właśnie skończyłem moduł dotyczący podstaw cyberbezpieczeństwa. Fascynujące jak wiele można się nauczyć o ochronie systemów i sieci komputerowych. Następny krok: Windows Fundamentals!",
-      "link": "https://linkedin.com/posts/jakub-szych-cybersec-1",
+      "title": "Rozpoczynam przygodę z cyberbezpieczeństwem! �",
+      "summary": "Postanowiłem oficjalnie rozpocząć naukę cyberbezpieczeństwa jako student IT. Pierwszym krokiem jest TryHackMe Pre-Security path - podstawy, które pomogą mi zrozumieć świat InfoSec.",
+      "link": "https://www.linkedin.com/in/jakub-szych/",
       "publishDate": "2025-01-25T10:30:00Z",
       "author": "Jakub Szych",
       "engagement": {
-        "likes": 15,
+        "likes": 12,
         "comments": 3,
-        "shares": 2
-      }
-    },
-    {
-      "id": 2,
-      "title": "Linux command line - moje nowe supermoce! 💻",
-      "summary": "Każdy dzień przynosi nowe odkrycia w świecie Linuxa. Dziś nauczyłem się zaawansowanych komend do analizy logów systemowych i monitorowania procesów. Grep, awk i sed to potężne narzędzia!",
-      "link": "https://linkedin.com/posts/jakub-szych-linux-2",
-      "publishDate": "2025-01-20T15:45:00Z",
-      "author": "Jakub Szych",
-      "engagement": {
-        "likes": 22,
-        "comments": 5,
         "shares": 1
       }
     },
     {
+      "id": 2,
+      "title": "Linux fundamentals - nowa pasja! �",
+      "summary": "Uczenie się Linuxa to prawdziwa przygoda. Terminal, którty początkowo wydawał się straszny, staje się coraz bardziej naturalny. Grep, awk, sed - potężne narzędzia do analizy danych!",
+      "link": "https://www.linkedin.com/in/jakub-szych/",
+      "publishDate": "2025-01-20T15:45:00Z",
+      "author": "Jakub Szych",
+      "engagement": {
+        "likes": 8,
+        "comments": 2,
+        "shares": 0
+      }
+    },
+    {
       "id": 3,
-      "title": "Python scripting dla cybersecurity - pierwsze kroki 🐍",
-      "summary": "Rozpocząłem naukę Pythona w kontekście cyberbezpieczeństwa. Pierwszy skrypt do skanowania portów już gotowy! Planuje rozwijać umiejętności w automatyzacji zadań bezpieczeństwa.",
-      "link": "https://linkedin.com/posts/jakub-szych-python-3",
+      "title": "Python i cyberbezpieczeństwo 🐍",
+      "summary": "Pierwsze próby pisania skryptów Python dla celów bezpieczeństwa. Fascynujące jak można automatyzować podstawowe zadania i analizy. Kolejny krok: network scanning!",
+      "link": "https://www.linkedin.com/in/jakub-szych/",
       "publishDate": "2025-01-15T09:20:00Z",
       "author": "Jakub Szych",
       "engagement": {
-        "likes": 18,
-        "comments": 7,
-        "shares": 3
-      }
-    },
-    {
-      "id": 4,
-      "title": "Moje pierwsze CTF challenge rozwiązane! 🎯",
-      "summary": "Wczoraj wieczorem spędziłem 3 godziny nad pierwszym CTF challenge na TryHackMe. Frustrujące początkowo, ale satysfakcja po znalezieniu flagi była niesamowita! To uzależnia 😄",
-      "link": "https://linkedin.com/posts/jakub-szych-ctf-4",
-      "publishDate": "2025-01-10T19:30:00Z",
-      "author": "Jakub Szych",
-      "engagement": {
-        "likes": 31,
-        "comments": 12,
-        "shares": 4
-      }
-    },
-    {
-      "id": 5,
-      "title": "Rozpoczynam przygodę z cyberbezpieczeństwem! 🚀",
-      "summary": "Postanowiłem oficjalnie rozpocząć naukę cyberbezpieczeństwa. Cel: zostać ethical hackerem. Pierwsza stacja: TryHackMe Pre-Security path. Wish me luck!",
-      "link": "https://linkedin.com/posts/jakub-szych-start-5",
-      "publishDate": "2025-01-05T12:00:00Z",
-      "author": "Jakub Szych",
-      "engagement": {
-        "likes": 45,
-        "comments": 15,
-        "shares": 8
+        "likes": 15,
+        "comments": 4,
+        "shares": 2
       }
     }
   ]

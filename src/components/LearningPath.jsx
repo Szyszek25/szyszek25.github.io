@@ -215,7 +215,7 @@ const LearningPath = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://tryhackme.com/p/szyszek25"
+                  href="https://tryhackme.com/p/jakubszych.dev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300"
@@ -223,7 +223,7 @@ const LearningPath = () => {
                   TryHackMe Profile
                 </a>
                 <a
-                  href="https://linkedin.com/in/jakub-szych"
+                  href="https://www.linkedin.com/in/jakub-szych/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary-600 transition-colors duration-300"

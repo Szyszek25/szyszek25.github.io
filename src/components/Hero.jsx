@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Shield, Code, Lock } from 'lucide-react';
 
+const HackTheBoxIcon = () => (
+  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M11.996 0L1.681 6v12l10.315 6 10.309-6V6L11.996 0zM6.92 17.544c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zm8.158 0c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zM12 8.006c.332 0 .659.034.979.1L12 8.943l-.979-.837c.32-.066.647-.1.979-.1z"/>
+  </svg>
+);
+
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -94,11 +100,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col gap-6 items-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
+            {/* Main Contact Button */}
             <motion.button
               onClick={scrollToContact}
               className="btn-primary text-lg px-8 py-4"
@@ -108,22 +115,38 @@ const Hero = () => {
               Skontaktuj się ze mną
             </motion.button>
             
-            <motion.a
-              href="https://tryhackme.com/p/szyszek25"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary text-lg px-8 py-4 inline-block"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Mój profil TryHackMe
-            </motion.a>
+            {/* Platform Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3">
+              <motion.a
+                href="https://tryhackme.com/p/jakubszych.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-base px-6 py-3 inline-flex items-center justify-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Shield className="w-5 h-5" />
+                <span>TryHackMe</span>
+              </motion.a>
+              
+              <motion.a
+                href="https://app.hackthebox.com/profile/2477474"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-base px-6 py-3 inline-flex items-center justify-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <HackTheBoxIcon />
+                <span>HackTheBox</span>
+              </motion.a>
+            </div>
           </motion.div>
         </motion.div>
 
         {/* Scroll Indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
@@ -131,11 +154,11 @@ const Hero = () => {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="text-white/70 cursor-pointer"
+            className="text-white/70 cursor-pointer hover:text-white/90 transition-colors flex flex-col items-center"
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <ArrowDown className="w-6 h-6 mx-auto" />
-            <span className="text-sm block mt-2">Przewiń w dół</span>
+            <ArrowDown className="w-6 h-6" />
+            <span className="text-sm mt-2">Przewiń w dół</span>
           </motion.div>
         </motion.div>
       </div>

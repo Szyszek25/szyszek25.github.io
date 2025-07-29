@@ -118,6 +118,10 @@ const LinkedInFeed = () => {
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Najnowsze posty z mojej drogi w cyberbezpieczeństwie
+              <br />
+              <span className="text-sm text-gray-500 dark:text-gray-500">
+                (Profil prywatny - posty przykładowe dla demonstracji)
+              </span>
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
@@ -259,13 +263,22 @@ const LinkedInFeed = () => {
             </motion.div>
           )}
 
-          {/* LinkedIn CTA */}
+          {/* Call to Action */}
           <motion.div 
             variants={itemVariants}
             className="text-center mt-12"
           >
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
+              <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
+                📋 Informacja o profilu LinkedIn
+              </h3>
+              <p className="text-blue-600 dark:text-blue-300 text-sm">
+                Mój profil LinkedIn jest ustawiony jako prywatny, dlatego automatyczne pobieranie postów nie jest możliwe. 
+                Powyższe posty to przykładowe wpisy demonstracyjne pokazujące moją ścieżkę w cyberbezpieczeństwie.
+              </p>
+            </div>
             <a
-              href="https://linkedin.com/in/jakub-szych"
+              href="https://www.linkedin.com/in/jakub-szych/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"

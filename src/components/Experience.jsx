@@ -1,0 +1,255 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef, useState, useEffect } from 'react';
+import { Briefcase, GraduationCap, MapPin, Calendar, Clock, ExternalLink } from 'lucide-react';
+
+const Experience = () => {
+  const [experiences, setExperiences] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    fetchExperience();
+  }, []);
+
+  const fetchExperience = async () => {
+    try {
+      setLoading(true);
+      
+      // W prawdziwej implementacji tutaj byłby API call do LinkedIn
+      // const response = await fetch('/api/linkedin-experience');
+      
+      // Na razie używamy lokalnego pliku
+      const response = await fetch('/src/data/experience.json');
+      const data = await response.json();
+      setExperiences(data.experience || []);
+    } catch (error) {
+      console.error('Error fetching experience:', error);
+      // Fallback data
+      setExperiences([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getExperienceIcon = (type) => {
+    return type === 'education' ? GraduationCap : Briefcase;
+  };
+
+  const getExperienceColor = (type, current) => {
+    if (current) {
+      return type === 'education' 
+        ? 'border-green-500 bg-green-50 dark:bg-green-900/20' 
+        : 'border-primary-500 bg-primary-50 dark:bg-primary-900/20';
+    }
+    return 'border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800';
+  };
+
+  const formatDate = (dateString) => {
+    if (!dateString) return 'Obecnie';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('pl-PL', {
+      year: 'numeric',
+      month: 'long'
+    });
+  };
+
+  const calculateDuration = (startDate, endDate) => {
+    const start = new Date(startDate);
+    const end = endDate ? new Date(endDate) : new Date();
+    const diffTime = Math.abs(end - start);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const months = Math.floor(diffDays / 30);
+    
+    if (months < 1) return 'Mniej niż miesiąc';
+    if (months === 1) return '1 miesiąc';
+    if (months < 12) return `${months} miesięcy`;
+    
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    
+    if (years === 1 && remainingMonths === 0) return '1 rok';
+    if (remainingMonths === 0) return `${years} lat`;
+    
+    return `${years} ${years === 1 ? 'rok' : 'lat'} ${remainingMonths} ${remainingMonths === 1 ? 'miesiąc' : 'miesięcy'}`;
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6 }
+    }
+  };
+
+  if (loading) {
+    return (
+      <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <div className="inline-flex items-center space-x-2 text-gray-600 dark:text-gray-400">
+              <Clock className="w-6 h-6 animate-spin" />
+              <span>Ładowanie doświadczenia...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800/50">
+      <div className="container mx-auto px-4">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="max-w-4xl mx-auto"
+        >
+          {/* Section Header */}
+          <motion.div 
+            variants={itemVariants}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
+              Doświadczenie
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Moja droga zawodowa i edukacyjna w świecie IT
+            </p>
+            <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
+          </motion.div>
+
+          {/* Timeline */}
+          <div className="relative">
+            {/* Vertical Line */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-gray-300 dark:to-gray-600"></div>
+
+            {/* Experience Items */}
+            <div className="space-y-12">
+              {experiences.map((exp, index) => {
+                const IconComponent = getExperienceIcon(exp.type);
+                
+                return (
+                  <motion.div
+                    key={exp.id}
+                    variants={itemVariants}
+                    className="relative flex items-start space-x-8"
+                  >
+                    {/* Timeline Dot */}
+                    <div className="relative z-10 flex-shrink-0">
+                      <div className={`w-16 h-16 rounded-full border-4 ${getExperienceColor(exp.type, exp.current)} flex items-center justify-center shadow-lg`}>
+                        <IconComponent className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+                      </div>
+                    </div>
+
+                    {/* Content Card */}
+                    <motion.div
+                      className={`flex-1 p-6 rounded-xl border-2 ${getExperienceColor(exp.type, exp.current)} shadow-lg card-hover`}
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <div className="flex items-start justify-between mb-4">
+                        <div className="flex-1">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                              {exp.title}
+                            </h3>
+                            {exp.current && (
+                              <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-medium rounded-full">
+                                Obecnie
+                              </span>
+                            )}
+                          </div>
+                          
+                          <h4 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">
+                            {exp.company}
+                          </h4>
+                          
+                          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400 mb-3">
+                            <div className="flex items-center space-x-1">
+                              <MapPin className="w-4 h-4" />
+                              <span>{exp.location}</span>
+                            </div>
+                            <div className="flex items-center space-x-1">
+                              <Calendar className="w-4 h-4" />
+                              <span>
+                                {formatDate(exp.startDate)} - {formatDate(exp.endDate)}
+                              </span>
+                            </div>
+                            <div className="flex items-center space-x-1">
+                              <Clock className="w-4 h-4" />
+                              <span>{calculateDuration(exp.startDate, exp.endDate)}</span>
+                            </div>
+                          </div>
+                          
+                          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                            {exp.description}
+                          </p>
+
+                          {/* Skills */}
+                          {exp.skills && exp.skills.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                              {exp.skills.map((skill, skillIndex) => (
+                                <span
+                                  key={skillIndex}
+                                  className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-sm rounded-full"
+                                >
+                                  {skill}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* LinkedIn Integration Note */}
+          <motion.div 
+            variants={itemVariants}
+            className="text-center mt-16"
+          >
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
+                🔗 Integracja z LinkedIn
+              </h3>
+              <p className="text-blue-600 dark:text-blue-300 text-sm mb-4">
+                To doświadczenie może być automatycznie synchronizowane z Twojego profilu LinkedIn, 
+                jeśli ustawisz go jako publiczny i skonfigurujesz odpowiednie API.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/jakub-szych/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium"
+              >
+                <ExternalLink className="w-4 h-4" />
+                <span>Zobacz pełny profil LinkedIn</span>
+              </a>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
