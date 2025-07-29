@@ -1,0 +1,59 @@
+name: Update LinkedIn Feed
+
+on:
+  schedule:
+    # Uruchamiaj codziennie o 6:00 UTC (7:00 CET)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    # Możliwość ręcznego uruchomienia
+
+jobs:
+  update-linkedin:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm install axios
+      
+    - name: Update LinkedIn feed
+      run: node scripts/update-linkedin.js
+      env:
+        # W przyszłości można dodać klucze API:
+        # RSS_API_KEY: ${{ secrets.RSS_API_KEY }}
+        # LINKEDIN_RSS_URL: ${{ secrets.LINKEDIN_RSS_URL }}
+        NODE_ENV: production
+        
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add src/data/linkedin.json
+        git commit -m "🔄 Auto-update LinkedIn feed $(date +'%Y-%m-%d %H:%M')" || exit 0
+        
+    - name: Push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
