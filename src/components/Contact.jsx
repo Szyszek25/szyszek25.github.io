@@ -259,10 +259,10 @@ const Contact = () => {
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-primary-100" />
                     <a 
-                      href="mailto:jakub.szych@example.com"
+                      href="mailto:jakubszych.dev@gmail.com"
                       className="hover:text-primary-100 transition-colors duration-300"
                     >
-                      jakub.szych@example.com
+                      jakubszych.dev@gmail.com
                     </a>
                   </div>
                 </div>
@@ -274,7 +274,6 @@ const Contact = () => {
                   <div className="space-y-2 text-sm text-primary-100">
                     <div>📧 Email: 24 godzin</div>
                     <div>💼 LinkedIn: 2-3 dni</div>
-                    <div>🐦 Twitter: Według dostępności</div>
                   </div>
                 </div>
               </div>

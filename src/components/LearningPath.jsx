@@ -10,39 +10,39 @@ const LearningPath = () => {
   const learningSteps = [
     {
       id: 1,
-      title: "TryHackMe Pre-Security",
-      description: "Podstawy cyberbezpieczeństwa, sieci komputerowe, systemy operacyjne",
+      title: "TryHackMe - Cybersecurity 101",
+      description: "Podstawy cyberbezpieczeństwa, defensive security intro. Ukończone pokoje: Defensive Security Intro",
       status: "in-progress",
       icon: Shield,
-      progress: 65,
-      timeline: "Styczeń 2025 - W trakcie"
+      progress: 30,
+      timeline: "Lipiec 2025 - W trakcie"
     },
     {
       id: 2,
-      title: "Linux Essentials",
-      description: "Podstawy systemów Linux, terminal, zarządzanie plikami i uprawnieniami",
-      status: "completed",
+      title: "HackTheBox Academy",
+      description: "Intro to Defensive Security, Network Enumeration. Przygotowanie do CTF challenges",
+      status: "in-progress",
       icon: Terminal,
-      progress: 100,
-      timeline: "Grudzień 2024 - Ukończone"
+      progress: 20,
+      timeline: "Lipiec 2025 - W trakcie"
     },
     {
       id: 3,
-      title: "Python dla automatyzacji",
-      description: "Skrypty Python do automatyzacji zadań w cyberbezpieczeństwie",
+      title: "Linux Command Line Mastery",
+      description: "Administracja Linux, scripting, analiza logów. Codzienne ćwiczenia w VM",
       status: "in-progress",
       icon: Code2,
       progress: 40,
-      timeline: "Luty 2025 - W trakcie"
+      timeline: "Lipiec 2025 - Ciągła praktyka"
     },
     {
       id: 4,
-      title: "HTB Starting Point",
-      description: "Pierwsze kroki w penetration testingu na platformie HackTheBox",
+      title: "Network Security Fundamentals", 
+      description: "Protokoły sieciowe, Wireshark, firewall configuration, network monitoring",
       status: "planned",
       icon: BookOpen,
       progress: 0,
-      timeline: "Marzec 2025 - Planowane"
+      timeline: "Sierpień 2025 - Planowane"
     }
   ];
 
@@ -106,7 +106,7 @@ const LearningPath = () => {
               Ścieżka nauki
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Moja droga w świecie cyberbezpieczeństwa - od podstaw do zaawansowanych technik
+              Moja cybersecurity journey - od lipca 2025
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
@@ -185,10 +185,10 @@ const LearningPath = () => {
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
-              { label: 'Ukończone kursy', value: '1', color: 'text-green-500' },
-              { label: 'W trakcie', value: '2', color: 'text-primary-500' },
+              { label: 'Ukończone pokoje', value: '1', color: 'text-green-500' },
+              { label: 'W trakcie', value: '3', color: 'text-primary-500' },
               { label: 'Planowane', value: '1', color: 'text-gray-500' },
-              { label: 'Łączny postęp', value: '51%', color: 'text-primary-600' }
+              { label: 'Łączny postęp', value: '23%', color: 'text-primary-600' }
             ].map((stat, index) => (
               <div key={index} className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                 <div className={`text-3xl font-bold ${stat.color} mb-2`}>

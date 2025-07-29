@@ -25,7 +25,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
   const navItems = [
     { id: 'about', label: 'O mnie' },
-    { id: 'experience', label: 'Doświadczenie' },
     { id: 'learning', label: 'Ścieżka nauki' },
     { id: 'linkedin', label: 'LinkedIn' },
     { id: 'contact', label: 'Kontakt' }

@@ -10,38 +10,97 @@ const Experience = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {
-    fetchExperience();
+    // Używamy mockowych danych zamiast API
+    setExperiences(mockExperiences);
+    setLoading(false);
   }, []);
 
-  const fetchExperience = async () => {
-    try {
-      setLoading(true);
-      
-      // W prawdziwej implementacji tutaj byłby API call do LinkedIn
-      // const response = await fetch('/api/linkedin-experience');
-      
-      // Na razie używamy lokalnego pliku
-      const response = await fetch('/src/data/experience.json');
-      const data = await response.json();
-      setExperiences(data.experience || []);
-    } catch (error) {
-      console.error('Error fetching experience:', error);
-      // Fallback data
-      setExperiences([]);
-    } finally {
-      setLoading(false);
+  // Mockowe dane - ścieżka nauki cybersecurity
+  const mockExperiences = [
+    {
+      id: 1,
+      title: "Cybersecurity Learning Path",
+      company: "Self-Directed Learning",
+      location: "Warszawa, Polska (Home Lab)",
+      startDate: "2025-07-01",
+      endDate: null,
+      current: true,
+      description: "Intensywna nauka cyberbezpieczeństwa przez platformy edukacyjne i praktyczne ćwiczenia. Focus na defensive security i ethical hacking.",
+      skills: ["TryHackMe", "HackTheBox", "Linux", "Network Security", "Penetration Testing"],
+      type: "learning",
+      phase: "Aktywna nauka"
+    },
+    {
+      id: 2,
+      title: "TryHackMe - Cybersecurity 101",
+      company: "TryHackMe Platform",
+      location: "Online",
+      startDate: "2025-07-15",
+      endDate: null,
+      current: true,
+      description: "Podstawy cyberbezpieczeństwa, defensive security intro, podstawy penetration testingu. Ukończone pokoje: Defensive Security Intro.",
+      skills: ["Defensive Security", "Network Analysis", "Incident Response", "Security Fundamentals"],
+      type: "learning",
+      phase: "W trakcie"
+    },
+    {
+      id: 3,
+      title: "HackTheBox Academy",
+      company: "HackTheBox Platform", 
+      location: "Online",
+      startDate: "2025-07-20",
+      endDate: null,
+      current: true,
+      description: "Moduły: Intro to Defensive Security, Network Enumeration. Przygotowanie do praktycznych CTF challenges.",
+      skills: ["Network Enumeration", "Vulnerability Assessment", "Security Tools", "CTF Preparation"],
+      type: "learning",
+      phase: "W trakcie"
+    },
+    {
+      id: 4,
+      title: "Linux Command Line Mastery",
+      company: "Różne źródła + praktyka",
+      location: "Home Lab",
+      startDate: "2025-07-10",
+      endDate: null,
+      current: true,
+      description: "Nauka administracji Linux, scripting, analiza logów, podstawy systemów Unix. Codzienne ćwiczenia w VM.",
+      skills: ["Linux Administration", "Bash Scripting", "System Analysis", "Log Analysis"],
+      type: "learning",
+      phase: "Ciągła praktyka"
+    },
+    {
+      id: 5,
+      title: "Network Security Fundamentals",
+      company: "Teoria + praktyka",
+      location: "Home Lab + Online",
+      startDate: "2025-07-25",
+      endDate: null,
+      current: true,
+      description: "Podstawy sieci, protokoły, analizowanie ruchu sieciowego, firewall configuration, network monitoring.",
+      skills: ["Network Protocols", "Wireshark", "Network Monitoring", "Firewall Configuration"],
+      type: "learning",
+      phase: "Planowane"
     }
+  ];
+
+  const fetchExperience = async () => {
+    // Funkcja pozostaje dla kompatybilności, ale używamy mockowych danych
+    return;
   };
 
   const getExperienceIcon = (type) => {
-    return type === 'education' ? GraduationCap : Briefcase;
+    if (type === 'education') return GraduationCap;
+    if (type === 'learning') return GraduationCap;
+    return Briefcase;
   };
 
   const getExperienceColor = (type, current) => {
     if (current) {
-      return type === 'education' 
-        ? 'border-green-500 bg-green-50 dark:bg-green-900/20' 
-        : 'border-primary-500 bg-primary-50 dark:bg-primary-900/20';
+      if (type === 'education' || type === 'learning') {
+        return 'border-green-500 bg-green-50 dark:bg-green-900/20';
+      }
+      return 'border-primary-500 bg-primary-50 dark:bg-primary-900/20';
     }
     return 'border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800';
   };
@@ -125,10 +184,10 @@ const Experience = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-              Doświadczenie
+              Ścieżka nauki
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Moja droga zawodowa i edukacyjna w świecie IT
+              Moja droga w cyberbezpieczeństwie - od lipca 2025
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
@@ -170,7 +229,7 @@ const Experience = () => {
                             </h3>
                             {exp.current && (
                               <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-medium rounded-full">
-                                Obecnie
+                                {exp.phase || 'Obecnie'}
                               </span>
                             )}
                           </div>
@@ -222,18 +281,18 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* LinkedIn Integration Note */}
+          {/* Learning Path Note */}
           <motion.div 
             variants={itemVariants}
             className="text-center mt-16"
           >
             <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
-                🔗 Integracja z LinkedIn
+                🎯 Cybersecurity Learning Journey
               </h3>
               <p className="text-blue-600 dark:text-blue-300 text-sm mb-4">
-                To doświadczenie może być automatycznie synchronizowane z Twojego profilu LinkedIn, 
-                jeśli ustawisz go jako publiczny i skonfigurujesz odpowiednie API.
+                To moja aktualna ścieżka nauki cyberbezpieczeństwa od lipca 2025. 
+                Regularnie aktualizuję postępy na LinkedIn i dokumentuję journey na portfolio.
               </p>
               <a
                 href="https://www.linkedin.com/in/jakub-szych/"
@@ -242,7 +301,7 @@ const Experience = () => {
                 className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium"
               >
                 <ExternalLink className="w-4 h-4" />
-                <span>Zobacz pełny profil LinkedIn</span>
+                <span>Śledź postępy na LinkedIn</span>
               </a>
             </div>
           </motion.div>

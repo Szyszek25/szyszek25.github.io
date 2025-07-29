@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Shield, Heart, Github, Linkedin } from 'lucide-react';
+import { Shield, Heart, Github, Linkedin, Gamepad2 } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,6 +21,11 @@ const Footer = () => {
       name: 'LinkedIn',
       icon: Linkedin,
       url: 'https://www.linkedin.com/in/jakub-szych/'
+    },
+    {
+      name: 'GameDev Portfolio',
+      icon: Gamepad2,
+      url: 'https://szych.framer.ai/'
     },
     {
       name: 'TryHackMe',

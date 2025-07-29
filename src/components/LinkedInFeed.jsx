@@ -43,26 +43,26 @@ const LinkedInFeed = () => {
   const mockPosts = [
     {
       id: 1,
-      title: "Ukończyłem pierwszy moduł TryHackMe Pre-Security! 🔒",
-      summary: "Właśnie skończyłem moduł dotyczący podstaw cyberbezpieczeństwa. Fascynujące jak wiele można się nauczyć o ochronie systemów...",
-      link: "https://linkedin.com/posts/jakub-szych-cybersec-1",
-      publishDate: "2025-01-25T10:30:00Z",
+      title: "2 lata informatyki za mną, specjalizacja w chmurze przede mną, ale wakacje należą do cybersecurity! �",
+      summary: "Od października startuję ze specjalizacją Technologie Chmurowe. Zanim pochłonie mnie Kubernetes i Docker, wakacje poświęcam intensywnej nauce ethical hackingu, penetration testingu, podstaw Linuxa i sieci. Co już mam na liczniku: HackTheBox Academy, TryHackMe Cybersecurity 101, szyszek25.github.io...",
+      link: "https://linkedin.com/posts/jakub-szych-cybersecurity-journey",
+      publishDate: "2025-07-29T10:30:00Z",
       author: "Jakub Szych"
     },
     {
       id: 2,
-      title: "Linux command line - moje nowe supermoce! 💻",
-      summary: "Każdy dzień przynosi nowe odkrycia w świecie Linuxa. Dziś nauczyłem się zaawansowanych komend do analizy logów systemowych...",
-      link: "https://linkedin.com/posts/jakub-szych-linux-2",
-      publishDate: "2025-01-20T15:45:00Z",
+      title: "Ukończyłem pierwszy pokój na TryHackMe! �️",
+      summary: "Defensive Security Intro - check! Fascynujące jak wiele można się nauczyć o ochronie systemów już na początku drogi...",
+      link: "https://linkedin.com/posts/jakub-szych-tryhackme-1",
+      publishDate: "2025-07-25T15:45:00Z",
       author: "Jakub Szych"
     },
     {
       id: 3,
-      title: "Python scripting dla cybersecurity - pierwsze kroki 🐍",
-      summary: "Rozpocząłem naukę Pythona w kontekście cyberbezpieczeństwa. Pierwszy skrypt do skanowania portów już gotowy!",
-      link: "https://linkedin.com/posts/jakub-szych-python-3",
-      publishDate: "2025-01-15T09:20:00Z",
+      title: "HackTheBox Academy - pierwsze kroki w defensive security �",
+      summary: "Rozpocząłem moduł Intro to Defensive Security. Każdy challenge to nowa lekcja i krok bliżej do zostania ethical hackerem!",
+      link: "https://linkedin.com/posts/jakub-szych-hackthebox-1",
+      publishDate: "2025-07-20T09:20:00Z",
       author: "Jakub Szych"
     }
   ];
@@ -272,8 +272,7 @@ const LinkedInFeed = () => {
               <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
                 📋 Informacja o profilu LinkedIn
               </h3>
-              <p className="text-blue-600 dark:text-blue-300 text-sm">
-                Mój profil LinkedIn jest ustawiony jako prywatny, dlatego automatyczne pobieranie postów nie jest możliwe. 
+              <p className="text-blue-600 dark:text-blue-300 text-sm"> 
                 Powyższe posty to przykładowe wpisy demonstracyjne pokazujące moją ścieżkę w cyberbezpieczeństwie.
               </p>
             </div>

@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Terminal, Code, Shield, Users } from 'lucide-react';
+import { Terminal, Code, Shield, Users, HardDrive, Network } from 'lucide-react';
 
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const tools = [
-    { icon: Terminal, name: 'Linux', description: 'Podstawy systemów Unix/Linux' },
-    { icon: Code, name: 'Python', description: 'Automatyzacja i skrypty' },
-    { icon: Shield, name: 'TryHackMe', description: 'Ethical hacking challenges' },
-    { icon: Users, name: 'Git', description: 'Kontrola wersji projektów' }
+    { icon: Shield, name: 'TryHackMe', description: 'Cybersecurity challenges' },
+    { icon: Terminal, name: 'Linux', description: 'Command line mastery' },
+    { icon: HardDrive, name: 'HackTheBox', description: 'Penetration testing' },
+    { icon: Network, name: 'Docker', description: 'Containerization & labs' }
   ];
 
   const containerVariants = {
@@ -58,26 +58,26 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
-                Moja droga w cyberbezpieczeństwie
+                Student IT z pasją do cybersecurity 🔐
               </h3>
               
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Jestem studentem IT, który odkrył fascynujący świat cyberbezpieczeństwa. 
-                  Rozpocząłem swoją przygodę od podstaw - nauki Linuxa i Pythona, 
-                  które stanowią fundament dla dalszego rozwoju w tej dziedzinie.
+                  3. rok informatyki na SGGW, od października startuję ze specjalizacją 
+                  <strong> Technologie Chmurowe</strong>. Wakacje poświęcam swojej największej 
+                  zajawce - cyberbezpieczeństwu.
                 </p>
                 
                 <p>
-                  Aktualnie koncentruję się na zdobywaniu praktycznych umiejętności 
-                  poprzez platformy edukacyjne jak TryHackMe oraz HackTheBox. 
-                  Każdy rozwiązany challenge to krok bliżej do zostania ethical hackerem.
+                  Aktualnie przebijam się przez <strong>TryHackMe Cybersecurity 101</strong> 
+                  i <strong>HackTheBox Academy</strong>. Buduję domowy lab z VM-kami i Docker 
+                  do ćwiczeń atak/obrona.
                 </p>
                 
                 <p>
-                  Moim celem jest rozwijanie umiejętności w penetration testingu, 
-                  analizie malware oraz ochronie infrastruktury IT. 
-                  Wierzę, że cyberbezpieczeństwo to nie tylko technologia, ale także odpowiedzialność.
+                  Jako osoba wysoko wrażliwa i empatyczna, łączę technical skills 
+                  z human-centered approach. Wierzę, że najlepsza ochrona 
+                  to ta, która rozumie zarówno technologię jak i ludzi.
                 </p>
               </div>
             </motion.div>
@@ -87,24 +87,24 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl transform rotate-3"></div>
                 <div className="relative bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-xl">
                   <h4 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                    🎯 Aktualne cele
+                    🎯 Plan na lato 2025
                   </h4>
                   <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-3"></span>
-                      Ukończenie TryHackMe Pre-Security
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                      Dokończyć ścieżkę Cybersecurity 101
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-3"></span>
-                      Certyfikat Linux Essentials
+                      Spróbować pierwszych CTF-ów na HTB
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-3"></span>
-                      HTB Starting Point completion
+                      Zbudować domowy lab (VM + Docker)
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-3"></span>
-                      Python automatyzacja w cybersec
+                      Cotygodniowe updates na LinkedIn
                     </li>
                   </ul>
                 </div>
@@ -146,8 +146,8 @@ const About = () => {
             className="text-center mt-16"
           >
             <blockquote className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 italic">
-              "W cyberbezpieczeństwie każdy dzień to nowa lekcja, 
-              a każdy challenge to możliwość stania się lepszym obrońcą cyfrowego świata."
+              "Cyberbezpieczeństwo to nie tylko technologia - to przede wszystkim 
+              zrozumienie ludzi i ochrona tego, co dla nich najważniejsze."
             </blockquote>
             <div className="mt-4 text-primary-500 font-semibold">
               — Jakub Szych
