@@ -19,68 +19,81 @@ const Experience = () => {
   const mockExperiences = [
     {
       id: 1,
-      title: "Cybersecurity Learning Path",
-      company: "Self-Directed Learning",
-      location: "Warszawa, Polska (Home Lab)",
+      title: "Cyberbezpieczeństwo",
+      company: "Samozatrudnienie",
+      location: "Warszawa, Woj. Mazowieckie, Polska",
       startDate: "2025-07-01",
       endDate: null,
       current: true,
-      description: "Intensywna nauka cyberbezpieczeństwa przez platformy edukacyjne i praktyczne ćwiczenia. Focus na defensive security i ethical hacking.",
-      skills: ["TryHackMe", "HackTheBox", "Linux", "Network Security", "Penetration Testing"],
-      type: "learning",
-      phase: "Aktywna nauka"
+      description: "Intensive cybersecurity self-education program preparing for Cloud Technologies specialization starting October 2025. Completing TryHackMe Cybersecurity 101, HackTheBox Academy modules, building home security lab.",
+      skills: ["Network Security", "Penetration Testing", "Linux Administration", "Incident Response", "Cloud Security"],
+      type: "work",
+      phase: "Obecnie"
     },
     {
       id: 2,
-      title: "TryHackMe",
-      company: "TryHackMe Platform",
-      location: "Online",
-      startDate: "2025-07-15",
+      title: "Programista aplikacji",
+      company: "Samozatrudnienie",
+      location: "Warszawa, Woj. Mazowieckie, Polska",
+      startDate: "2025-06-01",
       endDate: null,
       current: true,
-      description: "Podstawy cybersecurity, defensive security intro, podstawy penetration testingu. Ukończone pokoje: Defensive Security Intro.",
-      skills: ["Defensive Security", "Network Analysis", "Incident Response", "Security Fundamentals"],
-      type: "learning",
-      phase: "W trakcie"
+      description: "I create applications in Flutter.",
+      skills: ["Flutter", "Dart", "Mobile Development"],
+      type: "work",
+      phase: "Obecnie"
     },
     {
       id: 3,
-      title: "HackTheBox Academy",
-      company: "HackTheBox Platform", 
-      location: "Online",
-      startDate: "2025-07-20",
+      title: "Programista .NET",
+      company: "Samozatrudnienie", 
+      location: "Warszawa, Polska",
+      startDate: "2023-10-01",
       endDate: null,
       current: true,
-      description: "Moduły: Intro to Defensive Security, Network Enumeration. Przygotowanie do praktycznych CTF challenges.",
-      skills: ["Network Enumeration", "Vulnerability Assessment", "Security Tools", "CTF Preparation"],
-      type: "learning",
-      phase: "W trakcie"
+      description: "I create projects on Github, thanks to the knowledge acquired from the university and from additional sources",
+      skills: ["C#", ".NET", "ASP.NET", "Entity Framework", "SQL Server"],
+      type: "work",
+      phase: "Obecnie"
     },
     {
       id: 4,
-      title: "Linux Command Line Mastery",
-      company: "Różne źródła + praktyka",
-      location: "Home Lab",
-      startDate: "2025-07-10",
-      endDate: null,
-      current: true,
-      description: "Nauka administracji Linux, scripting, analiza logów, podstawy systemów Unix. Codzienne ćwiczenia w VM.",
-      skills: ["Linux Administration", "Bash Scripting", "System Analysis", "Log Analysis"],
-      type: "learning",
-      phase: "Ciągła praktyka"
+      title: "Unreal Engine Developer",
+      company: "Umowa zlecenie/freelancing",
+      location: "Praca zdalna",
+      startDate: "2023-07-01",
+      endDate: "2025-07-01",
+      current: false,
+      description: "Self-taught game development in Unreal Engine 5 mainly from Udemy and Youtube tutorials and books. Portfolio: szych.framer.ai/",
+      skills: ["Unreal Engine 5", "Blueprints", "C++", "Game Development", "Project Management"],
+      type: "work",
+      phase: "Zakończone"
     },
     {
       id: 5,
-      title: "Network Security Fundamentals",
-      company: "Teoria + praktyka",
-      location: "Home Lab + Online",
-      startDate: "2025-07-25",
-      endDate: null,
-      current: true,
-      description: "Podstawy sieci, protokoły, analizowanie ruchu sieciowego, firewall configuration, network monitoring.",
-      skills: ["Network Protocols", "Wireshark", "Network Monitoring", "Firewall Configuration"],
-      type: "learning",
-      phase: "Planowane"
+      title: "Amazon KDP Publishing",
+      company: "Samozatrudnienie",
+      location: "Praca zdalna",
+      startDate: "2021-04-01",
+      endDate: "2025-07-01",
+      current: false,
+      description: "Author and Marketer specializing in book creation, publishing, and promotion. Amazon advertising campaigns, metadata optimization, sales data analysis.",
+      skills: ["Amazon KDP", "Digital Marketing", "PPC Campaigns", "Content Creation", "Sales Analysis"],
+      type: "work",
+      phase: "Zakończone"
+    },
+    {
+      id: 6,
+      title: "Google x SGH Program - Skills of Tomorrow",
+      company: "Google",
+      location: "Online",
+      startDate: "2023-04-01",
+      endDate: "2023-06-01",
+      current: false,
+      description: "3-month online marketing and e-commerce training program. Google Ads, Analytics, Search Console, Tag Manager, Facebook Ads.",
+      skills: ["Google Ads", "Google Analytics", "SEO", "SEM", "E-commerce Marketing"],
+      type: "education",
+      phase: "Ukończone"
     }
   ];
 
@@ -158,7 +171,7 @@ const Experience = () => {
       <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800/50">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <div className="inline-flex items-center space-x-2 text-gray-600 dark:text-gray-400">
+            <div className="inline-flex items-center space-x-2 text-gray-600 dark:text-gray-300">
               <Clock className="w-6 h-6 animate-spin" />
               <span>Ładowanie doświadczenia...</span>
             </div>
@@ -171,10 +184,12 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800/50">
       <div className="container mx-auto px-4">
+        
+        
         <motion.div
           ref={ref}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate="visible"
           variants={containerVariants}
           className="max-w-4xl mx-auto"
         >
@@ -186,7 +201,7 @@ const Experience = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
               Ścieżka nauki
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Moja droga w cyberbezpieczeństwie - od lipca 2025
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
@@ -238,7 +253,7 @@ const Experience = () => {
                             {exp.company}
                           </h4>
                           
-                          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400 mb-3">
+                          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-300 mb-3">
                             <div className="flex items-center space-x-1">
                               <MapPin className="w-4 h-4" />
                               <span>{exp.location}</span>
@@ -255,7 +270,7 @@ const Experience = () => {
                             </div>
                           </div>
                           
-                          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                          <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                             {exp.description}
                           </p>
 

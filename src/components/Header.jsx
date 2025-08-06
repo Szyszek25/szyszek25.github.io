@@ -4,16 +4,36 @@ import { Moon, Sun, Menu, X, Shield } from 'lucide-react';
 
 const Header = ({ darkMode, toggleDarkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+      
+      // Set background blur when scrolled down
+      setIsScrolled(currentScrollY > 50);
+      
+      // Hide/show header based on scroll direction
+      if (currentScrollY < 50) {
+        // Always show when at top
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Hide when scrolling down (after 100px)
+        setIsVisible(false);
+        setIsMobileMenuOpen(false); // Close mobile menu when hiding
+      } else if (currentScrollY < lastScrollY) {
+        // Show when scrolling up
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -25,6 +45,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
   const navItems = [
     { id: 'about', label: 'O mnie' },
+    { id: 'experience', label: 'Doświadczenie' },
     { id: 'learning', label: 'Ścieżka nauki' },
     { id: 'linkedin', label: 'LinkedIn' },
     { id: 'contact', label: 'Kontakt' }
@@ -34,12 +55,15 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'glassmorphism shadow-lg' 
+          ? 'glassmorphism shadow-lg backdrop-blur-md' 
           : 'bg-transparent'
       }`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
+      initial={{ y: 0 }}
+      animate={{ 
+        y: isVisible ? 0 : -100,
+        opacity: isVisible ? 1 : 0
+      }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
