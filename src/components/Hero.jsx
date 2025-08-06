@@ -59,9 +59,9 @@ const Hero = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="w-32 h-32 xs:w-36 xs:h-36 md:w-60 md:h-60 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 animate-glow">
+            <div className="w-20 h-20 xs:w-24 xs:h-24 md:w-60 md:h-60 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 animate-glow">
               <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-                <Shield className="w-16 h-16 xs:w-18 xs:h-18 md:w-32 md:h-32 text-primary-500" />
+                <Shield className="w-10 h-10 xs:w-12 xs:h-12 md:w-32 md:h-32 text-primary-500" />
               </div>
             </div>
           </motion.div>
