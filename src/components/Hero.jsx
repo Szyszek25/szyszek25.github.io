@@ -22,7 +22,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 xs:pt-20 sm:pt-16 md:pt-0">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 xs:pt-24 sm:pt-20 md:pt-0">
       {/* Tło gradientowe */}
       <div className="absolute inset-0 cyber-gradient opacity-90"></div>
       
@@ -59,9 +59,9 @@ const Hero = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="w-24 h-24 xs:w-28 xs:h-28 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 animate-glow">
+            <div className="w-32 h-32 xs:w-36 xs:h-36 md:w-60 md:h-60 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 animate-glow">
               <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-                <Shield className="w-12 h-12 xs:w-14 xs:h-14 md:w-20 md:h-20 text-primary-500" />
+                <Shield className="w-16 h-16 xs:w-18 xs:h-18 md:w-32 md:h-32 text-primary-500" />
               </div>
             </div>
           </motion.div>
@@ -81,7 +81,7 @@ const Hero = () => {
 
           {/* Podtytuł */}
           <motion.p
-            className="text-base md:text-xl lg:text-2xl text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-4"
+            className="text-lg md:text-2xl lg:text-3xl text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -92,7 +92,7 @@ const Hero = () => {
 
           {/* CTA + GitHub + przyciski platform */}
           <motion.div
-            className="flex flex-col gap-4 md:gap-6 items-center"
+            className="flex flex-col gap-4 md:gap-6 items-center mb-16 md:mb-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -101,7 +101,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center">
               <motion.button
                 onClick={scrollToContact}
-                className="btn-primary text-base md:text-lg px-6 md:px-8 py-3 md:py-4"
+                className="btn-primary text-lg md:text-xl px-6 md:px-8 py-3 md:py-4"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -111,7 +111,7 @@ const Hero = () => {
                 href="https://github.com/szyszek25"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base md:text-lg px-6 md:px-8 py-3 md:py-4 inline-flex items-center space-x-2"
+                className="btn-secondary text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -126,7 +126,7 @@ const Hero = () => {
                 href="https://tryhackme.com/p/jakubszych.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-sm px-4 py-2 inline-flex items-center space-x-2"
+                className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -138,7 +138,7 @@ const Hero = () => {
                 href="https://app.hackthebox.com/profile/2477474"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-sm px-4 py-2 inline-flex items-center space-x-2"
+                className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -150,7 +150,7 @@ const Hero = () => {
                 href="https://szych.framer.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-sm px-4 py-2 inline-flex items-center space-x-2"
+                className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -163,7 +163,7 @@ const Hero = () => {
 
         {/* Scroll Indicator */}
         <motion.div
-          className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex justify-center w-full"
+          className="absolute bottom-4 md:bottom-8 left-0 right-0 z-20 flex justify-center px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
@@ -177,7 +177,7 @@ const Hero = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 md:p-3 group-hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
               <ArrowDown className="w-5 h-5 md:w-7 md:h-7" />
             </div>
-            <span className="text-xs md:text-sm mt-2 md:mt-3 font-medium opacity-90 group-hover:opacity-100 text-center">Przewiń w dół</span>
+            <span className="text-sm md:text-base mt-2 md:mt-3 font-medium opacity-90 group-hover:opacity-100 text-center whitespace-nowrap">Przewiń w dół</span>
           </motion.div>
         </motion.div>
       </div>
