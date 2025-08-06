@@ -223,7 +223,113 @@ patrz, jest niewidoczne, w kazdym trybie urzadzenia, a z boku w html jest kod na
 
 _**Assistant**_
 
+Widzę problem! W kodzie HTML widzę, że elementy mają klasy CSS z `text-gray-600` i `text-gray-400`, ale w trybie ciemnym (dark mode) te kolory mogą być niewidoczne na ciemnym tle. Problem polega na tym, że tekst ma zbyt małą opacność lub złe kolory dla trybu ciemnego.
 
+Sprawdźmy komponent Experience i naprawmy kolory: Widzę problem! Kolory tekstu są zbyt słabe w trybie ciemnym. Sprawdźmy dalej gdzie są style dla poszczególnych elementów: Problem jest jasny! Elementy używają `text-gray-600 dark:text-gray-400`, co w trybie ciemnym daje bardzo słabo widoczny tekst. Naprawmy to, zmieniając kolory na bardziej widoczne: 
+```
+
+```
+
+```
+
+```
+Sprawdźmy dalej gdzie jeszcze są problematyczne kolory: Naprawmy też opis - jest za słabo widoczny: 
+```
+
+```
+Sprawdźmy też loading state: 
+```
+
+```
+Sprawdźmy też koniec pliku, czy są inne elementy z słabymi kolorami: Świetnie! Te kolory wyglądają dobrze. Sprawdźmy czy serwer nadal działa: Świetnie! Serwer działa i HMR aktualizuje zmiany. Teraz sprawdźmy jeszcze jedną potencjalną przyczynę niewidoczności - może problem jest w kolorach tła. Sprawdźmy funkcję `getExperienceColor`: Kolory tła wyglądają dobrze. Problem może być w tym, że elementy mają `opacity: 0` i nie animują się poprawnie. Sprawdźmy czy `isInView` działa poprawnie. Może dodajmy tymczasowo stały kolor do tła, żeby sprawdzić czy elementy są w ogóle renderowane: 
+```
+
+```
+Teraz animacja powinna zawsze być widoczna. Sprawdźmy czy teraz sekcja jest widoczna na stronie. Jeśli tak, to problem był z `isInView`. Jeśli nie, problem jest gdzie indziej.
+
+Sprawdźmy też czy może problem jest z samą sekcją - dodajmy tymczasowy tekst testowy na początku sekcji: 
+```
+
+```
+Teraz sprawdź stronę - powinieneś zobaczyć czerwony tekst "TEST: Sekcja Experience się renderuje!" na stronie. Jeśli go widzisz, oznacza to, że sekcja się renderuje, ale problem jest z animacjami lub kolorami. Jeśli nie widzisz czerwonego tekstu, problem jest z całą sekcją lub jej umiejscowieniem w App.jsx.
+
+---
+
+_**User**_
+
+strona na mobile jest całkowicie rozwalona!!! nie mozesz zrobic tak, by to wszystko sie dopasowywalo do ekranu i nie bylo elementow po przesunieciu? ramki wychodzą poza ewkran
+
+---
+
+_**Assistant**_
+
+Widzę problem! Strona na mobile jest rzeczywiście rozwalona - elementy wychodzą poza ekran i nie są responsywne. Sprawdźmy obecny kod i naprawmy responsive design: Problem jest jasny! Layout nie jest responsywny. Na mobile powinniśmy mieć pionowy layout bez linii czasowej i mniejsze marginesy. Naprawmy to: 
+```
+
+```
+Teraz naprawmy zawartość kart - tytuły i tekst muszą być responsywne: 
+```
+
+```
+Teraz naprawmy też nagłówek sekcji, żeby był responsywny: 
+```
+
+```
+Teraz naprawmy sekcję Skills, żeby była responsywna i nie wychodziła poza ekran: 
+```
+
+```
+Teraz dodajmy responsywne padding do całej sekcji i usuńmy tekst testowy: Sprawdźmy dokładnie jak wygląda początek funkcji return: Widzę, że tekst testowy został już usunięty manualnie. Teraz po prostu naprawmy padding: 
+```
+
+```
+Sprawdźmy czy serwer działa poprawnie: Świetnie! Serwer działa i aktualizuje zmiany. Sprawdźmy jeszcze końcową sekcję - notkę o ścieżce nauki, żeby była responsywna: 
+```
+
+```
+Sprawdźmy jeszcze marginesy sekcji nagłówka: 
+```
+
+```
+Teraz spróbujmy dodać jeszcze jeden fix - sprawdźmy czy motion.div nie blokuje hover efektów na mobile: 
+```
+
+```
+## Podsumowanie poprawek responsywnych dla mobile:
+
+1. **Timeline ukryta na mobile** - pionowa linia czasowa jest tylko na desktop (`hidden md:block`)
+
+2. **Flexbox responsive** - na mobile elementy układają się pionowo (`flex-col md:flex-row`)
+
+3. **Ikony dostosowane** - mniejsze na mobile (`w-12 h-12 md:w-16 md:h-16`)
+
+4. **Tytuły responsywne** - mniejsze czcionki na mobile (`text-lg md:text-xl`)
+
+5. **Padding responsywny** - mniejsze odstępy na mobile (`p-4 md:p-6`)
+
+6. **Meta informacje** - układają się pionowo na mobile (`flex-col sm:flex-row`)
+
+7. **Skills badges** - mniejsze na mobile (`text-xs md:text-sm`, `px-2 md:px-3`)
+
+8. **Break-words** - zapobiega wychodzeniu tekstu poza ekran
+
+9. **Hover effect** - wyłączony na mobile (scale tylko na desktop)
+
+10. **Marginesy** - mniejsze na mobile (`py-12 md:py-20`, `mb-12 md:mb-16`)
+
+Teraz strona powinna być w pełni responsywna i elementy nie powinny wychodzić poza ekran na urządzeniach mobilnych!
+
+---
+
+_**User**_
+
+lepiej, ale wciaz naglowek rozszerza za bardzo strone i zostaje kilka pikseli za duzo ekranu, strzalka przewin w dół w ogole jest ukryta
+
+---
+
+_**Assistant**_
+
+Widzę problem! Header ma za duży padding i zajmuje za dużo miejsca na mobile, przez co strzałka "przewiń w dół" jest ukryta. Sprawdźmy i naprawmy Header oraz Hero: Problem jest w tym, że header ma `py-4` (16px góra i dół), co razem z zawartością daje za dużą wysokość. Zmniejszmy padding na mobile: 
 
 ---
 

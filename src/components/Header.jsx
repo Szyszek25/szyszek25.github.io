@@ -65,7 +65,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2 md:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div 
@@ -73,8 +73,8 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             onClick={() => scrollToSection('hero')}
             whileHover={{ scale: 1.05 }}
           >
-            <Shield className="w-8 h-8 text-primary-500" />
-            <span className="text-xl font-bold text-gradient">
+            <Shield className="w-6 h-6 md:w-8 md:h-8 text-primary-500" />
+            <span className="text-lg md:text-xl font-bold text-gradient">
               Jakub Szych
             </span>
           </motion.div>
@@ -97,30 +97,30 @@ const Header = ({ darkMode, toggleDarkMode }) => {
           </nav>
 
           {/* Dark Mode Toggle & Mobile Menu */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 md:space-x-4">
             <motion.button
               onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
+              className="p-1.5 md:p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               {darkMode ? (
-                <Sun className="w-5 h-5 text-yellow-500" />
+                <Sun className="w-4 h-4 md:w-5 md:h-5 text-yellow-500" />
               ) : (
-                <Moon className="w-5 h-5 text-gray-700" />
+                <Moon className="w-4 h-4 md:w-5 md:h-5 text-gray-700" />
               )}
             </motion.button>
 
             {/* Mobile Menu Toggle */}
             <motion.button
-              className="md:hidden p-2 rounded-lg bg-gray-200 dark:bg-gray-700"
+              className="md:hidden p-1.5 rounded-lg bg-gray-200 dark:bg-gray-700"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               whileTap={{ scale: 0.95 }}
             >
               {isMobileMenuOpen ? (
-                <X className="w-5 h-5" />
+                <X className="w-4 h-4" />
               ) : (
-                <Menu className="w-5 h-5" />
+                <Menu className="w-4 h-4" />
               )}
             </motion.button>
           </div>

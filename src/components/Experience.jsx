@@ -182,8 +182,8 @@ const Experience = () => {
   }
 
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800/50">
-      <div className="container mx-auto px-4">
+    <section id="experience" className="py-12 md:py-20 bg-gray-50 dark:bg-gray-800/50">
+      <div className="container mx-auto px-4">`
         
         
         <motion.div
@@ -196,12 +196,12 @@ const Experience = () => {
           {/* Section Header */}
           <motion.div 
             variants={itemVariants}
-            className="text-center mb-16"
+            className="text-center mb-12 md:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gradient text-center">
               Ścieżka nauki
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-base md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center px-4">
               Moja droga w cyberbezpieczeństwie - od lipca 2025
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
@@ -209,11 +209,11 @@ const Experience = () => {
 
           {/* Timeline */}
           <div className="relative">
-            {/* Vertical Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-gray-300 dark:to-gray-600"></div>
+            {/* Vertical Line - tylko na desktop */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-gray-300 dark:to-gray-600 hidden md:block"></div>
 
             {/* Experience Items */}
-            <div className="space-y-12">
+            <div className="space-y-8 md:space-y-12">
               {experiences.map((exp, index) => {
                 const IconComponent = getExperienceIcon(exp.type);
                 
@@ -221,66 +221,66 @@ const Experience = () => {
                   <motion.div
                     key={exp.id}
                     variants={itemVariants}
-                    className="relative flex items-start space-x-8"
+                    className="relative flex flex-col md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-8"
                   >
                     {/* Timeline Dot */}
-                    <div className="relative z-10 flex-shrink-0">
-                      <div className={`w-16 h-16 rounded-full border-4 ${getExperienceColor(exp.type, exp.current)} flex items-center justify-center shadow-lg`}>
-                        <IconComponent className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+                    <div className="relative z-10 flex-shrink-0 mx-auto md:mx-0">
+                      <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full border-4 ${getExperienceColor(exp.type, exp.current)} flex items-center justify-center shadow-lg`}>
+                        <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-primary-600 dark:text-primary-400" />
                       </div>
                     </div>
 
                     {/* Content Card */}
                     <motion.div
-                      className={`flex-1 p-6 rounded-xl border-2 ${getExperienceColor(exp.type, exp.current)} shadow-lg card-hover`}
-                      whileHover={{ scale: 1.02 }}
+                      className={`flex-1 p-4 md:p-6 rounded-xl border-2 ${getExperienceColor(exp.type, exp.current)} shadow-lg card-hover w-full`}
+                      whileHover={{ scale: window.innerWidth > 768 ? 1.02 : 1 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <div className="flex items-start justify-between mb-4">
-                        <div className="flex-1">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                      <div className="flex flex-col items-start justify-between mb-4">
+                        <div className="flex-1 w-full">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-2 mb-2">
+                            <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-200 mb-1 sm:mb-0">
                               {exp.title}
                             </h3>
                             {exp.current && (
-                              <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-medium rounded-full">
+                              <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-medium rounded-full w-fit">
                                 {exp.phase || 'Obecnie'}
                               </span>
                             )}
                           </div>
                           
-                          <h4 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">
+                          <h4 className="text-base md:text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">
                             {exp.company}
                           </h4>
                           
-                          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-300 mb-3">
+                          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-2 sm:gap-4 text-xs md:text-sm text-gray-600 dark:text-gray-300 mb-3">
                             <div className="flex items-center space-x-1">
-                              <MapPin className="w-4 h-4" />
-                              <span>{exp.location}</span>
+                              <MapPin className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
+                              <span className="break-words">{exp.location}</span>
                             </div>
                             <div className="flex items-center space-x-1">
-                              <Calendar className="w-4 h-4" />
-                              <span>
+                              <Calendar className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
+                              <span className="break-words">
                                 {formatDate(exp.startDate)} - {formatDate(exp.endDate)}
                               </span>
                             </div>
                             <div className="flex items-center space-x-1">
-                              <Clock className="w-4 h-4" />
-                              <span>{calculateDuration(exp.startDate, exp.endDate)}</span>
+                              <Clock className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
+                              <span className="break-words">{calculateDuration(exp.startDate, exp.endDate)}</span>
                             </div>
                           </div>
                           
-                          <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                          <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mb-4 leading-relaxed break-words">
                             {exp.description}
                           </p>
 
                           {/* Skills */}
                           {exp.skills && exp.skills.length > 0 && (
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-1 md:gap-2">
                               {exp.skills.map((skill, skillIndex) => (
                                 <span
                                   key={skillIndex}
-                                  className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-sm rounded-full"
+                                  className="px-2 md:px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs md:text-sm rounded-full break-words"
                                 >
                                   {skill}
                                 </span>
@@ -299,13 +299,13 @@ const Experience = () => {
           {/* Learning Path Note */}
           <motion.div 
             variants={itemVariants}
-            className="text-center mt-16"
+            className="text-center mt-12 md:mt-16"
           >
-            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 md:p-6">
+              <h3 className="text-base md:text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
                 🎯 Cybersecurity Learning Journey
               </h3>
-              <p className="text-blue-600 dark:text-blue-300 text-sm mb-4">
+              <p className="text-blue-600 dark:text-blue-300 text-xs md:text-sm mb-4 leading-relaxed">
                 To moja aktualna ścieżka nauki cyberbezpieczeństwa od lipca 2025. 
                 Regularnie aktualizuję postępy na LinkedIn i dokumentuję journey na portfolio.
               </p>
@@ -313,9 +313,9 @@ const Experience = () => {
                 href="https://www.linkedin.com/in/jakub-szych/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium"
+                className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium text-sm md:text-base"
               >
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
                 <span>Śledź postępy na LinkedIn</span>
               </a>
             </div>
