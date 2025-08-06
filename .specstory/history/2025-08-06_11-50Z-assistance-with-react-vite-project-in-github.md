@@ -330,6 +330,79 @@ lepiej, ale wciaz naglowek rozszerza za bardzo strone i zostaje kilka pikseli za
 _**Assistant**_
 
 Widzę problem! Header ma za duży padding i zajmuje za dużo miejsca na mobile, przez co strzałka "przewiń w dół" jest ukryta. Sprawdźmy i naprawmy Header oraz Hero: Problem jest w tym, że header ma `py-4` (16px góra i dół), co razem z zawartością daje za dużą wysokość. Zmniejszmy padding na mobile: 
+```
+
+```
+Teraz sprawdźmy logo i czy nie jest za duże na mobile: Zmniejszmy logo na mobile: 
+```
+
+```
+Teraz sprawdźmy przyciski (dark mode i menu) czy nie są za duże: Zmniejszmy padding przycisków na mobile: 
+```
+
+```
+Teraz sprawdźmy i zmniejszmy także przycisk menu mobilnego: 
+```
+
+```
+Teraz sprawdźmy Hero i zmniejszmy padding-top jeszcze bardziej, żeby strzałka była widoczna: Zmniejszmy padding-top jeszcze bardziej na bardzo małych ekranach: 
+```
+
+```
+Sprawdźmy też czy scroll indicator ma odpowiednie umiejscowienie: Zmniejszmy strzałkę na mobile i jej pozycję: 
+```
+
+```
+Sprawdźmy czy serwer nadal działa: Świetnie! Serwer działa i aktualizuje zmiany. Możemy również jeszcze bardziej zoptymalizować Hero - sprawdźmy czy nie możemy dodatkowo zmniejszyć marginesy avatara: Zmniejszmy marginesy avatara jeszcze bardziej na mobile: 
+```
+
+```
+Sprawdźmy także marginesy tytułu i podtytułu: Zmniejszmy czcionki i marginesy na mobile: 
+```
+
+```
+Teraz sprawdźmy sekcję z przyciskami CTA - możemy je też zmniejszyć na mobile: Zmniejszmy przyciski na mobile: 
+```
+
+```
+## Podsumowanie optymalizacji mobile:
+
+### Header:
+1. **Zmniejszony padding** - `py-2 md:py-4` zamiast `py-4`
+2. **Mniejsze logo** - `w-6 h-6 md:w-8 md:h-8` i `text-lg md:text-xl`
+3. **Mniejsze przyciski** - `p-1.5 md:p-2` i ikony `w-4 h-4 md:w-5 md:h-5`
+4. **Mniejsze odstępy** - `space-x-2 md:space-x-4`
+
+### Hero:
+1. **Znacznie zmniejszony padding-top** - `pt-16 xs:pt-20 sm:pt-16 md:pt-0`
+2. **Mniejszy avatar** - `w-24 h-24 xs:w-28 xs:h-28` i mniejsze marginesy
+3. **Responsywne czcionki** - `text-3xl md:text-6xl` dla tytułu
+4. **Mniejsze przyciski** - `text-base md:text-lg` i `px-6 md:px-8`
+5. **Strzałka scroll** - `bottom-8 md:bottom-12` i mniejsze rozmiary
+
+### Inne zmiany:
+1. **Dodano padding** do tekstu (`px-4`)
+2. **Zmniejszone marginesy** na wszystkich elementach dla mobile
+3. **Responsywne ikony** wszędzie
+
+Teraz header zajmuje znacznie mniej miejsca, strzałka "przewiń w dół" powinna być widoczna, a cała strona powinna dobrze się mieścić na ekranie mobile!
+
+---
+
+_**User**_
+
+zwieksz naglowek 1.5x razy i niech bedzie caly czas taki blur jak przy zjezdzaniu, bo przy rozwijaniu listy na mobile jest przezroczyste i przyciski sie wtapiają
+
+---
+
+_**Assistant**_
+
+Widzę dwa problemy:
+
+1. **Błąd składni w `Experience.jsx`** - na linii 98 brakuje przecinka i nawiasu klamrowego
+2. **Header ma problemy z blur na mobile**
+
+Najpierw naprawmy błąd składni w Experience.jsx: Problem! W tablicy `mockExperiences` brakuje przecinka po ostatnim obiekcie i są dodane nowe elementy bez właściwego formatowania. Naprawmy to: 
 
 ---
 
