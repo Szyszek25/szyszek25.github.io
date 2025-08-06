@@ -32,13 +32,13 @@ const Experience = () => {
     },
     {
       id: 2,
-      title: "TryHackMe - Cybersecurity 101",
+      title: "TryHackMe",
       company: "TryHackMe Platform",
       location: "Online",
       startDate: "2025-07-15",
       endDate: null,
       current: true,
-      description: "Podstawy cyberbezpieczeństwa, defensive security intro, podstawy penetration testingu. Ukończone pokoje: Defensive Security Intro.",
+      description: "Podstawy cybersecurity, defensive security intro, podstawy penetration testingu. Ukończone pokoje: Defensive Security Intro.",
       skills: ["Defensive Security", "Network Analysis", "Incident Response", "Security Fundamentals"],
       type: "learning",
       phase: "W trakcie"

@@ -11,7 +11,7 @@ const LearningPath = () => {
     {
       id: 1,
       title: "TryHackMe - Cybersecurity 101",
-      description: "Podstawy cyberbezpieczeństwa, defensive security intro. Ukończone pokoje: Defensive Security Intro",
+      description: "Podstawy cybersecurity, defensive security intro. Ukończone pokoje: Defensive Security Intro",
       status: "in-progress",
       icon: Shield,
       progress: 30,
