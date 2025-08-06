@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Shield, Code, Lock, Gamepad2 } from 'lucide-react';
-
+import { ArrowDown, Shield, Code, Lock, Gamepad2, Github } from 'lucide-react';
+const GitHub = Github;
 const HackTheBoxIcon = () => (
   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
     <path d="M11.996 0L1.681 6v12l10.315 6 10.309-6V6L11.996 0zM6.92 17.544c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zm8.158 0c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zM12 8.006c.332 0 .659.034.979.1L12 8.943l-.979-.837c.32-.066.647-.1.979-.1z"/>
@@ -23,29 +23,21 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Gradient */}
+      {/* Tło gradientowe */}
       <div className="absolute inset-0 cyber-gradient opacity-90"></div>
       
-      {/* Floating Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {floatingIcons.map(({ Icon, delay, position }, index) => (
+      {/* Latające ikony w tle */}
+      <div className="absolute inset-0 overflow-hidden hidden md:block">
+        {floatingIcons.map(({ Icon, delay, position }, idx) => (
           <motion.div
-            key={index}
+            key={idx}
             className={`absolute ${position} text-primary-500/20`}
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ 
-              opacity: 1, 
-              scale: 1,
-              y: [0, -20, 0],
-            }}
+            animate={{ opacity: 1, scale: 1, y: [0, -20, 0] }}
             transition={{
               duration: 2,
-              delay: delay,
-              y: {
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }
+              delay,
+              y: { duration: 4, repeat: Infinity, ease: "easeInOut" }
             }}
           >
             <Icon size={80} />
@@ -53,7 +45,7 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Main Content */}
+      {/* Główna zawartość */}
       <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -74,7 +66,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Title */}
+          {/* Nagłówek */}
           <motion.h1
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white"
             initial={{ opacity: 0, y: 30 }}
@@ -87,7 +79,7 @@ const Hero = () => {
             </span>
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* Podtytuł */}
           <motion.p
             className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
@@ -98,58 +90,71 @@ const Hero = () => {
             Odkrywam świat ethical hackingu, penetration testingu i ochrony systemów.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA + GitHub + przyciski platform */}
           <motion.div
             className="flex flex-col gap-6 items-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            {/* Main Contact Button */}
-            <motion.button
-              onClick={scrollToContact}
-              className="btn-primary text-lg px-8 py-4"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Skontaktuj się ze mną
-            </motion.button>
-            
-            {/* Platform Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3">
+            {/* Skontaktuj + GitHub */}
+            <div className="flex flex-col sm:flex-row gap-6 items-center">
+              <motion.button
+                onClick={scrollToContact}
+                className="btn-primary text-lg px-8 py-4"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Skontaktuj się ze mną
+              </motion.button>
+              <motion.a
+                href="https://github.com/szyszek25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-lg px-8 py-4 inline-flex items-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <GitHub className="w-5 h-5" />
+                <span>GitHub</span>
+              </motion.a>
+            </div>
+
+            {/* Platformy (mniejsze) */}
+            <div className="flex flex-col sm:flex-row gap-2">
               <motion.a
                 href="https://tryhackme.com/p/jakubszych.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base px-6 py-3 inline-flex items-center justify-center space-x-2"
+                className="btn-secondary text-sm px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Shield className="w-5 h-5" />
+                <Shield className="w-4 h-4" />
                 <span>TryHackMe</span>
               </motion.a>
-              
+
               <motion.a
                 href="https://app.hackthebox.com/profile/2477474"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base px-6 py-3 inline-flex items-center justify-center space-x-2"
+                className="btn-secondary text-sm px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <HackTheBoxIcon />
                 <span>HackTheBox</span>
               </motion.a>
-              
+
               <motion.a
                 href="https://szych.framer.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base px-6 py-3 inline-flex items-center justify-center space-x-2"
+                className="btn-secondary text-sm px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Gamepad2 className="w-5 h-5" />
+                <Gamepad2 className="w-4 h-4" />
                 <span>GameDev Portfolio</span>
               </motion.a>
             </div>
