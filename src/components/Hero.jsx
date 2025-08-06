@@ -22,7 +22,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-28 xs:pt-24 sm:pt-20 md:pt-0">
       {/* Tło gradientowe */}
       <div className="absolute inset-0 cyber-gradient opacity-90"></div>
       
@@ -54,7 +54,7 @@ const Hero = () => {
         >
           {/* Avatar */}
           <motion.div
-            className="relative inline-block mb-8 mt-4 md:mt-0"
+            className="relative inline-block mb-8 mt-8 xs:mt-6 sm:mt-4 md:mt-0"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
