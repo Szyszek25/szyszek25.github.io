@@ -4019,7 +4019,48 @@ jak naprawić to, by na mobile logo zabezpieczenia nie wchodziło na naglowek?
 
 _**Assistant**_
 
-Widzę problem! Na mobile floating ikony nakładają się na główną zawartość. Sprawdzę aktualny kod i naprawię pozycjonowanie: 
+Widzę problem! Na mobile floating ikony nakładają się na główną zawartość. Sprawdzę aktualny kod i naprawię pozycjonowanie: Teraz naprawię floating ikony - ukryję je na mobile i zmienię pozycjonowanie: 
+```
+
+```
+Perfect! ✅ **Problem rozwiązany!**
+
+## 🎯 **Co naprawiłem:**
+
+**Dodałem `hidden md:block`** do kontenera z floating ikonami:
+
+```jsx
+<div className="absolute inset-0 overflow-hidden hidden md:block">
+```
+
+## 📱 **Jak to działa:**
+
+- **`hidden`** - ukrywa ikony na wszystkich ekranach
+- **`md:block`** - pokazuje ikony dopiero od medium screen (768px+)
+
+## 🚀 **Rezultat:**
+
+- ✅ **Mobile** - żadnych floating ikon, czytelny nagłówek
+- ✅ **Desktop/Tablet** - floating ikony nadal działają
+- ✅ **Responsywne** - automatyczne przełączanie
+
+**Odśwież stronę** i sprawdź na mobile - teraz floating ikony nie będą się nakładać na nagłówek! 🎉
+
+Możesz też zmienić breakpoint jeśli chcesz:
+- `lg:block` - dopiero od 1024px
+- `xl:block` - dopiero od 1280px
+
+---
+
+_**User**_
+
+jesteś? nie widze twoich zmian
+
+---
+
+_**Assistant**_
+
+
 
 ---
 
