@@ -58,7 +58,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
-                Student IT na ścieżce DevOps �
+                Student IT na ścieżce DevOps ☁️
               </h3>
               
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">

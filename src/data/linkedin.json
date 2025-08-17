@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2025-01-29T10:00:00Z",
+  "lastUpdated": "2025-08-17T10:00:00Z",
   "posts": [
     {
       "id": 1,
-      "title": "Rozpoczynam przygodę z cyberbezpieczeństwem! �",
-      "summary": "Postanowiłem oficjalnie rozpocząć naukę cyberbezpieczeństwa jako student IT. Pierwszym krokiem jest TryHackMe Pre-Security path - podstawy, które pomogą mi zrozumieć świat InfoSec.",
+      "title": "Learning-by-building DevOps w praktyce! 🚀",
+      "summary": "Właśnie wdrożyłem kolejną aplikację z Docker containerization i GitHub Actions CI/CD na Railway. Automated testing, branch protection, secrets management - wszystko działa jak w zegarku. Security mindset w każdym kroku procesu!",
       "link": "https://www.linkedin.com/in/jakub-szych/",
-      "publishDate": "2025-01-25T10:30:00Z",
+      "publishDate": "2025-08-16T10:30:00Z",
       "author": "Jakub Szych",
       "engagement": {
-        "likes": 12,
-        "comments": 3,
-        "shares": 1
+        "likes": 28,
+        "comments": 7,
+        "shares": 3
       }
     },
     {
       "id": 2,
-      "title": "Linux fundamentals - nowa pasja! �",
-      "summary": "Uczenie się Linuxa to prawdziwa przygoda. Terminal, którty początkowo wydawał się straszny, staje się coraz bardziej naturalny. Grep, awk, sed - potężne narzędzia do analizy danych!",
+      "title": "Azure fundamentals w praktyce! ☁️",
+      "summary": "Eksplorując AWS/Azure/GCP - fascynujące jak różne podejścia mają cloud providers do tego samego problemu. Linux/Bash basics, SSH, networking - budowanie solidnych fundamentów przed przejściem do Kubernetes. October plan: powrót do cybersecurity z tym cloud background!",
       "link": "https://www.linkedin.com/in/jakub-szych/",
-      "publishDate": "2025-01-20T15:45:00Z",
+      "publishDate": "2025-08-13T15:45:00Z",
       "author": "Jakub Szych",
       "engagement": {
-        "likes": 8,
-        "comments": 2,
-        "shares": 0
+        "likes": 35,
+        "comments": 9,
+        "shares": 5
       }
     },
     {
       "id": 3,
-      "title": "Python i cyberbezpieczeństwo 🐍",
-      "summary": "Pierwsze próby pisania skryptów Python dla celów bezpieczeństwa. Fascynujące jak można automatyzować podstawowe zadania i analizy. Kolejny krok: network scanning!",
+      "title": "CI/CD pipeline evolution! �",
+      "summary": "Od prostych GitHub Actions do complex workflows z automated testing, Railway deployment z cron schedules. YAML staje się moim drugim językiem! Security-first approach - każdy commit przez branch protection, secrets management na poziomie. Next: Kubernetes & Terraform basics.",
       "link": "https://www.linkedin.com/in/jakub-szych/",
-      "publishDate": "2025-01-15T09:20:00Z",
+      "publishDate": "2025-08-11T09:20:00Z",
       "author": "Jakub Szych",
       "engagement": {
-        "likes": 15,
-        "comments": 4,
-        "shares": 2
+        "likes": 41,
+        "comments": 11,
+        "shares": 7
       }
     }
   ]

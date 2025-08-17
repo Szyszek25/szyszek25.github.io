@@ -10,61 +10,61 @@ const useLinkedIn = () => {
   const profileData = {
     firstName: 'Jakub',
     lastName: 'Szych',
-    headline: 'IT Student | Cybersecurity Beginner',
-    summary: 'Student IT rozpoczynający przygodę z cyberbezpieczeństwem. Odkrywam świat ethical hackingu, penetration testingu i ochrony systemów.',
+    headline: 'IT Student | Junior DevOps Engineer',
+    summary: 'Student IT (3rd year) na ścieżce DevOps & Cloud Technologies. Learning-by-building z Docker, GitHub Actions CI/CD, Azure. Powrót do cybersecurity w październiku z cloud background.',
     location: 'Poland',
     profilePicture: null,
     connections: '150+',
-    followers: 89,
+    followers: 125,
     profileUrl: 'https://www.linkedin.com/in/jakub-szych/',
     isStudent: true,
-    university: 'IT Studies',
-    currentFocus: 'Cybersecurity & Ethical Hacking'
+    university: 'SGGW Warsaw - Cloud Technologies spec.',
+    currentFocus: 'DevOps & Cloud with Security Mindset'
   };
 
   // Prawdziwe posty z LinkedIn - dodaj linki do swoich postów
   const postsData = [
     {
       id: '1',
-      content: 'Właśnie ukończyłem pierwszy pokój na TryHackMe! 🔒 "Basic Pentesting" był świetnym wprowadzeniem do praktycznych aspektów testowania penetracyjnego. Fascynuje mnie, jak wiele można się nauczyć poprzez hands-on experience. Następny cel: ukończenie ścieżki "Pre Security"! #TryHackMe #Cybersecurity #EthicalHacking #LearningJourney',
-      timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
-      likes: 23,
-      comments: 5,
-      shares: 2,
-      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_tryhackme-cybersecurity-ethicalhacking-activity-XXXXXXXXXX-XXXX', // 🔥 TUTAJ WSTAW PRAWDZIWY LINK
+      content: 'Learning-by-building DevOps w praktyce! � Właśnie wdrożyłem kolejną aplikację z Docker containerization i GitHub Actions CI/CD na Railway. Automated testing, branch protection, secrets management - wszystko działa jak w zegarku. Security mindset w każdym kroku procesu! #DevOps #Docker #GitHubActions #CloudDeployment #Railway',
+      timestamp: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+      likes: 28,
+      comments: 7,
+      shares: 3,
+      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_devops-docker-githubactions-activity-XXXXXXXXXX-XXXX',
       author: {
         name: 'Jakub Szych',
         profileUrl: 'https://www.linkedin.com/in/jakub-szych/'
       },
-      hashtags: ['TryHackMe', 'Cybersecurity', 'EthicalHacking', 'LearningJourney']
+      hashtags: ['DevOps', 'Docker', 'GitHubActions', 'CloudDeployment', 'Railway']
     },
     {
-      id: '2',
-      content: 'Dzisiaj odkryłem potęgę OSINT (Open Source Intelligence) podczas nauki cyberbezpieczeństwa! 🔍 Niesamowite, jak wiele cennych informacji można znaleźć używając tylko publicznie dostępnych źródeł. To otwiera mi oczy na znaczenie digital footprint i privacy. Kolejny krok: poznanie narzędzi jak Maltego i theHarvester. #OSINT #InfoSec #CyberSecurity #DigitalForensics',
-      timestamp: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
-      likes: 31,
-      comments: 8,
-      shares: 4,
-      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_osint-infosec-cybersecurity-activity-XXXXXXXXXX-XXXX', // 🔥 TUTAJ WSTAW PRAWDZIWY LINK
+      id: '2', 
+      content: 'Azure fundamentals w praktyce! ☁️ Eksplorując AWS/Azure/GCP - fascynujące jak różne podejścia mają cloud providers do tego samego problemu. Linux/Bash basics, SSH, networking - budowanie solidnych fundamentów przed przejściem do Kubernetes. October plan: powrót do cybersecurity z tym cloud background! #Azure #CloudFundamentals #Linux #DevOpsJourney',
+      timestamp: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+      likes: 35,
+      comments: 9,
+      shares: 5,
+      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_azure-cloudfundamentals-linux-activity-XXXXXXXXXX-XXXX',
       author: {
         name: 'Jakub Szych',
         profileUrl: 'https://www.linkedin.com/in/jakub-szych/'
       },
-      hashtags: ['OSINT', 'InfoSec', 'CyberSecurity', 'DigitalForensics']
+      hashtags: ['Azure', 'CloudFundamentals', 'Linux', 'DevOpsJourney']
     },
     {
       id: '3',
-      content: 'Rozpocząłem naukę Pythona w kontekście cyberbezpieczeństwa! 🐍 Pierwszy skrypt do skanowania portów już gotowy. Jest coś magicznego w automatyzacji zadań security testing. Python okazuje się nieocenionym narzędziem w arsenale ethical hackera. Planuję kolejne projekty: password cracker i vulnerability scanner. #Python #NetworkSecurity #Scripting #CyberSec',
-      timestamp: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
-      likes: 42,
-      comments: 12,
-      shares: 6,
-      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_python-networksecurity-scripting-activity-XXXXXXXXXX-XXXX', // 🔥 TUTAJ WSTAW PRAWDZIWY LINK
+      content: 'CI/CD pipeline evolution! 🔄 Od prostych GitHub Actions do complex workflows z automated testing, Railway deployment z cron schedules. YAML staje się moim drugim językiem! Security-first approach - każdy commit przez branch protection, secrets management na poziomie. Next: Kubernetes & Terraform basics. #CICD #YAML #Automation #SecureDeployment',
+      timestamp: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString(),
+      likes: 41,
+      comments: 11,
+      shares: 7,
+      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_cicd-yaml-automation-activity-XXXXXXXXXX-XXXX',
       author: {
         name: 'Jakub Szych',
         profileUrl: 'https://www.linkedin.com/in/jakub-szych/'
       },
-      hashtags: ['Python', 'NetworkSecurity', 'Scripting', 'CyberSec']
+      hashtags: ['CICD', 'YAML', 'Automation', 'SecureDeployment']
     }
   ];
 

@@ -45,7 +45,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
   const navItems = [
     { id: 'about', label: 'O mnie' },
-    { id: 'experience', label: 'Doświadczenie' },
+    // { id: 'experience', label: 'Doświadczenie' },
     { id: 'learning', label: 'Moja droga chmurowa' },
     { id: 'skills-progress', label: 'Postępy w nauce' },
     { id: 'linkedin', label: 'LinkedIn' },

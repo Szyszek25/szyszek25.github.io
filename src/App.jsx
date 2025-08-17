@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 import LearningPath from './components/LearningPath';
 import SkillsProgress from './components/SkillsProgress';
 import LinkedInFeed from './components/LinkedInFeed';
@@ -49,7 +49,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Experience />
+        {/* <Experience /> */}
         <SkillsProgress />
         <LearningPath />
         <LinkedInFeed />

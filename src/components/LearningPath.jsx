@@ -10,48 +10,48 @@ const LearningPath = () => {
   const learningSteps = [
     {
       id: 1,
-      title: "Learning-by-building Cloud & DevOps",
-      description: "Shipping small apps z Docker i GitHub Actions CI/CD (YAML). Deployment na Railway z cron schedules dla automatyzacji.",
+      title: "Junior DevOps Engineer",
+      description: "Docker + GitHub Actions CI/CD → Railway deployment. Security mindset w każdym kroku. 2 miesiące intensywnej praktyki.",
       status: "in-progress",
       icon: Cloud,
-      progress: 70,
-      timeline: "Lipiec 2025 - W trakcie"
+      progress: 80,
+      timeline: "Lipiec 2025 - Obecnie (2 mies.)"
     },
     {
       id: 2,
-      title: "Multi-Cloud Fundamentals",
-      description: "Eksploracja AWS, Azure & GCP fundamentals. Linux/Bash, Windows Terminal, SSH, networking basics.",
+      title: "Multi-Cloud Expertise", 
+      description: "AWS/Azure/GCP fundamentals, Linux/Bash, SSH, networking. Cron automation, YAML workflows mastery.",
       status: "in-progress",
       icon: Server,
-      progress: 45,
+      progress: 65,
       timeline: "Lipiec-Sierpień 2025"
     },
     {
       id: 3,
-      title: "Automation & CI/CD Mastery",
-      description: "Stronger CI/CD (tests, branch protections, secrets management). Automatyzacja z GitHub Actions i Railway cron jobs.",
-      status: "in-progress",
+      title: "DevOps Automation",
+      description: "Advanced CI/CD: tests, branch protection, secrets management. Kubernetes & Terraform basics preparation.",
+      status: "in-progress", 
       icon: GitBranch,
-      progress: 60,
-      timeline: "Lipiec 2025 - Ciągła praktyka"
+      progress: 75,
+      timeline: "Sierpień 2025 - Ongoing"
     },
     {
       id: 4,
-      title: "Container Orchestration", 
-      description: "Pierwsze kroki z Kubernetes & Terraform (basics only). Gradual expansion po solidnych fundamentach.",
+      title: "Cloud Technologies Spec",
+      description: "SGGW Cloud Technologies specialization starts. Focus: K8s, Terraform, cloud-native solutions.",
       status: "planned",
       icon: Layers,
-      progress: 15,
-      timeline: "Sierpień-Wrzesień 2025"
+      progress: 25,
+      timeline: "Październik 2025 - Rozpoczęcie"
     },
     {
       id: 5,
-      title: "Cloud IAM & Security",
-      description: "Cloud IAM & cost-aware deployments. Security mindset w kontekście DevOps i infrastruktury chmurowej.",
+      title: "Cloud Security Expert",
+      description: "Return to cybersecurity: securing cloud workloads, DevSecOps, cloud IAM. TryHackMe/HackTheBox z cloud context.",
       status: "planned",
       icon: Database,
-      progress: 5,
-      timeline: "Wrzesień-Październik 2025"
+      progress: 15,
+      timeline: "Październik 2025+ (Cloud Security)"
     }
   ];
 
@@ -115,7 +115,7 @@ const LearningPath = () => {
               Moja droga chmurowa
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Od lipca 2025 - Learning-by-building w świecie DevOps i technologii chmurowych
+              **Lipiec 2025** - Learning-by-building DevOps & Cloud → **Październik 2025** - powrót do cybersecurity z cloud expertise
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
@@ -194,10 +194,10 @@ const LearningPath = () => {
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
-              { label: 'Projekty deployed', value: '3+', color: 'text-green-500' },
+              { label: 'Miesiące DevOps', value: '2', color: 'text-green-500' },
               { label: 'W trakcie', value: '3', color: 'text-primary-500' },
-              { label: 'Planowane', value: '2', color: 'text-gray-500' },
-              { label: 'Łączny postęp', value: '37%', color: 'text-primary-600' }
+              { label: 'Cloud Tech spec', value: 'Oct 25', color: 'text-blue-500' },
+              { label: 'Łączny postęp', value: '52%', color: 'text-primary-600' }
             ].map((stat, index) => (
               <div key={index} className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                 <div className={`text-3xl font-bold ${stat.color} mb-2`}>
@@ -217,10 +217,10 @@ const LearningPath = () => {
           >
             <div className="bg-gradient-to-r from-primary-500 to-primary-600 text-white p-8 rounded-2xl">
               <h3 className="text-2xl font-bold mb-4">
-                Chcesz śledzić moją drogę w chmurze?
+                🚀 DevOps Journey → Cloud Security Expert
               </h3>
               <p className="text-primary-100 mb-6">
-                Obserwuj moje cotygodniowe update'y na LinkedIn, gdzie dzielę się postępami w nauce DevOps
+                **2 miesiące DevOps** → **Październik: Cloud Tech specialization** → **Cloud Security focus**. Dokumentuję journey na LinkedIn!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

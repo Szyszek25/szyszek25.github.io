@@ -199,10 +199,10 @@ const Experience = () => {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gradient text-center">
-              Ścieżka nauki
+              Doświadczenie
             </h2>
             <p className="text-base md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center px-4">
-              Moja droga w cyberbezpieczeństwie - od lipca 2025
+              Moja droga zawodowa i edukacyjna
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
@@ -297,7 +297,7 @@ const Experience = () => {
           </div>
 
           {/* Learning Path Note */}
-          <motion.div 
+          {/* <motion.div 
             variants={itemVariants}
             className="text-center mt-12 md:mt-16"
           >
@@ -319,7 +319,7 @@ const Experience = () => {
                 <span>Śledź postępy na LinkedIn</span>
               </a>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
