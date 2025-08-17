@@ -136,13 +136,13 @@ const SkillsProgress = () => {
                       {skillItems.map((item, index) => (
                         <motion.div
                           key={index}
-                          className="flex items-start space-x-3 p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg"
+                          className="flex items-start space-x-3 p-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600"
                           initial={{ opacity: 0, x: -20 }}
                           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                           transition={{ duration: 0.4, delay: index * 0.1 }}
                         >
                           <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                          <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">
                             {item}
                           </p>
                         </motion.div>

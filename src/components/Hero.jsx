@@ -17,7 +17,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-40 xs:pt-44 sm:pt-40 md:pt-0">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 md:pt-32">
       {/* Tło gradientowe */}
       <div className="absolute inset-0 cyber-gradient opacity-90"></div>
       
@@ -85,13 +85,25 @@ const Hero = () => {
             Buduję umiejętności w Azure, Docker, CI/CD i automatyzacji infrastruktury.
           </motion.p>
 
-          {/* CTA + GitHub + przyciski platform */}
+          {/* CTA + GitHub + przyciski */}
           <motion.div
             className="flex flex-col gap-4 md:gap-6 items-center mb-16 md:mb-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
+            {/* Postępy w nauce */}
+            <div className="flex justify-center">
+              <motion.button
+                onClick={() => scrollToSection('skills-progress')}
+                className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                📊 Postępy w nauce
+              </motion.button>
+            </div>
+
             {/* Skontaktuj + GitHub */}
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center">
               <motion.button
@@ -115,44 +127,8 @@ const Hero = () => {
               </motion.a>
             </div>
 
-            {/* Postępy w nauce */}
+            {/* GameDev Portfolio (mniejszy) */}
             <div className="flex justify-center">
-              <motion.button
-                onClick={() => scrollToSection('skills-progress')}
-                className="btn-secondary text-lg md:text-xl px-6 md:px-8 py-3 md:py-4"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                📊 Postępy w nauce
-              </motion.button>
-            </div>
-
-            {/* Platformy (mniejsze) */}
-            <div className="flex flex-col sm:flex-row gap-2">
-              <motion.a
-                href="https://azure.microsoft.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Cloud className="w-4 h-4" />
-                <span>Azure Learning</span>
-              </motion.a>
-
-              <motion.a
-                href="https://hub.docker.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Database className="w-4 h-4" />
-                <span>Docker Hub</span>
-              </motion.a>
-
               <motion.a
                 href="https://szych.framer.ai/"
                 target="_blank"
