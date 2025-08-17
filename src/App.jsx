@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import LearningPath from './components/LearningPath';
+import SkillsProgress from './components/SkillsProgress';
 import LinkedInFeed from './components/LinkedInFeed';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -49,6 +50,7 @@ function App() {
         <Hero />
         <About />
         <Experience />
+        <SkillsProgress />
         <LearningPath />
         <LinkedInFeed />
         <Contact />

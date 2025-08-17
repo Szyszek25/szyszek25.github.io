@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Mail, Send, Github, Linkedin, Shield } from 'lucide-react';
+import { Mail, Send, Github, Linkedin, Cloud, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -62,26 +62,16 @@ const Contact = () => {
       color: 'hover:text-blue-600'
     },
     {
-      name: 'GitHub',
+      name: 'GitHub', 
       icon: Github,
       url: 'https://github.com/szyszek25',
       color: 'hover:text-gray-800 dark:hover:text-gray-200'
     },
     {
-      name: 'TryHackMe',
-      icon: Shield,
-      url: 'https://tryhackme.com/p/jakubszych.dev',
-      color: 'hover:text-red-600'
-    },
-    {
-      name: 'HackTheBox',
-      icon: () => (
-        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M11.996 0L1.681 6v12l10.315 6 10.309-6V6L11.996 0zM6.92 17.544c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zm8.158 0c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zM12 8.006c.332 0 .659.034.979.1L12 8.943l-.979-.837c.32-.066.647-.1.979-.1z"/>
-        </svg>
-      ),
-      url: 'https://app.hackthebox.com/profile/2477474',
-      color: 'hover:text-green-500'
+      name: 'Portfolio',
+      icon: Cloud,
+      url: 'https://szyszek25.github.io/',
+      color: 'hover:text-primary-600'
     }
   ];
 
@@ -123,7 +113,7 @@ const Contact = () => {
               Skontaktuj się ze mną
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Masz pytania o cyberbezpieczeństwo? Chcesz nawiązać współpracę? 
+              Szukasz Junior DevOps Engineer? Chcesz porozmawiać o technologiach chmurowych? 
               Napisz do mnie!
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
@@ -259,10 +249,20 @@ const Contact = () => {
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-primary-100" />
                     <a 
-                      href="mailto:jakubszych.dev@gmail.com"
+                      href="mailto:jakubszych2525@gmail.com"
                       className="hover:text-primary-100 transition-colors duration-300"
                     >
-                      jakubszych.dev@gmail.com
+                      jakubszych2525@gmail.com
+                    </a>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3 mt-3">
+                    <Phone className="w-5 h-5 text-primary-100" />
+                    <a 
+                      href="tel:+48720766319"
+                      className="hover:text-primary-100 transition-colors duration-300"
+                    >
+                      720 766 319
                     </a>
                   </div>
                 </div>
@@ -313,10 +313,11 @@ const Contact = () => {
                   💡 Najlepiej kontaktować się w sprawach:
                 </h4>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
-                  <li>• Pytania o cyberbezpieczeństwo</li>
-                  <li>• Współpraca przy projektach edukacyjnych</li>
-                  <li>• Mentoring w nauce IT security</li>
-                  <li>• Wymiana doświadczeń z TryHackMe/HTB</li>
+                  <li>• Staże Junior DevOps Engineer, Cloud, Helpdesk, IoT</li>
+                  <li>• Projektów w technologiach chmurowych</li>
+                  <li>• Współpracy przy automatyzacji</li>
+                  <li>• Mentoringu w nauce DevOps</li>
+                  <li>• Wymiany doświadczeń z Azure/Docker/CI-CD</li>
                 </ul>
               </div>
             </motion.div>

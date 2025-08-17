@@ -1,0 +1,52 @@
+{
+  "Azure": [
+    "Podstawy usług chmurowych (Tydzień 3)",
+    "Poznanie interfejsu Azure Portal (Tydzień 3)",
+    "Przygotowanie do certyfikatu AZ-900 (Tydzień 3)",
+    "Eksploracja Azure fundamentals (W trakcie)"
+  ],
+  "Docker": [
+    "Podstawy pisania dockerfiles (Tydzień 3)",
+    "Konteneryzacja aplikacji (Tydzień 2)",
+    "Zarządzanie obrazami Docker (Tydzień 2)",
+    "Shipping small apps z Docker (W trakcie)"
+  ],
+  "GitHub Actions": [
+    "Pierwsze workflow YAML (Tydzień 2)",
+    "Automatyzacja build/run JS app (Tydzień 2)",
+    "CI/CD podstawy (Tydzień 2)",
+    "Upload JS app z automatyzacją (Zakończone)"
+  ],
+  "Railway": [
+    "Deployment do chmury (Tydzień 2)",
+    "Konfiguracja cron jobs (Tydzień 2)",
+    "Automatyzacja deploymentów (Tydzień 2)",
+    "Cron job uruchomiony zgodnie z harmonogramem (Zakończone)"
+  ],
+  "AWS": [
+    "Eksploracja AWS fundamentals (W trakcie)",
+    "Porównanie z Azure i GCP (W trakcie)"
+  ],
+  "Google Cloud Platform": [
+    "Podstawy GCP (W trakcie)",
+    "Porównanie dostawców chmury (W trakcie)"
+  ],
+  "Linux/Bash": [
+    "Podstawy poleceń Linux (W trakcie)",
+    "Windows Terminal/PowerShell fundamentals (W trakcie)",
+    "SSH i podstawy networking (W trakcie)"
+  ],
+  "Python": [
+    "Wykorzystanie w projektach DevOps (W trakcie)",
+    "Automatyzacja zadań (W trakcie)",
+    "Backend development (Doświadczenie z studiów)"
+  ],
+  "Kubernetes": [
+    "Pierwsze kroki z K8s - basics only (W trakcie)",
+    "Planowanie głębszej nauki po podstawach (Przyszłość)"
+  ],
+  "Terraform": [
+    "Pierwsze kroki z IaC - basics only (W trakcie)",
+    "Planowanie rozwoju po fundamentach (Przyszłość)"
+  ]
+}

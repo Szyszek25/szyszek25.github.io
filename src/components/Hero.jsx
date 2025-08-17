@@ -1,24 +1,19 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Shield, Code, Lock, Gamepad2, Github } from 'lucide-react';
+import { ArrowDown, Cloud, Code, Database, Gamepad2, Github } from 'lucide-react';
 const GitHub = Github;
-const HackTheBoxIcon = () => (
-  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M11.996 0L1.681 6v12l10.315 6 10.309-6V6L11.996 0zM6.92 17.544c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zm8.158 0c-.503-.307-.755-.768-.755-1.383 0-.614.252-1.076.755-1.383.503-.307 1.176-.461 2.02-.461.844 0 1.517.154 2.02.461.503.307.754.769.754 1.383 0 .615-.251 1.076-.754 1.383-.503.307-1.176.461-2.02.461-.844 0-1.517-.154-2.02-.461zM12 8.006c.332 0 .659.034.979.1L12 8.943l-.979-.837c.32-.066.647-.1.979-.1z"/>
-  </svg>
-);
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   const floatingIcons = [
-    { Icon: Shield, delay: 0, position: 'top-20 left-20' },
+    { Icon: Cloud, delay: 0, position: 'top-20 left-20' },
     { Icon: Code, delay: 0.5, position: 'top-32 right-32' },
-    { Icon: Lock, delay: 1, position: 'bottom-32 left-32' },
+    { Icon: Database, delay: 1, position: 'bottom-32 left-32' },
   ];
 
   return (
@@ -61,7 +56,7 @@ const Hero = () => {
           >
             <div className="w-20 h-20 xs:w-24 xs:h-24 md:w-60 md:h-60 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 animate-glow">
               <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-                <Shield className="w-10 h-10 xs:w-12 xs:h-12 md:w-32 md:h-32 text-primary-500" />
+                <Cloud className="w-10 h-10 xs:w-12 xs:h-12 md:w-32 md:h-32 text-primary-500" />
               </div>
             </div>
           </motion.div>
@@ -75,7 +70,7 @@ const Hero = () => {
           >
             <span className="block">Jakub Szych</span>
             <span className="text-gradient text-2xl md:text-4xl lg:text-5xl">
-              Cybersecurity Beginner
+              Junior DevOps Engineer
             </span>
           </motion.h1>
 
@@ -86,8 +81,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Student IT rozpoczynający przygodę z cyberbezpieczeństwem. 
-            Odkrywam świat ethical hackingu, penetration testingu i ochrony systemów.
+            Student IT specjalizujący się w technologiach chmurowych. 
+            Buduję umiejętności w Azure, Docker, CI/CD i automatyzacji infrastruktury.
           </motion.p>
 
           {/* CTA + GitHub + przyciski platform */}
@@ -100,7 +95,7 @@ const Hero = () => {
             {/* Skontaktuj + GitHub */}
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center">
               <motion.button
-                onClick={scrollToContact}
+                onClick={() => scrollToSection('contact')}
                 className="btn-primary text-lg md:text-xl px-6 md:px-8 py-3 md:py-4"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -120,30 +115,42 @@ const Hero = () => {
               </motion.a>
             </div>
 
+            {/* Postępy w nauce */}
+            <div className="flex justify-center">
+              <motion.button
+                onClick={() => scrollToSection('skills-progress')}
+                className="btn-secondary text-lg md:text-xl px-6 md:px-8 py-3 md:py-4"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                📊 Postępy w nauce
+              </motion.button>
+            </div>
+
             {/* Platformy (mniejsze) */}
             <div className="flex flex-col sm:flex-row gap-2">
               <motion.a
-                href="https://tryhackme.com/p/jakubszych.dev"
+                href="https://azure.microsoft.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Shield className="w-4 h-4" />
-                <span>TryHackMe</span>
+                <Cloud className="w-4 h-4" />
+                <span>Azure Learning</span>
               </motion.a>
 
               <motion.a
-                href="https://app.hackthebox.com/profile/2477474"
+                href="https://hub.docker.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <HackTheBoxIcon />
-                <span>HackTheBox</span>
+                <Database className="w-4 h-4" />
+                <span>Docker Hub</span>
               </motion.a>
 
               <motion.a

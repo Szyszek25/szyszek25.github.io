@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Moon, Sun, Menu, X, Shield } from 'lucide-react';
+import { Moon, Sun, Menu, X, Cloud } from 'lucide-react';
 
 const Header = ({ darkMode, toggleDarkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,7 +46,8 @@ const Header = ({ darkMode, toggleDarkMode }) => {
   const navItems = [
     { id: 'about', label: 'O mnie' },
     { id: 'experience', label: 'Doświadczenie' },
-    { id: 'learning', label: 'Ścieżka nauki' },
+    { id: 'learning', label: 'Moja droga chmurowa' },
+    { id: 'skills-progress', label: 'Postępy w nauce' },
     { id: 'linkedin', label: 'LinkedIn' },
     { id: 'contact', label: 'Kontakt' }
   ];
@@ -73,7 +74,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             onClick={() => scrollToSection('hero')}
             whileHover={{ scale: 1.05 }}
           >
-            <Shield className="w-8 h-8 md:w-10 md:h-10 text-primary-500" />
+            <Cloud className="w-8 h-8 md:w-10 md:h-10 text-primary-500" />
             <span className="text-xl md:text-2xl font-bold text-gradient">
               Jakub Szych
             </span>

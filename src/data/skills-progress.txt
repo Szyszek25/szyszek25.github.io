@@ -1,0 +1,34 @@
+Azure:
+- Podstawy usług chmurowych (Tydzień 3)
+- Poznanie interfejsu Azure Portal (Tydzień 3)
+- Przygotowanie do certyfikatu AZ-900 (Tydzień 3)
+
+Docker:
+- Podstawy pisania dockerfiles (Tydzień 3)
+- Konteneryzacja aplikacji (Tydzień 2)
+- Zarządzanie obrazami Docker (Tydzień 2)
+
+MongoDB:
+- Pierwszy kontakt z bazami NoSQL (Tydzień 3)
+- Środowisko MongoDB Compass (Tydzień 3)
+- Planowanie MongoDB Atlas w Azure (Tydzień 3)
+
+GitHub Actions:
+- Pierwsze workflow YAML (Tydzień 2)
+- Automatyzacja build/run JS app (Tydzień 2)
+- CI/CD podstawy (Tydzień 2)
+
+Railway:
+- Deployment do chmury (Tydzień 2)
+- Konfiguracja cron jobs (Tydzień 2)
+- Automatyzacja deploymentów (Tydzień 2)
+
+Bash/Linux:
+- Podstawy poleceń Linux (W trakcie)
+- Windows Terminal/PowerShell (W trakcie)
+- SSH i podstawy networking (W trakcie)
+
+Python:
+- Wykorzystanie w projektach DevOps (W trakcie)
+- Automatyzacja zadań (W trakce)
+- Integracja z bazami danych (W trakcie)

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { CheckCircle, Circle, BookOpen, Terminal, Shield, Code2 } from 'lucide-react';
+import { CheckCircle, Circle, Cloud, Code, Database, GitBranch, Layers, Server } from 'lucide-react';
 
 const LearningPath = () => {
   const ref = useRef(null);
@@ -10,39 +10,48 @@ const LearningPath = () => {
   const learningSteps = [
     {
       id: 1,
-      title: "TryHackMe - Cybersecurity 101",
-      description: "Podstawy cybersecurity, defensive security intro. Ukończone pokoje: Defensive Security Intro",
+      title: "Learning-by-building Cloud & DevOps",
+      description: "Shipping small apps z Docker i GitHub Actions CI/CD (YAML). Deployment na Railway z cron schedules dla automatyzacji.",
       status: "in-progress",
-      icon: Shield,
-      progress: 30,
+      icon: Cloud,
+      progress: 70,
       timeline: "Lipiec 2025 - W trakcie"
     },
     {
       id: 2,
-      title: "HackTheBox Academy",
-      description: "Intro to Defensive Security, Network Enumeration. Przygotowanie do CTF challenges",
+      title: "Multi-Cloud Fundamentals",
+      description: "Eksploracja AWS, Azure & GCP fundamentals. Linux/Bash, Windows Terminal, SSH, networking basics.",
       status: "in-progress",
-      icon: Terminal,
-      progress: 20,
-      timeline: "Lipiec 2025 - W trakcie"
+      icon: Server,
+      progress: 45,
+      timeline: "Lipiec-Sierpień 2025"
     },
     {
       id: 3,
-      title: "Linux Command Line Mastery",
-      description: "Administracja Linux, scripting, analiza logów. Codzienne ćwiczenia w VM",
+      title: "Automation & CI/CD Mastery",
+      description: "Stronger CI/CD (tests, branch protections, secrets management). Automatyzacja z GitHub Actions i Railway cron jobs.",
       status: "in-progress",
-      icon: Code2,
-      progress: 40,
+      icon: GitBranch,
+      progress: 60,
       timeline: "Lipiec 2025 - Ciągła praktyka"
     },
     {
       id: 4,
-      title: "Network Security Fundamentals", 
-      description: "Protokoły sieciowe, Wireshark, firewall configuration, network monitoring",
+      title: "Container Orchestration", 
+      description: "Pierwsze kroki z Kubernetes & Terraform (basics only). Gradual expansion po solidnych fundamentach.",
       status: "planned",
-      icon: BookOpen,
-      progress: 0,
-      timeline: "Sierpień 2025 - Planowane"
+      icon: Layers,
+      progress: 15,
+      timeline: "Sierpień-Wrzesień 2025"
+    },
+    {
+      id: 5,
+      title: "Cloud IAM & Security",
+      description: "Cloud IAM & cost-aware deployments. Security mindset w kontekście DevOps i infrastruktury chmurowej.",
+      status: "planned",
+      icon: Database,
+      progress: 5,
+      timeline: "Wrzesień-Październik 2025"
     }
   ];
 
@@ -103,10 +112,10 @@ const LearningPath = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-              Ścieżka nauki
+              Moja droga chmurowa
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Moja cybersecurity journey - od lipca 2025
+              Od lipca 2025 - Learning-by-building w świecie DevOps i technologii chmurowych
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
@@ -185,10 +194,10 @@ const LearningPath = () => {
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
-              { label: 'Ukończone pokoje', value: '1', color: 'text-green-500' },
+              { label: 'Projekty deployed', value: '3+', color: 'text-green-500' },
               { label: 'W trakcie', value: '3', color: 'text-primary-500' },
-              { label: 'Planowane', value: '1', color: 'text-gray-500' },
-              { label: 'Łączny postęp', value: '23%', color: 'text-primary-600' }
+              { label: 'Planowane', value: '2', color: 'text-gray-500' },
+              { label: 'Łączny postęp', value: '37%', color: 'text-primary-600' }
             ].map((stat, index) => (
               <div key={index} className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                 <div className={`text-3xl font-bold ${stat.color} mb-2`}>
@@ -208,27 +217,27 @@ const LearningPath = () => {
           >
             <div className="bg-gradient-to-r from-primary-500 to-primary-600 text-white p-8 rounded-2xl">
               <h3 className="text-2xl font-bold mb-4">
-                Chcesz śledzić moje postępy?
+                Chcesz śledzić moją drogę w chmurze?
               </h3>
               <p className="text-primary-100 mb-6">
-                Obserwuj mnie na platformach edukacyjnych i LinkedIn, gdzie dzielę się swoimi osiągnięciami
+                Obserwuj moje cotygodniowe update'y na LinkedIn, gdzie dzielę się postępami w nauce DevOps
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="https://tryhackme.com/p/jakubszych.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300"
-                >
-                  TryHackMe Profile
-                </a>
                 <a
                   href="https://www.linkedin.com/in/jakub-szych/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary-600 transition-colors duration-300"
+                  className="bg-white text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300"
                 >
                   LinkedIn Profile
+                </a>
+                <a
+                  href="https://github.com/szyszek25"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary-600 transition-colors duration-300"
+                >
+                  GitHub Profile
                 </a>
               </div>
             </div>

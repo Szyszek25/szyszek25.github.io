@@ -43,26 +43,34 @@ const LinkedInFeed = () => {
   const mockPosts = [
     {
       id: 1,
-      title: "2 lata informatyki za mną, specjalizacja w chmurze przede mną, ale wakacje należą do cybersecurity! �",
-      summary: "Od października startuję ze specjalizacją Technologie Chmurowe. Zanim pochłonie mnie Kubernetes i Docker, wakacje poświęcam intensywnej nauce ethical hackingu, penetration testingu, podstaw Linuxa i sieci. Co już mam na liczniku: HackTheBox Academy, TryHackMe Cybersecurity 101, szyszek25.github.io...",
-      link: "https://linkedin.com/posts/jakub-szych-cybersecurity-journey",
-      publishDate: "2025-07-29T10:30:00Z",
+      title: "Witam chmurki w dzień słoneczny ☁️ Tydzień 3 nauki DevOps/Cloud za mną! 🚀",
+      summary: "Dzięki waszej pomocy zapadła decyzja w sprawie kierunku mojego rozwoju! Aktualnie rozwijane umiejętności: Azure, Docker, MongoDB. Kierunek rozwoju: DevOps, Cloud Engineer, Database Engineer. Nabyte umiejętności: Azure (cert AZ-900), MongoDB (pierwszy raz NoSQL), Docker (podstawy dockerfiles). Cel: znaleźć staż Junior DevOps Engineer! ☁️",
+      link: "https://linkedin.com/posts/jakub-szych-devops-week3",
+      publishDate: "2025-08-10T10:30:00Z",
       author: "Jakub Szych"
     },
     {
       id: 2,
-      title: "Ukończyłem pierwszy pokój na TryHackMe! �️",
-      summary: "Defensive Security Intro - check! Fascynujące jak wiele można się nauczyć o ochronie systemów już na początku drogi...",
-      link: "https://linkedin.com/posts/jakub-szych-tryhackme-1",
-      publishDate: "2025-07-25T15:45:00Z",
+      title: "Learning-by-building cloud & DevOps with a security mindset 🔐",
+      summary: "What I'm doing now: • Shipping small apps with Docker and simple GitHub Actions CI/CD (YAML) • Deploying to the cloud (Railway) and using cron schedules for automation • Exploring AWS / Azure / GCP fundamentals Recent wins: uploaded JS app to GitHub with automated build/run! 🚀",
+      link: "https://linkedin.com/posts/jakub-szych-devops-journey",
+      publishDate: "2025-08-05T15:45:00Z",
       author: "Jakub Szych"
     },
     {
       id: 3,
-      title: "HackTheBox Academy - pierwsze kroki w defensive security �",
-      summary: "Rozpocząłem moduł Intro to Defensive Security. Każdy challenge to nowa lekcja i krok bliżej do zostania ethical hackerem!",
-      link: "https://linkedin.com/posts/jakub-szych-hackthebox-1",
-      publishDate: "2025-07-20T09:20:00Z",
+      title: "3rd-year CS @ SGGW Warsaw — Cloud Technologies specialization from Oct 2025! ☁️",
+      summary: "Specializing in Cloud Technologies, but vacation belongs to building in the cloud! My knowledge: Cloud (Azure, AWS, GCP, Docker, GitHub Actions), Backend (Python, C#), Workflow (Git, AI Agents, GitHub Copilot). Goal: To secure the digital world while building in the cloud. 🌐",
+      link: "https://linkedin.com/posts/jakub-szych-cloud-specialization",
+      publishDate: "2025-08-01T09:20:00Z",
+      author: "Jakub Szych"
+    },
+    {
+      id: 4,
+      title: "Hi, I'm Jakub - empathetic technologist and aspiring DevOps specialist! 🚀",
+      summary: "My passion lies at the intersection of human psychology, user behaviors and computer science. Portfolio: https://szyszek25.github.io/ What makes me different? I bring emotional intelligence to technology - empathy helps design better solutions, sensitivity allows spotting patterns others miss. 💡",
+      link: "https://linkedin.com/posts/jakub-szych-intro-devops",
+      publishDate: "2025-07-28T14:30:00Z",
       author: "Jakub Szych"
     }
   ];
@@ -117,10 +125,10 @@ const LinkedInFeed = () => {
               </h2>
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Najnowsze posty z mojej drogi w cyberbezpieczeństwie
+              Najnowsze posty z mojej drogi w DevOps i technologiach chmurowych
               <br />
               <span className="text-sm text-gray-500 dark:text-gray-500">
-                (Profil prywatny - posty przykładowe dla demonstracji)
+                (Posty przykładowe dla demonstracji portfolio)
               </span>
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
@@ -273,7 +281,7 @@ const LinkedInFeed = () => {
                 📋 Informacja o profilu LinkedIn
               </h3>
               <p className="text-blue-600 dark:text-blue-300 text-sm"> 
-                Powyższe posty to przykładowe wpisy demonstracyjne pokazujące moją ścieżkę w cyberbezpieczeństwie.
+                Powyższe posty to przykładowe wpisy demonstracyjne pokazujące moją ścieżkę DevOps i technologii chmurowych.
               </p>
             </div>
             <a
