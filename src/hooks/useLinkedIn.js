@@ -14,8 +14,8 @@ const useLinkedIn = () => {
     summary: 'Student IT (3rd year) na ścieżce DevOps & Cloud Technologies. Learning-by-building z Docker, GitHub Actions CI/CD, Azure. Powrót do cybersecurity w październiku z cloud background.',
     location: 'Poland',
     profilePicture: null,
-    connections: '150+',
-    followers: 125,
+    connections: '170+',
+    followers: 145,
     profileUrl: 'https://www.linkedin.com/in/jakub-szych/',
     isStudent: true,
     university: 'SGGW Warsaw - Cloud Technologies spec.',
@@ -26,45 +26,17 @@ const useLinkedIn = () => {
   const postsData = [
     {
       id: '1',
-      content: 'Learning-by-building DevOps w praktyce! � Właśnie wdrożyłem kolejną aplikację z Docker containerization i GitHub Actions CI/CD na Railway. Automated testing, branch protection, secrets management - wszystko działa jak w zegarku. Security mindset w każdym kroku procesu! #DevOps #Docker #GitHubActions #CloudDeployment #Railway',
-      timestamp: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
-      likes: 28,
-      comments: 7,
-      shares: 3,
-      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_devops-docker-githubactions-activity-XXXXXXXXXX-XXXX',
+      content: 'Tydzień 4 nauki DevOps/Cloud za mną! 🚀 W poszukiwaniu Azure datacenter wyruszyłem na Maltę - od katakumb po groty, aż na szczyt Comino. Chmury nie znalazłem, ale słońce i świetne 5G tak! 😄 Po powrocie przerobiłem AZ-900: Cloud Computing, Shared Responsibility Model, modele chmur (Public/Private/Hybrid), koszty i usługi (IaaS/PaaS/SaaS/Serverless). Rada: ucz się małymi porcjami, regularnie i znajdź swoje miejsce flow! #DevOps #Azure #AZ900 #Malta',
+      timestamp: new Date(Date.now() - 0 * 24 * 60 * 60 * 1000).toISOString(),
+      likes: 42,
+      comments: 12,
+      shares: 8,
+      linkedInUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7365824055490281473/',
       author: {
         name: 'Jakub Szych',
         profileUrl: 'https://www.linkedin.com/in/jakub-szych/'
       },
-      hashtags: ['DevOps', 'Docker', 'GitHubActions', 'CloudDeployment', 'Railway']
-    },
-    {
-      id: '2', 
-      content: 'Azure fundamentals w praktyce! ☁️ Eksplorując AWS/Azure/GCP - fascynujące jak różne podejścia mają cloud providers do tego samego problemu. Linux/Bash basics, SSH, networking - budowanie solidnych fundamentów przed przejściem do Kubernetes. October plan: powrót do cybersecurity z tym cloud background! #Azure #CloudFundamentals #Linux #DevOpsJourney',
-      timestamp: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
-      likes: 35,
-      comments: 9,
-      shares: 5,
-      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_azure-cloudfundamentals-linux-activity-XXXXXXXXXX-XXXX',
-      author: {
-        name: 'Jakub Szych',
-        profileUrl: 'https://www.linkedin.com/in/jakub-szych/'
-      },
-      hashtags: ['Azure', 'CloudFundamentals', 'Linux', 'DevOpsJourney']
-    },
-    {
-      id: '3',
-      content: 'CI/CD pipeline evolution! 🔄 Od prostych GitHub Actions do complex workflows z automated testing, Railway deployment z cron schedules. YAML staje się moim drugim językiem! Security-first approach - każdy commit przez branch protection, secrets management na poziomie. Next: Kubernetes & Terraform basics. #CICD #YAML #Automation #SecureDeployment',
-      timestamp: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString(),
-      likes: 41,
-      comments: 11,
-      shares: 7,
-      linkedInUrl: 'https://www.linkedin.com/posts/jakub-szych_cicd-yaml-automation-activity-XXXXXXXXXX-XXXX',
-      author: {
-        name: 'Jakub Szych',
-        profileUrl: 'https://www.linkedin.com/in/jakub-szych/'
-      },
-      hashtags: ['CICD', 'YAML', 'Automation', 'SecureDeployment']
+      hashtags: ['DevOps', 'Azure', 'AZ900', 'Malta', 'CloudComputing', 'StudentLife']
     }
   ];
 

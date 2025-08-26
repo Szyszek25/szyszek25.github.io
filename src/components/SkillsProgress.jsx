@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Cloud, Code, Database, GitBranch, Terminal, Layers, TrendingUp } from 'lucide-react';
+import { Cloud, Code, Database, GitBranch, Terminal, Layers, TrendingUp, BookOpen } from 'lucide-react';
 import { useSkillsProgress } from '../hooks/useSkillsProgress';
 
 const SkillsProgress = () => {
@@ -10,6 +10,7 @@ const SkillsProgress = () => {
   const { skills, loading, error, refreshSkills } = useSkillsProgress();
 
   const skillIcons = {
+    'Kursy': BookOpen,
     'Azure': Cloud,
     'Docker': Layers, 
     'MongoDB': Database,

@@ -1,14 +1,20 @@
 {
+  "Kursy": [
+    "Kurs AZ-900 Scott Duffy Udemy - 8.5h kompletny (W trakcie)"
+  ],
   "Azure": [
     "Podstawy usług chmurowych (Tydzień 3)",
     "Poznanie interfejsu Azure Portal (Tydzień 3)",
     "Przygotowanie do certyfikatu AZ-900 (Tydzień 3)",
-    "Eksploracja Azure fundamentals (W trakcie)"
+    "AZ-900 fundamentals - Cloud Computing, Shared Responsibility Model (Tydzień 4)",
+    "Modele chmur: Public, Private, Hybrid (Tydzień 4)",
+    "Koszty i korzyści: scalability, elastyczność, niezawodność (Tydzień 4)",
+    "Usługi: IaaS, PaaS, SaaS, Serverless (Tydzień 4)"
   ],
   "Docker": [
-    "Podstawy pisania dockerfiles (Tydzień 3)",
     "Konteneryzacja aplikacji (Tydzień 2)",
     "Zarządzanie obrazami Docker (Tydzień 2)",
+    "Podstawy pisania dockerfiles (Tydzień 3)",
     "Shipping small apps z Docker (W trakcie)"
   ],
   "GitHub Actions": [
@@ -37,9 +43,9 @@
     "SSH i podstawy networking (W trakcie)"
   ],
   "Python": [
+    "Backend development (Doświadczenie z studiów)",
     "Wykorzystanie w projektach DevOps (W trakcie)",
-    "Automatyzacja zadań (W trakcie)",
-    "Backend development (Doświadczenie z studiów)"
+    "Automatyzacja zadań (W trakcie)"
   ],
   "Kubernetes": [
     "Pierwsze kroki z K8s - basics only (W trakcie)",
