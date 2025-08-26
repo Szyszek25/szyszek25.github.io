@@ -3,31 +3,37 @@
     "Kurs AZ-900 Scott Duffy Udemy - 8.5h kompletny (W trakcie)"
   ],
   "Azure": [
-    "Podstawy usług chmurowych (Tydzień 3)",
-    "Poznanie interfejsu Azure Portal (Tydzień 3)",
-    "Przygotowanie do certyfikatu AZ-900 (Tydzień 3)",
-    "AZ-900 fundamentals - Cloud Computing, Shared Responsibility Model (Tydzień 4)",
-    "Modele chmur: Public, Private, Hybrid (Tydzień 4)",
-    "Koszty i korzyści: scalability, elastyczność, niezawodność (Tydzień 4)",
-    "Usługi: IaaS, PaaS, SaaS, Serverless (Tydzień 4)"
+    "📅 Tydzień 4:",
+    "Usługi: IaaS, PaaS, SaaS, Serverless",
+    "Koszty i korzyści: scalability, elastyczność, niezawodność", 
+    "Modele chmur: Public, Private, Hybrid",
+    "AZ-900 fundamentals - Cloud Computing, Shared Responsibility Model",
+    "📅 Tydzień 3:",
+    "Przygotowanie do certyfikatu AZ-900",
+    "Poznanie interfejsu Azure Portal",
+    "Podstawy usług chmurowych"
   ],
   "Docker": [
-    "Konteneryzacja aplikacji (Tydzień 2)",
-    "Zarządzanie obrazami Docker (Tydzień 2)",
-    "Podstawy pisania dockerfiles (Tydzień 3)",
-    "Shipping small apps z Docker (W trakcie)"
+    "📅 Tydzień 3:",
+    "Podstawy pisania dockerfiles",
+    "Shipping small apps z Docker (W trakcie)",
+    "📅 Tydzień 2:",
+    "Zarządzanie obrazami Docker",
+    "Konteneryzacja aplikacji"
   ],
   "GitHub Actions": [
-    "Pierwsze workflow YAML (Tydzień 2)",
-    "Automatyzacja build/run JS app (Tydzień 2)",
-    "CI/CD podstawy (Tydzień 2)",
-    "Upload JS app z automatyzacją (Zakończone)"
+    "📅 Tydzień 2:",
+    "Upload JS app z automatyzacją (Zakończone)",
+    "CI/CD podstawy",
+    "Automatyzacja build/run JS app",
+    "Pierwsze workflow YAML"
   ],
   "Railway": [
-    "Deployment do chmury (Tydzień 2)",
-    "Konfiguracja cron jobs (Tydzień 2)",
-    "Automatyzacja deploymentów (Tydzień 2)",
-    "Cron job uruchomiony zgodnie z harmonogramem (Zakończone)"
+    "📅 Tydzień 2:",
+    "Cron job uruchomiony zgodnie z harmonogramem (Zakończone)",
+    "Automatyzacja deploymentów",
+    "Konfiguracja cron jobs",
+    "Deployment do chmury"
   ],
   "AWS": [
     "Eksploracja AWS fundamentals (W trakcie)",

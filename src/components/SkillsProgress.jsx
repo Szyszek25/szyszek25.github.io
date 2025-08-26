@@ -137,20 +137,34 @@ const SkillsProgress = () => {
 
                     {/* Progress Items */}
                     <div className="space-y-3">
-                      {skillItems.map((item, index) => (
-                        <motion.div
-                          key={index}
-                          className="flex items-start space-x-3 p-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600"
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                          transition={{ duration: 0.4, delay: index * 0.1 }}
-                        >
-                          <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">
-                            {item}
-                          </p>
-                        </motion.div>
-                      ))}
+                      {skillItems.map((item, index) => {
+                        const isWeekHeader = item.startsWith('📅 Tydzień');
+                        
+                        return (
+                          <motion.div
+                            key={index}
+                            className={`flex items-start space-x-3 p-3 rounded-lg ${
+                              isWeekHeader 
+                                ? 'bg-gradient-to-r from-primary-100 to-primary-50 dark:from-primary-900/30 dark:to-primary-800/20 border-l-4 border-primary-500' 
+                                : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600'
+                            }`}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                            transition={{ duration: 0.4, delay: index * 0.1 }}
+                          >
+                            {!isWeekHeader && (
+                              <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
+                            )}
+                            <p className={`text-sm leading-relaxed ${
+                              isWeekHeader 
+                                ? 'font-semibold text-primary-700 dark:text-primary-300 ml-0' 
+                                : 'text-gray-800 dark:text-gray-200'
+                            }`}>
+                              {item}
+                            </p>
+                          </motion.div>
+                        );
+                      })}
                     </div>
 
                     {/* Progress Indicator */}
