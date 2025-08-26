@@ -107,14 +107,17 @@ const SkillsProgress = () => {
               variants={containerVariants}
               className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
-              {Object.entries(skills).map(([skillName, skillItems]) => {
+              {Object.entries(skills).map(([skillName, skillItems], index) => {
                 const IconComponent = skillIcons[skillName] || Code;
+                const isCourseColumn = skillName === 'Kursy';
                 
                 return (
                   <motion.div
                     key={skillName}
                     variants={itemVariants}
-                    className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 dark:border-gray-700 card-hover"
+                    className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 dark:border-gray-700 card-hover ${
+                      isCourseColumn ? 'md:col-span-2 lg:col-span-2' : ''
+                    }`}
                     whileHover={{ scale: 1.02, y: -5 }}
                   >
                     {/* Skill Header */}
