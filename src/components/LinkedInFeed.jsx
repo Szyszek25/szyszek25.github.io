@@ -26,9 +26,17 @@ const LinkedInFeed = () => {
         for (const p of paths) {
           try {
             const res = await fetch(`${p}${p.includes('?') ? '' : `?t=${ts}`}`, { cache: 'no-store' });
-            if (res.ok) {
-              const json = await res.json();
-              return json;
+            if (!res.ok) continue;
+            const txt = await res.text();
+            if (!txt || !txt.trim()) continue; // skip empty files
+            try {
+              const json = JSON.parse(txt);
+              if (json && (Array.isArray(json.posts) || json.lastUpdated)) {
+                return json;
+              }
+            } catch (_) {
+              // invalid JSON at this path, try next
+              continue;
             }
           } catch (_) {
             // continue to next path
@@ -145,10 +153,6 @@ const LinkedInFeed = () => {
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Najnowsze posty z mojej drogi w DevOps i technologiach chmurowych
-              <br />
-              <span className="text-sm text-gray-500 dark:text-gray-500">
-                (Posty przykładowe dla demonstracji portfolio)
-              </span>
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
@@ -297,14 +301,16 @@ const LinkedInFeed = () => {
             variants={itemVariants}
             className="text-center mt-12"
           >
-            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
-              <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
-                📋 Informacja o profilu LinkedIn
-              </h3>
-              <p className="text-blue-600 dark:text-blue-300 text-sm"> 
-                Powyższe posty to przykładowe wpisy demonstracyjne pokazujące moją ścieżkę DevOps i technologii chmurowych.
-              </p>
-            </div>
+            {error && (
+              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
+                <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-2">
+                  📋 Informacja o profilu LinkedIn
+                </h3>
+                <p className="text-blue-600 dark:text-blue-300 text-sm"> 
+                  Profil jest prywatny lub plik danych jest niedostępny, więc wyświetlam posty demonstracyjne.
+                </p>
+              </div>
+            )}
             <a
               href="https://www.linkedin.com/in/jakub-szych/"
               target="_blank"
