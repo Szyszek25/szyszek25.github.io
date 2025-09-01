@@ -1,10 +1,3 @@
-Świetnie, czyli chcesz zachować **format taki jak powyżej** (po polsku, sekcje z emoji, checklisty, code-blocks), tylko zaktualizowany tak, żeby pasował do Twojej strony i LinkedIna.
-Czyli zamiast „Cybersecurity” → **DevOps & Cloud**.
-
-Przykładowa gotowa wersja:
-
----
-
 # 🚀 Jakub Szych – Portfolio DevOps & Cloud
 
 Nowoczesne, responsywne portfolio studenta informatyki rozwijającego się w kierunku **DevOps i technologii chmurowych**, zbudowane z **React + Vite** i hostowane na **GitHub Pages**.
