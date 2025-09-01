@@ -1,30 +1,31 @@
-# 🛡️ Jakub Szych - Portfolio Cybersecurity
+# 🚀 Jakub Szych – Portfolio DevOps & Cloud
 
-Nowoczesne, responsywne portfolio studenta cyberbezpieczeństwa zbudowane z React + Vite i hostowane na GitHub Pages.
+Nowoczesne, responsywne portfolio studenta informatyki rozwijającego się w kierunku **DevOps i technologii chmurowych**, zbudowane z **React + Vite** i hostowane na **GitHub Pages**.
 
 ## ✨ Funkcje
 
-- **Responsywny design** - działa na wszystkich urządzeniach
-- **Dark/Light mode** - przełączanie motywów z localStorage
-- **Animacje** - płynne przejścia z Framer Motion
-- **LinkedIn Feed** - automatyczne pobieranie postów (GitHub Actions)
-- **Formularz kontaktowy** - integracja z Formspree
-- **PWA ready** - optymalizacja wydajności
+* **Responsywny design** – działa na wszystkich urządzeniach
+* **Dark/Light mode** – przełączanie motywów z localStorage
+* **Animacje** – płynne przejścia z Framer Motion
+* **LinkedIn Feed** – automatyczne pobieranie postów (GitHub Actions)
+* **Formularz kontaktowy** – integracja z Formspree
+* **PWA ready** – optymalizacja wydajności
 
 ## 🚀 Tech Stack
 
-- **Frontend**: React 18 + Vite
-- **Styling**: Tailwind CSS
-- **Animacje**: Framer Motion
-- **Ikony**: Lucide React
-- **Deploy**: GitHub Pages
-- **CI/CD**: GitHub Actions
+* **Frontend**: React 18 + Vite
+* **Styling**: Tailwind CSS
+* **Animacje**: Framer Motion
+* **Ikony**: Lucide React
+* **Deploy**: GitHub Pages
+* **CI/CD**: GitHub Actions
 
 ## 📦 Instalacja i uruchomienie
 
 ### Wymagania
-- Node.js 18+
-- npm lub yarn
+
+* Node.js 18+
+* npm lub yarn
 
 ### Lokalne uruchomienie
 
@@ -58,162 +59,79 @@ npm run deploy
 ## 🔧 Konfiguracja
 
 ### GitHub Pages
-1. Idź do Settings > Pages w swoim repo
-2. Wybierz "GitHub Actions" jako source
-3. Kod automatycznie się zdeployuje po push do main
+
+1. Idź do **Settings > Pages** w swoim repo
+2. Wybierz „GitHub Actions” jako source
+3. Kod automatycznie się zdeployuje po push do `main`
 
 ### Formspree (formularz kontaktowy)
+
 1. Zarejestruj się na [formspree.io](https://formspree.io)
 2. Stwórz nowy formularz
 3. Zamień `YOUR_FORM_ID` w `Contact.jsx` na swój ID
 
 ### LinkedIn Feed (opcjonalne)
 
-**⚠️ Uwaga**: Jeśli Twój profil LinkedIn jest prywatny, automatyczne pobieranie postów nie będzie działać. W takim przypadku możesz:
+⚠️ Jeśli Twój profil LinkedIn jest prywatny, automatyczne pobieranie postów nie zadziała. Możesz:
 
-1. **Używać mock danych** (jak obecnie) - edytuj `src/data/linkedin.json`
-2. **Wyłączyć sekcję LinkedIn** - usuń komponent z `App.jsx`
+1. **Używać mock danych** – edytuj `src/data/linkedin.json`
+2. **Wyłączyć sekcję LinkedIn** – usuń komponent z `App.jsx`
 3. **Ustawić profil jako publiczny** i skonfigurować RSS
-
-#### Metoda 1: RSS.app (dla publicznych profili)
-1. Idź na [rss.app](https://rss.app)
-2. Znajdź swój profil LinkedIn i skopiuj RSS URL
-3. Ustaw webhook lub API endpoint
-4. Zaktualizuj `scripts/update-linkedin.js`
-
-#### Metoda 2: Zapier/n8n
-1. Stwórz workflow: LinkedIn RSS → JSON webhook
-2. Ustaw cron job co 24h
-3. Webhook powinien aktualizować `src/data/linkedin.json`
-
-#### Metoda 3: Ręcznie
-```bash
-# Aktualizuj linkedin.json ręcznie
-npm run update:linkedin
-```
-
-### Konfiguracja RSS-to-JSON
-
-W `scripts/update-linkedin.js` zaktualizuj:
-
-```javascript
-// Zamień na swój RSS URL
-const RSS_TO_JSON_URL = 'https://api.rss.app/feeds/YOUR_FEED_ID.json';
-
-// Lub użyj innego serwisu:
-// const RSS_TO_JSON_URL = 'https://api.zapier.com/hooks/catch/YOUR_HOOK/';
-```
 
 ## 📁 Struktura projektu
 
 ```
 szyszek25.github.io/
 ├── public/
-│   ├── shield.svg          # Ikona w header
-│   └── ...
 ├── src/
-│   ├── components/         # Komponenty React
-│   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── LearningPath.jsx
-│   │   ├── LinkedInFeed.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Footer.jsx
-│   │   └── ScrollToTop.jsx
+│   ├── components/
 │   ├── data/
-│   │   └── linkedin.json   # Dane LinkedIn (auto-update)
-│   ├── App.jsx            # Główny komponent
-│   ├── main.jsx           # Entry point
-│   └── index.css          # Style Tailwind
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
 ├── scripts/
-│   └── update-linkedin.js  # Skrypt update LinkedIn
 ├── .github/workflows/
-│   ├── deploy.yml         # Deploy na GitHub Pages
-│   └── linkedin.yml       # Auto-update LinkedIn
 ├── package.json
-├── vite.config.js         # Konfiguracja Vite
-├── tailwind.config.js     # Konfiguracja Tailwind
-└── README.md
+└── vite.config.js
 ```
 
 ## 🎨 Personalizacja
 
-### Zmiana kolorów
-Edytuj `tailwind.config.js`:
-
-```javascript
-colors: {
-  primary: {
-    DEFAULT: '#your-color',
-    // ... inne odcienie
-  }
-}
-```
-
-### Dodawanie sekcji
-1. Stwórz nowy komponent w `src/components/`
-2. Dodaj do `App.jsx`
-3. Dodaj link w `Header.jsx`
-
-### Modyfikacja ścieżki nauki
-Edytuj `LearningPath.jsx` - zaktualizuj array `learningSteps`
+* Zmiana kolorów: `tailwind.config.js`
+* Dodawanie sekcji: `src/components/` + `App.jsx`
+* Modyfikacja ścieżki nauki: `LearningPath.jsx`
 
 ## 🔍 SEO i Performance
 
-- ✅ Meta tags (OpenGraph, Twitter Cards)
-- ✅ Semantic HTML
-- ✅ Lazy loading obrazów
-- ✅ Minifikacja CSS/JS
-- ✅ Responsive images
-- ✅ Fast loading fonts
-
-## 🐛 Rozwiązywanie problemów
-
-### Build fails
-```bash
-# Wyczyść cache
-rm -rf node_modules package-lock.json
-npm install
-```
-
-### LinkedIn feed nie działa
-1. Sprawdź `src/data/linkedin.json`
-2. Sprawdź konsole DevTools
-3. Sprawdź GitHub Actions logs
-
-### Formspree nie wysyła
-1. Sprawdź czy FORM_ID jest poprawny
-2. Sprawdź spam folder
-3. Sprawdź limity na formspree.io
+* ✅ Meta tags (OpenGraph, Twitter Cards)
+* ✅ Semantic HTML
+* ✅ Lazy loading obrazów
+* ✅ Minifikacja CSS/JS
+* ✅ Responsive images
 
 ## 📱 Browser Support
 
-- ✅ Chrome/Edge 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Mobile browsers
+* ✅ Chrome/Edge 90+
+* ✅ Firefox 88+
+* ✅ Safari 14+
+* ✅ Mobile browsers
 
 ## 📄 Licencja
 
-MIT License - możesz użyć tego kodu dla własnych projektów!
+MIT License – możesz użyć tego kodu dla własnych projektów.
 
 ## 🤝 Contributing
 
 Pull requests welcome! Proponowane ulepszenia:
 
-- [ ] Więcej animacji
-- [ ] Blog section
-- [ ] Projects showcase
-- [ ] Certyfikaty section
-- [ ] Multi-language support
+* [ ] Więcej animacji
+* [ ] Blog section
+* [ ] Projects showcase
+* [ ] Certyfikaty section
+* [ ] Multi-language support
 
 ## 📬 Kontakt
 
-- **LinkedIn**: [jakub-szych](https://linkedin.com/in/jakub-szych)
-- **GitHub**: [szyszek25](https://github.com/szyszek25)
-- **TryHackMe**: [szyszek25](https://tryhackme.com/p/szyszek25)
-
----
-
-💡 **Tip**: Pamiętaj o regularnym commitowaniu i śledzeniu swoich postępów w cyberbezpieczeństwie!
+* **Portfolio**: [szyszek25.github.io](https://szyszek25.github.io)
+* **LinkedIn**: [jakub-szych](https://linkedin.com/in/jakub-szych)
+* **GitHub**: [szyszek25](https://github.com/szyszek25)
