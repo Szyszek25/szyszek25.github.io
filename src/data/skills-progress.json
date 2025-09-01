@@ -3,6 +3,14 @@
     "Kurs AZ-900 Scott Duffy Udemy - 8.5h kompletny (W trakcie)"
   ],
   "Azure": [
+    "📅 Tydzień 5:",
+    "Azure Functions – pierwsza funkcja serverless (event trigger, uruchamianie na żądanie)",
+    "Virtual Machine – utworzenie i logowanie z Windows Terminal",
+    "Organizacja zasobów – Resource Groups i Subscriptions w praktyce",
+    "Azure Container Instances – szybki deployment kontenera bez orkiestracji",
+    "Azure Storage – Blob, Files, Data Box – różnice i zastosowania",
+    "Teoria (Compute): VM, VM Scale Sets, App Services, Functions, ACI, AKS",
+    "Teoria (Networking/Storage): DNS, VPN Gateway, Public/Private Endpoints, Blob, Files, File Sync, Data Box",
     "📅 Tydzień 4:",
     "Usługi: IaaS, PaaS, SaaS, Serverless",
     "Koszty i korzyści: scalability, elastyczność, niezawodność", 

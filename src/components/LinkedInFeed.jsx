@@ -28,7 +28,10 @@ const LinkedInFeed = () => {
       }
       
       const data = await response.json();
-      setPosts(data.posts || []);
+      const sorted = (data.posts || [])
+        .slice()
+        .sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+      setPosts(sorted);
     } catch (err) {
       console.error('Error fetching LinkedIn posts:', err);
       setError(err.message);

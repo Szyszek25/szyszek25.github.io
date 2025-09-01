@@ -1,12 +1,20 @@
 {
-  "lastUpdated": "2025-08-26T10:00:00Z",
+  "lastUpdated": "2025-09-01T09:00:00Z",
   "posts": [
+    {
+      "id": 2,
+      "title": "Tydzień 5: pierwszy serverless w Azure + praktyka chmury! 🚀",
+      "summary": "Wrzesień wystartował – tempo dalej rośnie! Pierwsza Azure Function (serverless), VM z logowaniem przez Windows Terminal, porządkowanie Resource Groups i Subscriptions, kontenery w Azure Container Instances, a do tego przegląd Azure Storage: Blob, Files, Data Box. Małe kroki, codziennie. 💪",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7368222937306353666/",
+      "publishDate": "2025-09-01T08:30:00Z",
+      "author": "Jakub Szych"
+    },
     {
       "id": 1,
       "title": "Tydzień 4 nauki DevOps/Cloud za mną! 🚀",
       "summary": "W poszukiwaniu Azure datacenter wyruszyłem na Maltę - od katakumb po groty, aż na szczyt Comino. Chmury nie znalazłem, ale słońce i świetne 5G tak! Po powrocie przerobiłem AZ-900: Cloud Computing, Shared Responsibility Model, modele chmur, koszty i usługi. Rada: ucz się małymi porcjami, regularnie!",
       "link": "https://www.linkedin.com/feed/update/urn:li:activity:7365824055490281473/",
-      "publishDate": "2025-08-26T10:30:00Z",
+      "publishDate": "2025-08-25T10:30:00Z",
       "author": "Jakub Szych",
       "engagement": {
         "likes": 42,
