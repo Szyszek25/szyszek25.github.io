@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Linkedin, ExternalLink, Calendar, MessageCircle, RefreshCw } from 'lucide-react';
+import { trackLinkClick } from '../utils/analytics';
 
 const LinkedInFeed = () => {
   const [posts, setPosts] = useState([]);
@@ -19,15 +20,30 @@ const LinkedInFeed = () => {
     try {
       setLoading(true);
       setError(null);
-      
-      // Try to fetch from the generated linkedin.json file
-      const response = await fetch('/src/data/linkedin.json');
-      
-      if (!response.ok) {
-        throw new Error('Nie udało się pobrać postów');
-      }
-      
-      const data = await response.json();
+      const ts = Date.now();
+
+      const tryPaths = async (paths) => {
+        for (const p of paths) {
+          try {
+            const res = await fetch(`${p}${p.includes('?') ? '' : `?t=${ts}`}`, { cache: 'no-store' });
+            if (res.ok) {
+              const json = await res.json();
+              return json;
+            }
+          } catch (_) {
+            // continue to next path
+          }
+        }
+        throw new Error('Nie udało się pobrać postów z żadnej ścieżki');
+      };
+
+      // Try multiple locations to be robust across dev/build/GitHub Pages
+      const data = await tryPaths([
+        '/linkedin.json',                // built from public/ into dist root
+        '/public/linkedin.json',         // when serving repo root without build
+        '/src/data/linkedin.json'        // Vite dev path
+      ]);
+
       const sorted = (data.posts || [])
         .slice()
         .sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
@@ -218,6 +234,7 @@ const LinkedInFeed = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
+                        onClick={() => trackLinkClick('LinkedIn Icon', post.link)}
                       >
                         <ExternalLink className="w-5 h-5" />
                       </a>
@@ -246,6 +263,7 @@ const LinkedInFeed = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-300"
+                        onClick={() => trackLinkClick(post.title || 'LinkedIn Post', post.link)}
                       >
                         Zobacz pełny post →
                       </a>

@@ -56,8 +56,8 @@ async function updateLinkedInFeed() {
     };
     */
 
-    // Ścieżka do pliku danych
-    const dataPath = path.join(__dirname, '..', 'src', 'data', 'linkedin.json');
+  // Ścieżka do pliku danych serwowanego przez GH Pages (public/)
+  const dataPath = path.join(__dirname, '..', 'public', 'linkedin.json');
     
     // Zapisz zaktualizowane dane
     fs.writeFileSync(dataPath, JSON.stringify(mockLinkedInData, null, 2));

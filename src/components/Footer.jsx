@@ -76,8 +76,8 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              Student IT odkrywający fascynujący świat cyberbezpieczeństwa. 
-              Każdy dzień to nowa lekcja w dziedzinie ochrony systemów i ethical hackingu.
+              Student IT na ścieżce DevOps & Cloud. 
+              Każdy dzień to nowa lekcja automatyzacji, chmury i dobrych praktyk CI/CD.
             </motion.p>
 
             <motion.div
@@ -156,10 +156,10 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <li>🔒 TryHackMe Pre-Security</li>
-              <li>🐍 Python dla cybersec</li>
-              <li>🐧 Linux administracja</li>
-              <li>🛡️ Ethical hacking basics</li>
+              <li>☁️ Azure AZ-900 (fundamenty)</li>
+              <li>� Docker i kontenery</li>
+              <li>⚙️ GitHub Actions (CI/CD)</li>
+              <li>� Linux/Bash podstawy</li>
             </motion.ul>
           </div>
         </div>

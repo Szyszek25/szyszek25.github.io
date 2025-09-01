@@ -63,8 +63,8 @@ const About = () => {
               
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  3. rok informatyki na SGGW, od października startuję ze specjalizacją 
-                  <strong> Technologie Chmurowe</strong>. Skupiam się na nauce DevOps, 
+                  Jestem na 3. roku informatyki na SGGW, od października startuję ze specjalizacją 
+                  <strong> Technologie Chmurowe</strong>. Skupiam się teraz na nauce DevOps, 
                   automatyzacji i infrastruktury w chmurze.
                 </p>
                 
@@ -72,12 +72,11 @@ const About = () => {
                   Aktualnie zgłębiam <strong>Azure</strong>, buduję projekty z 
                   <strong> Docker</strong> i <strong>GitHub Actions</strong>. 
                   Eksperymentuję z <strong>MongoDB</strong> i deploymentem na 
-                  <strong>Railway</strong>.
+                  <strong> Railway</strong>.
                 </p>
                 
                 <p>
-                  Jako osoba empatyczna i analityczna, łączę technical skills 
-                  z human-centered approach. Wierzę, że najlepsza infrastruktura 
+                  Jako osoba empatyczna i analityczna, łączę umiejętności techniczne z podejściem skoncentrowanym na człowieku. Wierzę, że najlepsza infrastruktura 
                   to ta, która służy ludziom i biznesowi.
                 </p>
               </div>
@@ -140,6 +139,8 @@ const About = () => {
               ))}
             </div>
           </motion.div>
+
+          
 
           {/* Quote */}
           <motion.div 

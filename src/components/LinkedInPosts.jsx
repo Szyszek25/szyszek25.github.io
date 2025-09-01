@@ -116,7 +116,7 @@ const LinkedInPosts = () => {
                     {post.author?.name || 'Jakub Szych'}
                   </h4>
                   <div className="flex items-center space-x-2 text-xs text-gray-500 dark:text-gray-400">
-                    <span>IT Student • Cybersecurity Beginner</span>
+                    <span>IT Student • Junior DevOps Engineer</span>
                     <span>•</span>
                     <span>{formatDate(post.timestamp)}</span>
                   </div>

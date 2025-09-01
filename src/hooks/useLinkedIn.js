@@ -11,7 +11,7 @@ const useLinkedIn = () => {
     firstName: 'Jakub',
     lastName: 'Szych',
     headline: 'IT Student | Junior DevOps Engineer',
-    summary: 'Student IT (3rd year) na ścieżce DevOps & Cloud Technologies. Learning-by-building z Docker, GitHub Actions CI/CD, Azure. Powrót do cybersecurity w październiku z cloud background.',
+  summary: 'Student IT (3rd year) na ścieżce DevOps & Cloud Technologies. Learning-by-building z Docker, GitHub Actions CI/CD i Azure. Fokus: automatyzacja i praktyka chmury.',
     location: 'Poland',
     profilePicture: null,
     connections: '170+',
