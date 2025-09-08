@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2025-09-08T10:00:00Z",
+  "lastUpdated": "2025-09-08T12:00:00Z",
   "posts": [
     {
       "id": 6,
       "title": "Tydzień 6: IAM, Governance, Monitoring + zdrowie psychiczne",
-      "summary": "Dzień dobry! Dziś trochę o chmurach, a trochę o zdrowiu psychicznym. Ukończyłem sekcje Identity & Access, Governance i Monitoring w Azure, a z testów AZ-900 ostatni wynik to 82% – idę w dobrą stronę!",
+      "summary": "Dzień dobry! Dziś trochę o chmurach i trochę o zdrowiu psychicznym. Nowe umiejętności: Entra ID/IAM, RBAC, Zero‑Trust, Cost Management & Governance (Azure Policy, Resource Locks), ARM/IaC, Azure Portal & Cloud Shell, Monitoring (Advisor, Monitor, Service Health). Test AZ‑900: 82%.",
       "link": "https://www.linkedin.com/in/jakub-szych/detail/recent-activity/",
       "publishDate": "2025-09-08T08:00:00Z",
       "author": "Jakub Szych"

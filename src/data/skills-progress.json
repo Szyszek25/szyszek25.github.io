@@ -1,8 +1,17 @@
 {
   "Kursy": [
-    "Kurs AZ-900 Scott Duffy Udemy - 8.5h kompletny (W trakcie)"
+    "Kurs AZ-900 Scott Duffy (Udemy) – ukończony",
+    "Przygotowanie do egzaminu AZ-900 – w toku",
+    "Testy próbne AZ-900 – ostatni wynik: 82%"
   ],
   "Azure": [
+    "📅 Tydzień 6:",
+    "Identity & Access Management – Entra ID, RBAC, Zero-Trust, Defense in Depth",
+    "Governance & Cost Management – Azure Policy, Resource Locks, kosztorysowanie",
+    "Infrastructure as Code – ARM Templates, IaC",
+    "Zarządzanie zasobami – Azure Portal, Cloud Shell",
+    "Monitoring – Azure Advisor, Azure Monitor, Service Health",
+    "Testy próbne AZ-900 – ostatni wynik: 82%",
     "📅 Tydzień 5:",
     "Azure Functions – pierwsza funkcja serverless (event trigger, uruchamianie na żądanie)",
     "Virtual Machine – utworzenie i logowanie z Windows Terminal",
