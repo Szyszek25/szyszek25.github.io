@@ -3648,6 +3648,90 @@ zrob push pliku
 
 _**Assistant**_
 
+I’ll check the repository status and then stage, commit, and push your current changes so the file is uploaded to GitHub. 
+
+---
+
+_**User**_
+
+JAKUB SZYCH
+ "Każdego dnia jest wiele okazji, a poniedziałek
+ to idealny dzień, aby je wykorzystać." 
+~ Izabela Koldras
+ Tydzień 
+�
+�
+ 06
+ Dzień dobry!
+ 8 Sept 2025
+ Dziś trochę o chmurach 
+☁
+ , a trochę o zdrowiu psychicznym - 
+więcej o tym wyżej w treści publikacji! 
+�
+�
+ Co udało mi się zrobić 
+�
+�
+Ukończyłem sekcje dotyczące Identity, Access & Security – od 
+Microsoft Entra ID, przez RBAC, po model Zero-Trust. Teraz rozumiem, jak 
+ważna jest warstwa bezpieczeństwa w każdej chmurze. 
+�
+�
+ Przerobiłem tematykę Cost Management & Governance – od 
+kalkulatorów kosztów po Azure Policy i Resource Locks. To otworzyło mi 
+oczy, jak planować i optymalizować wydatki. 
+�
+�
+ Poznałem narzędzia do zarządzania zasobami – Azure Portal, Cloud 
+Shell, ARM Templates, IaC – dzięki temu wiem, że automatyzacja w 
+chmurze to ogromna oszczędność czasu. 
+⚡
+ Zgłębiłem temat Monitoring Tools – Azure Advisor, Service Health, 
+Monitor Dashboard – i zobaczyłem, że bez monitorowania żadna 
+infrastruktura nie będzie stabilna. 
+�
+�
+ Ukończyłem kurs na Udemy przygotowujący pod AZ-900 - wielokrotnie 
+doczytując się szczegółów w innych miejscach.
+ Zrobiłem kilka testów praktyczny i ostatni wynik wyniósł 82% – daje mi 
+on pewność, że idę w dobrą stronę! 
+✅
+ Z teorii nauczyłem się 
+�
+�
+ Identity & Access Management, RBAC, Zero-Trust, Defense in Depth, Microsoft 
+Defender for Cloud, Azure Policy, Resource Locks, ARM Templates, Azure 
+Advisor, Azure Monitor, Service Health.
+ Kuba, ukończyłeś kurs, co dalej? 
+�
+�
+ Do końca września chcę przystąpić do egzaminu AZ-900, jednak wiem, 
+że muszę jeszcze uzupełnić braki i wykonać przykładowe testy
+ Skorzystam więc z zasobów Udemy - posiadam subskrypcję, dzięki której 
+mam dostęp do większości szkoleń - bardzo polecam, dostęp do nauki jest 
+niemal nieograniczony!
+ Kolejny tydzień lub dwa poświęcę na dokształcanie się. Lubię być 
+przygotowany na 200%! O wszystkim będę informował na bieżąco.
+ A już w ten piątek ukaże się kolejny materiał edukacyjny - omówimy 
+Identity & Access Management w Azure - krótko i praktycznie! 
+�
+�
+Dzięki za przeczytanie i zachęcam do refleksji z treści 
+publikacji,
+ Do usłyszenia, Kuba! 
+�
+�
+ A tutaj photo dump z minionego tygodnia 
+�
+�
+
+dodaj nowe, tydzien 6
+
+---
+
+_**Assistant**_
+
 
 
 ---
