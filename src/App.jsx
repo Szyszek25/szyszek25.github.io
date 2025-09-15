@@ -12,30 +12,31 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  // Default to dark if no saved preference
+  const getInitialDark = () => {
+    if (typeof window === 'undefined') return true;
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') return true;
+    if (saved === 'light') return false;
+    // no saved preference -> default dark
+    return true;
+  };
+
+  const [darkMode, setDarkMode] = useState(getInitialDark);
 
   useEffect(() => {
-    // Check for saved theme preference or default to light mode
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-      setDarkMode(true);
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
-    
-    if (newDarkMode) {
+    // Apply class immediately on mount
+    if (darkMode) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
     }
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(prev => !prev);
   };
 
   return (

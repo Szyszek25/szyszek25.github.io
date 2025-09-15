@@ -66,11 +66,11 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
     >
-      <div className="container mx-auto px-4 py-3 md:py-6">
+  <div className="container mx-auto px-4 py-4 md:py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div 
-            className="flex items-center space-x-2 cursor-pointer"
+            className="flex items-center space-x-2 cursor-pointer mt-1 md:mt-0"
             onClick={() => scrollToSection('hero')}
             whileHover={{ scale: 1.05 }}
           >

@@ -69,6 +69,14 @@ const LinkedInFeed = () => {
   // Mock data for demonstration
   const mockPosts = [
     {
+      id: 0,
+      title: "Tydzień 7 nauki DevOps/Cloud za mną! 🚀",
+      summary: "Pogłębiałem oficjalną dokumentację Microsoft (Identity, Governance, Monitoring, IaC), robiłem testy AZ-900 i utrwalałem Zero-Trust & Defense in Depth. Przygotowuję post #4 o Identity & Access Management i planuję termin egzaminu (koniec września / październik). Fundamenty pod nowy projekt analizy sentymentu też ruszyły! 🔐",
+      link: "https://linkedin.com/posts/jakub-szych-week7-devops-cloud",
+      publishDate: "2025-09-14T10:00:00Z",
+      author: "Jakub Szych"
+    },
+    {
       id: 1,
       title: "Witam chmurki w dzień słoneczny ☁️ Tydzień 3 nauki DevOps/Cloud za mną! 🚀",
       summary: "Dzięki waszej pomocy zapadła decyzja w sprawie kierunku mojego rozwoju! Aktualnie rozwijane umiejętności: Azure, Docker, MongoDB. Kierunek rozwoju: DevOps, Cloud Engineer, Database Engineer. Nabyte umiejętności: Azure (cert AZ-900), MongoDB (pierwszy raz NoSQL), Docker (podstawy dockerfiles). Cel: znaleźć staż Junior DevOps Engineer! ☁️",
