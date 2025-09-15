@@ -1,7 +1,16 @@
 {
-	"lastUpdated": "2025-09-08T12:00:00Z",
+	"lastUpdated": "2025-09-15T12:00:00Z",
 	"posts": [
 		{
+			"id": 7,
+			"title": "Tydzień 7: dokumentacja, testy AZ-900 i fundamenty projektu",
+			"summary": "Tydzień 7 nauki DevOps/Cloud – pogłębianie dokumentacji Microsoft (Identity, Governance, Monitoring, IaC), testy AZ-900, utrwalanie Zero-Trust. W piątek post #4 (Identity & Access Management). W tle fundamenty projektu analizy sentymentu. Dzięki za wsparcie!",
+			"link": "https://www.linkedin.com/feed/update/urn:li:activity:7373318435918741504/",
+			"publishDate": "2025-09-15T08:00:00Z",
+			"author": "Jakub Szych"
+		},
+		{
+
 			"id": 6,
 			"title": "Tydzień 6: IAM, Governance, Monitoring + zdrowie psychiczne",
 			"summary": "Dzień dobry! Dziś trochę o chmurach i trochę o zdrowiu psychicznym. Nowe umiejętności: Entra ID/IAM, RBAC, Zero‑Trust, Cost Management & Governance (Azure Policy, Resource Locks), ARM/IaC, Azure Portal & Cloud Shell, Monitoring (Advisor, Monitor, Service Health). Test AZ‑900: 82%.",
