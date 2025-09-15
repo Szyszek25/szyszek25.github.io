@@ -1,7 +1,12 @@
 Azure:
-- Podstawy usług chmurowych (Tydzień 3)
-- Poznanie interfejsu Azure Portal (Tydzień 3)
-- Przygotowanie do certyfikatu AZ-900 (Tydzień 3)
+- Tydzień 7: Pogłębienie dokumentacji (Identity, Governance, Monitoring, IaC)
+- Tydzień 7: Testy praktyczne AZ-900 (analiza wyników)
+- Tydzień 7: Utrwalanie Zero-Trust / Defense in Depth / Azure Policy
+- Tydzień 7: Przygotowanie posta #4 (Identity & Access Management)
+- Tydzień 7: Planowanie terminu egzaminu (koniec IX / X)
+- Tydzień 3: Podstawy usług chmurowych
+- Tydzień 3: Poznanie interfejsu Azure Portal
+- Tydzień 3: Przygotowanie do certyfikatu AZ-900
 
 Docker:
 - Podstawy pisania dockerfiles (Tydzień 3)
@@ -32,3 +37,13 @@ Python:
 - Wykorzystanie w projektach DevOps (W trakcie)
 - Automatyzacja zadań (W trakce)
 - Integracja z bazami danych (W trakcie)
+
+Fundamenty pod projekt (Analiza sentymentu):
+- Tydzień 7: Koncepcja i zakres projektu
+- Tydzień 7: Źródła danych (posty, komentarze, newsy)
+- Tydzień 7: Wybór stosu technologicznego (Python, Azure Functions/Storage)
+- Tydzień 7: Plan pipeline: pobieranie -> czyszczenie -> analiza -> wizualizacja
+- Tydzień 7: Metryki: sentiment score, trend, intensywność emocji
+- Tydzień 7: Roadmapa MVP + iteracje
+- Tydzień 7: Research bibliotek (Transformers, spaCy, nltk)
+- Tydzień 7: Plan walidacji i prezentacji wyników

@@ -19,7 +19,8 @@ const SkillsProgress = () => {
     'Bash/Linux': Terminal,
     'Python': Code,
     'Kubernetes': Cloud,
-    'Terraform': Code
+    'Terraform': Code,
+    'Fundamenty pod projekt': TrendingUp
   };
 
   const containerVariants = {
@@ -109,7 +110,7 @@ const SkillsProgress = () => {
             >
               {Object.entries(skills).map(([skillName, skillItems], index) => {
                 const IconComponent = skillIcons[skillName] || Code;
-                const isCourseColumn = skillName === 'Kursy';
+                const isCourseColumn = skillName === 'Kursy' || skillName === 'Fundamenty pod projekt';
                 
                 return (
                   <motion.div

@@ -4,7 +4,20 @@
     "Przygotowanie do egzaminu AZ-900 – w toku",
     "Testy próbne AZ-900 – ostatni wynik: 82%"
   ],
+  "Fundamenty pod projekt": [
+    "📅 Tydzień 7:",
+    "Koncepcja projektu analizy sentymentu (zakres + dane)",
+    "Stack wstępny: Python + (opcjonalnie) Azure Functions/Storage",
+    "Szkic pipeline: pobieranie -> czyszczenie -> NLP -> insighty",
+    "Roadmapa MVP + metryki (sentiment, trend)"
+  ],
   "Azure": [
+    "📅 Tydzień 7:",
+    "Pogłębienie dokumentacji Microsoft – Identity, Governance, Monitoring, IaC",
+    "Testy praktyczne i analiza wyników egzaminacyjnych AZ-900",
+    "Utrwalanie koncepcji: Zero-Trust, Defense in Depth, Azure Policy",
+    "Przygotowanie do posta edukacyjnego #4 o Identity & Access Management",
+    "Planowanie terminu egzaminu AZ-900 (koniec września / październik)",
     "📅 Tydzień 6:",
     "Identity & Access Management – Entra ID, RBAC, Zero-Trust, Defense in Depth",
     "Governance & Cost Management – Azure Policy, Resource Locks, kosztorysowanie",
