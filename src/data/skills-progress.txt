@@ -38,11 +38,17 @@ Python:
 - Automatyzacja zadań (W trakce)
 - Integracja z bazami danych (W trakcie)
 
-Fundamenty pod projekt (Analiza sentymentu):
+Fundamenty pod projekt – Data Science / AI:
+- Tydzień 8: Środowisko (Anaconda, Jupyter, Conda) – przygotowanie do pracy z NLP
+- Tydzień 8: Preprocessing (Pandas, spaCy) – czyszczenie i obróbka tekstu
+- Tydzień 8: Vectorization (Count, TF-IDF) – zamiana tekstu na liczby dla modeli
+- Tydzień 8: Sentiment Analysis – analiza nastroju w tekście
+- Tydzień 8: Text Classification (Naïve Bayes) – kategoryzacja tekstów ML-em
+- Tydzień 8: Topic Modeling (NMF) – wykrywanie tematów w zbiorach tekstów
 - Tydzień 7: Koncepcja i zakres projektu
 - Tydzień 7: Źródła danych (posty, komentarze, newsy)
 - Tydzień 7: Wybór stosu technologicznego (Python, Azure Functions/Storage)
-- Tydzień 7: Plan pipeline: pobieranie -> czyszczenie -> analiza -> wizualizacja
+- Tydzień 7: Plan pipeline: pobieranie -> czyszczenie -> NLP -> insighty
 - Tydzień 7: Metryki: sentiment score, trend, intensywność emocji
 - Tydzień 7: Roadmapa MVP + iteracje
 - Tydzień 7: Research bibliotek (Transformers, spaCy, nltk)

@@ -1,6 +1,14 @@
 {
-	"lastUpdated": "2025-09-15T12:00:00Z",
+	"lastUpdated": "2025-09-22T12:00:00Z",
 	"posts": [
+		{
+			"id": 8,
+			"title": "Tydzień 8: DevOps/Data – NLP i przygotowania",
+			"summary": "Ponuro na dworze, ale pomysły w mojej głowie szaleją! 🔥 Tydzień 8 nauki DevOps/Data za mną! 🚀 Kurs 'Natural Language Processing in Python' (Maven Analytics), przygotowania do roku akademickiego i świadome przesunięcie AZ-900. W piątek: Azure governance & compliance.",
+			"link": "https://www.linkedin.com/feed/update/urn:li:activity:7375967587303714816/",
+			"publishDate": "2025-09-22T08:00:00Z",
+			"author": "Jakub Szych"
+		},
 		{
 			"id": 7,
 			"title": "Tydzień 7: dokumentacja, testy AZ-900 i fundamenty projektu",

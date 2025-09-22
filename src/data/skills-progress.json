@@ -4,7 +4,14 @@
     "Przygotowanie do egzaminu AZ-900 – w toku",
     "Testy próbne AZ-900 – ostatni wynik: 82%"
   ],
-  "Fundamenty pod projekt": [
+  "Fundamenty pod projekt – Data Science / AI": [
+    "📅 Tydzień 8:",
+    "Środowisko (Anaconda, Jupyter, Conda) – przygotowanie do pracy z NLP",
+    "Preprocessing (Pandas, spaCy) – czyszczenie i obróbka tekstu",
+    "Vectorization (Count, TF-IDF) – zamiana tekstu na liczby dla modeli",
+    "Sentiment Analysis – analiza nastroju w tekście",
+    "Text Classification (Naïve Bayes) – kategoryzacja tekstów ML-em",
+    "Topic Modeling (NMF) – wykrywanie tematów w zbiorach tekstów",
     "📅 Tydzień 7:",
     "Koncepcja projektu analizy sentymentu (zakres + dane)",
     "Stack wstępny: Python + (opcjonalnie) Azure Functions/Storage",
