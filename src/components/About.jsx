@@ -64,15 +64,15 @@ const About = () => {
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
                   Jestem na 3. roku informatyki na SGGW, od października startuję ze specjalizacją 
-                  <strong> Technologie Chmurowe</strong>. Skupiam się teraz na nauce DevOps, 
-                  automatyzacji i infrastruktury w chmurze.
+                  <strong> Technologie Chmurowe</strong>. Skupiam się teraz na nauce DevOps, Data, 
+                  automatyzacji i infrastruktury w chmurze, a także psychologicznym aspekcie używania internetu.
                 </p>
                 
                 <p>
                   Aktualnie zgłębiam <strong>Azure</strong>, buduję projekty z 
                   <strong> Docker</strong> i <strong>GitHub Actions</strong>. 
-                  Eksperymentuję z <strong>MongoDB</strong> i deploymentem na 
-                  <strong> Railway</strong>.
+                  Eksperymentuję z <strong>Pythonem</strong> i transformerami/AI
+                  
                 </p>
                 
                 <p>
