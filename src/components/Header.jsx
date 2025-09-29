@@ -70,14 +70,19 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div 
-            className="flex items-center space-x-2 cursor-pointer mt-1 md:mt-0"
+            className="flex items-center space-x-2 cursor-pointer"
             onClick={() => scrollToSection('hero')}
             whileHover={{ scale: 1.05 }}
           >
             <Cloud className="w-8 h-8 md:w-10 md:h-10 text-primary-500" />
-            <span className="text-xl md:text-2xl font-bold text-gradient">
-              Jakub Szych
-            </span>
+            <div className="leading-tight">
+              <div className="text-xl md:text-2xl font-bold text-gradient">
+                Jakub Szych
+              </div>
+              <div className="block text-[10px] sm:text-[11px] md:text-xs text-gray-600 dark:text-gray-400">
+                Psychoinformatics Student — DevOps · Data · AI
+              </div>
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}
