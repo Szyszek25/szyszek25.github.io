@@ -252,7 +252,7 @@ const Contact = () => {
                       href="mailto:jakubszych.dev@gmail.com"
                       className="hover:text-primary-100 transition-colors duration-300"
                     >
-                      jakubszych2525@gmail.com
+                      jakubszych.dev@gmail.com
                     </a>
                   </div>
                   

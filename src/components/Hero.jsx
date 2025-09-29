@@ -90,7 +90,6 @@ const Hero = () => {
             Student IT specjalizujący się w technologiach chmurowych, danych, a także emocjach i zachowniach człowieka. 
             Buduję umiejętności w Azure, Docker, CI/CD oraz Pythonie z użyciem modeli transformerowych i AI.
           </motion.p>
-
           {/* CTA + GitHub + przyciski */}
           <motion.div
             className="flex flex-col gap-4 md:gap-6 items-center mb-16 md:mb-20"

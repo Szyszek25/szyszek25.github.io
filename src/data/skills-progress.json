@@ -85,29 +85,31 @@
     "Deployment do chmury"
   ],
   "AWS": [
+    "📅 Tydzień 1:",
+    "Konto AWS – IAM user + MFA, podstawowa konfiguracja",
+    "Przegląd usług: EC2, S3, IAM, CloudWatch",
+    "Porównanie z Azure – nazewnictwo i modele płatności",
     "Eksploracja AWS fundamentals (W trakcie)",
     "Porównanie z Azure i GCP (W trakcie)"
   ],
   "Google Cloud Platform": [
+    "📅 Tydzień 1:",
+    "Konto GCP – projekt, billing, Cloud Shell",
+    "Przegląd usług: Compute Engine, Cloud Storage, IAM",
+    "Regiony/strefy, konsola vs CLI – podstawy",
     "Podstawy GCP (W trakcie)",
     "Porównanie dostawców chmury (W trakcie)"
   ],
   "Linux/Bash": [
+    "📅 Tydzień 1:",
+    "Nawigacja (ls, cd, pwd) w Windows Terminal",
+    "Operacje na plikach i uprawnieniach (touch, mkdir, chmod)",
+    "Skrypty bash – zmienne, pętle, aliasy startowe",
     "Podstawy poleceń Linux (W trakcie)",
     "Windows Terminal/PowerShell fundamentals (W trakcie)",
     "SSH i podstawy networking (W trakcie)"
-  ],
-  "Python": [
-    "Backend development (Doświadczenie z studiów)",
-    "Wykorzystanie w projektach DevOps (W trakcie)",
-    "Automatyzacja zadań (W trakcie)"
-  ],
-  "Kubernetes": [
-    "Pierwsze kroki z K8s - basics only (W trakcie)",
-    "Planowanie głębszej nauki po podstawach (Przyszłość)"
-  ],
-  "Terraform": [
-    "Pierwsze kroki z IaC - basics only (W trakcie)",
-    "Planowanie rozwoju po fundamentach (Przyszłość)"
   ]
+  
+  
+  
 }
