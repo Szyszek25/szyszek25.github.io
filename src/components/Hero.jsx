@@ -88,7 +88,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             Student IT specjalizujący się w technologiach chmurowych, danych, a także emocjach i zachowniach człowieka. 
-            Buduję umiejętności w Azure, Docker, CI/CD i automatyzacji infrastruktury, a także używam Python, modeli transformerowych i AI.
+            Buduję umiejętności w Azure, Docker, CI/CD oraz Pythonie z użyciem modeli transformerowych i AI.
           </motion.p>
 
           {/* CTA + GitHub + przyciski */}

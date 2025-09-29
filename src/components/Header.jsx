@@ -79,7 +79,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
               <div className="text-xl md:text-2xl font-bold text-gradient">
                 Jakub Szych
               </div>
-              <div className="block text-[10px] sm:text-[11px] md:text-xs text-gray-600 dark:text-gray-400">
+              <div className="block text-xs sm:text-[11px] md:text-xs text-gray-700 dark:text-gray-300 mt-0.5">
                 Psychoinformatics Student — DevOps · Data · AI
               </div>
             </div>
