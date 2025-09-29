@@ -104,7 +104,7 @@ const About = () => {
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-3"></span>
-                      Znaleźć staż Junior DevOps Engineer
+                      Znaleźć staż Junior DevOps/Data/AI Engineer
                     </li>
                   </ul>
                 </div>
