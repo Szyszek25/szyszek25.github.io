@@ -76,7 +76,7 @@ const Hero = () => {
           >
             <span className="block">Jakub Szych</span>
             <span className="text-gradient text-2xl md:text-4xl lg:text-5xl">
-              Junior DevOps Engineer
+              Junior DevOps/Data Engineer
             </span>
           </motion.h1>
 
@@ -87,8 +87,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Student IT specjalizujący się w technologiach chmurowych. 
-            Buduję umiejętności w Azure, Docker, CI/CD i automatyzacji infrastruktury.
+            Student IT specjalizujący się w technologiach chmurowych, danych, a także emocjach i zachowniach człowieka. 
+            Buduję umiejętności w Azure, Docker, CI/CD i automatyzacji infrastruktury, a także używam Python, modeli transformerowych i AI.
           </motion.p>
 
           {/* CTA + GitHub + przyciski */}
