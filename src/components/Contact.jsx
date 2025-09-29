@@ -177,7 +177,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-300"
-                      placeholder="Pytanie o cyberbezpieczeństwo"
+                      placeholder="Pytanie o chmury"
                     />
                   </div>
 
@@ -249,7 +249,7 @@ const Contact = () => {
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-primary-100" />
                     <a 
-                      href="mailto:jakubszych2525@gmail.com"
+                      href="mailto:jakubszych.dev@gmail.com"
                       className="hover:text-primary-100 transition-colors duration-300"
                     >
                       jakubszych2525@gmail.com
@@ -273,7 +273,7 @@ const Contact = () => {
                   </h4>
                   <div className="space-y-2 text-sm text-primary-100">
                     <div>📧 Email: 24 godzin</div>
-                    <div>💼 LinkedIn: 2-3 dni</div>
+                    <div>💼 LinkedIn: 0-2 dni</div>
                   </div>
                 </div>
               </div>
@@ -313,7 +313,7 @@ const Contact = () => {
                   💡 Najlepiej kontaktować się w sprawach:
                 </h4>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
-                  <li>• Staże Junior DevOps Engineer, Cloud, Helpdesk, IoT</li>
+                  <li>• Staże Junior DevOps Engineer, Data Engineer, IoT, AI</li>
                   <li>• Projektów w technologiach chmurowych</li>
                   <li>• Współpracy przy automatyzacji</li>
                   <li>• Mentoringu w nauce DevOps</li>

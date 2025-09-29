@@ -39,6 +39,10 @@ Python:
 - Integracja z bazami danych (W trakcie)
 
 Fundamenty pod projekt – Data Science / AI:
+- Tydzień 9: Zarządzanie czasem – plan dnia pod studia, LinkedIn i naukę
+- Tydzień 9: Priorytety i higiena pracy – eliminacja rozpraszaczy, odpoczynek
+- Tydzień 9: Plan na październik – migracja postępów do zadań uczelnianych + biuletyn
+- Tydzień 9: Seria Azure – ostatni post edukacyjny (domknięcie serii)
 - Tydzień 8: Środowisko (Anaconda, Jupyter, Conda) – przygotowanie do pracy z NLP
 - Tydzień 8: Preprocessing (Pandas, spaCy) – czyszczenie i obróbka tekstu
 - Tydzień 8: Vectorization (Count, TF-IDF) – zamiana tekstu na liczby dla modeli
@@ -53,3 +57,9 @@ Fundamenty pod projekt – Data Science / AI:
 - Tydzień 7: Roadmapa MVP + iteracje
 - Tydzień 7: Research bibliotek (Transformers, spaCy, nltk)
 - Tydzień 7: Plan walidacji i prezentacji wyników
+
+Studia:
+- Tydzień 9: Powrót na uczelnię – sprawy kwaterunkowe i organizacyjne
+- Tydzień 9: Plan zarządzania czasem (blokowe uczenie, odpoczynek, priorytety)
+- Tydzień 9: Łączenie postępów z zadaniami na uczelni (od przyszłego tygodnia)
+- Tydzień 9: Start biuletynu – informatyka + dobrostan psychiczny

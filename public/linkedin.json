@@ -1,6 +1,14 @@
 {
-	"lastUpdated": "2025-09-22T12:00:00Z",
+	"lastUpdated": "2025-09-29T12:00:00Z",
 	"posts": [
+		{
+			"id": 9,
+			"title": "Tydzień 9: czas na regenerację i plan gry",
+			"summary": "Cześć! I z uśmiechem witam nowe osoby! Tydzień 9️⃣. nauki DevOps/Data za mną! 🚀 Przez ostatnie 7 dni pozwoliłem umysłowi na odpoczynek i zamknąłem sprawy kwaterunkowe 📦. W dokumencie opisałem, jak łączyć studia, LinkedIn i naukę; co dalej z serią Azure i co pojawi się w październiku. Miłego czytania! 🤍",
+			"link": "https://www.linkedin.com/feed/update/urn:li:activity:7378398845656924160/",
+			"publishDate": "2025-09-29T08:00:00Z",
+			"author": "Jakub Szych"
+		},
 		{
 			"id": 8,
 			"title": "Tydzień 8: DevOps/Data – NLP i przygotowania",
