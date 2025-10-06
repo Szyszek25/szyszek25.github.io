@@ -4,19 +4,54 @@
     "Przygotowanie do egzaminu AZ-900 – w toku",
     "Testy próbne AZ-900 – ostatni wynik: 82%"
   ],
+
+  "Studia — Python": [
+    "📅 Tydzień 10: ",
+    "Praktyczne wykorzystanie bibliotek Pythona w analizie danych i uczeniu maszynowym",
+    "Obsługa bibliotek: pandas, numpy, matplotlib, scikit-learn",
+    "Wczytywanie i analiza danych z plików CSV",
+    "Czyszczenie i przygotowanie danych do modeli ML",
+    "Tworzenie modeli predykcyjnych i eksport wyników",
+    "Praca w środowisku Jupyter Notebook",
+    "Analiza danych na podstawie zbioru Titanic Dataset – przygotowanie danych, trenowanie modelu, tworzenie pliku submission.csv z wynikami"
+  ],
+  "Studia — DevOps CKA": [
+    "📅 Tydzień 10: ",
+    "Usługi DevOps [CKA]",
+    "Instalacja i konfiguracja środowiska Docker",
+    "Tworzenie i uruchamianie kontenerów z obrazów",
+    "Praca z podstawowymi poleceniami Docker CLI",
+    "Zrozumienie pojęć: kontener, obraz, rejestr",
+    "Praktyczne zastosowanie konteneryzacji do uruchamiania aplikacji"
+  ],
+  "Studia — Wirtualizacja": [
+    "📅 Tydzień 10: ",
+    "Wirtualizacja i konteneryzacja",
+    "Instalacja systemu Rocky Linux w VirtualBox",
+    "Konfiguracja maszyny wirtualnej (RAM, CPU, sieć, dysk)",
+    "Logowanie do maszyny przez SSH (PuTTY)",
+    "Instalacja niezbędnych narzędzi: podman, kubectl, minikube",
+    "Uruchomienie klastra Kubernetes na Rocky Linux"
+  ],
+
   "Studia": [
     "📅 Tydzień 9:",
     "Powrót na uczelnię – sprawy kwaterunkowe i organizacyjne",
     "Plan zarządzania czasem: blokowe uczenie, regularny odpoczynek, priorytety",
     "Od przyszłego tygodnia: łączenie postępów z zadaniami na uczelni",
-    "Start biuletynu – informatyka + dobrostan psychiczny (własne doświadczenia)"
+    "Start biuletynu – informatyka + dobrostan psychiczne (własne doświadczenia)"
   ],
   "Fundamenty pod projekt – Data Science / AI": [
+    "📅 Tydzień 10:",
+    "Projekt: implementacja pipelineu - pobieranie danych, czyszczenie, wektoryzacja, modelowanie i walidacja",
+    "Dane: zebranie danych z postów, komentarzy i newsów; przygotowanie datasetu treningowego",
+    "Narzędzia: Python, pandas, spaCy/nltk, scikit-learn, (opcjonalnie) Transformers",
+    "Eksperymenty: TF-IDF vs Embeddings, baseline Naïve Bayes, metryki: accuracy, f1, sentiment score",
     "📅 Tydzień 9:",
     "Zarządzanie czasem: plan dnia pod studia, LinkedIn i naukę (analiza i decyzje)",
     "Priorytety i higiena pracy: eliminacja rozpraszaczy, czas na odpoczynek i naukę",
     "Plan na październik: migracja postępów do zadań uczelnianych + start biuletynu",
-    "Seria Azure: ostatni post edukacyjny w piątek (domknięcie serii)",
+    "Seria Azure: ostatni post edukacyjny w piątek (domknięcie serii) + budowa fundamentów pod analizę emocji w tekście w Internecie (pierwszy artykuł w piątek)",
     "📅 Tydzień 8:",
     "Środowisko (Anaconda, Jupyter, Conda) – przygotowanie do pracy z NLP",
     "Preprocessing (Pandas, spaCy) – czyszczenie i obróbka tekstu",
@@ -29,6 +64,12 @@
     "Stack wstępny: Python + (opcjonalnie) Azure Functions/Storage",
     "Szkic pipeline: pobieranie -> czyszczenie -> NLP -> insighty",
     "Roadmapa MVP + metryki (sentiment, trend)"
+  ],
+  "Osobiście": [
+    "📅 Tydzień 10:",
+    "Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)",
+    "Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników",
+    "Status: W trakcie"
   ],
   "Azure": [
     "📅 Tydzień 7:",

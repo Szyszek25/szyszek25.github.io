@@ -112,7 +112,7 @@ const SkillsProgress = () => {
             >
               {Object.entries(skills).map(([skillName, skillItems], index) => {
                 const IconComponent = skillIcons[skillName] || Code;
-                const isCourseColumn = skillName === 'Kursy' || skillName === 'Fundamenty pod projekt' || skillName === 'Fundamenty pod projekt – Data Science / AI' || skillName === 'Studia' || skillName === 'Azure';
+                const isCourseColumn = skillName === 'Kursy' || skillName === 'Fundamenty pod projekt' || skillName === 'Fundamenty pod projekt – Data Science / AI' || skillName === 'Azure';
                 
                 return (
                   <motion.div

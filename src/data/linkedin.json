@@ -1,6 +1,38 @@
 {
-  "lastUpdated": "2025-09-08T12:00:00Z",
+  "lastUpdated": "2025-10-06T12:00:00Z",
   "posts": [
+    {
+      "id": 10,
+      "title": "Tydzień 10: NLP, studia i kontenery w praktyce",
+      "summary": "Cześć, ten tydzień był... intensywny 🤸. Tydzień 10 nauki DevOps/Data oraz pierwszy tydzień studiów za mną! Buduję fundamenty pod analizę sentymentu (pierwszy artykuł w piątek), na uczelni pracujemy z pandas, numpy, matplotlib i scikit-learn na Titanic Dataset, a w module DevOps [CKA] ogarniam Docker CLI, obrazy i kontenery. Ustawiłem też Rocky Linux w VirtualBox, SSH i kubectl/minikube, żeby lokalnie stawiać klastry Kubernetes. Dzięki za przeczytanie – wracam do wykładów! 🎓",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7380949482416455680/",
+      "publishDate": "2025-10-06T08:00:00Z",
+      "author": "Jakub Szych"
+    },
+    {
+      "id": 9,
+      "title": "Tydzień 9: czas na regenerację i plan gry",
+      "summary": "Cześć! I z uśmiechem witam nowe osoby! Tydzień 9️⃣. nauki DevOps/Data za mną! 🚀 Przez ostatnie 7 dni pozwoliłem umysłowi na odpoczynek i zamknąłem sprawy kwaterunkowe 📦. W dokumencie opisałem, jak łączyć studia, LinkedIn i naukę; co dalej z serią Azure i co pojawi się w październiku. Miłego czytania! 🤍",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7378398845656924160/",
+      "publishDate": "2025-09-29T08:00:00Z",
+      "author": "Jakub Szych"
+    },
+    {
+      "id": 8,
+      "title": "Tydzień 8: DevOps/Data – NLP i przygotowania",
+      "summary": "Ponuro na dworze, ale pomysły w mojej głowie szaleją! 🔥 Tydzień 8 nauki DevOps/Data za mną! 🚀 Kurs 'Natural Language Processing in Python' (Maven Analytics), przygotowania do roku akademickiego i świadome przesunięcie AZ-900. W piątek: Azure governance & compliance.",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7375967587303714816/",
+      "publishDate": "2025-09-22T08:00:00Z",
+      "author": "Jakub Szych"
+    },
+    {
+      "id": 7,
+      "title": "Tydzień 7: dokumentacja, testy AZ-900 i fundamenty projektu",
+      "summary": "Tydzień 7 nauki DevOps/Cloud – pogłębianie dokumentacji Microsoft (Identity, Governance, Monitoring, IaC), testy AZ-900, utrwalanie Zero-Trust. W piątek post #4 (Identity & Access Management). W tle fundamenty projektu analizy sentymentu. Dzięki za wsparcie!",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7373318435918741504/",
+      "publishDate": "2025-09-15T08:00:00Z",
+      "author": "Jakub Szych"
+    },
     {
       "id": 6,
       "title": "Tydzień 6: IAM, Governance, Monitoring + zdrowie psychiczne",
