@@ -6,6 +6,13 @@
   ],
 
   "Studia — Python": [
+    "📅 Tydzień 11:",
+    "Nauka podstaw Pythona",
+    "Typy podstawowe: int, float, bool, str",
+    "Pętle: for, while",
+    "Struktury danych: listy, krotki, słowniki, zbiory",
+    "Funkcje: definiowanie, parametry, funkcje anonimowe (lambda)",
+    "Konwersja typów: przekształcanie między różnymi typami danych",
     "📅 Tydzień 10: ",
     "Praktyczne wykorzystanie bibliotek Pythona w analizie danych i uczeniu maszynowym",
     "Obsługa bibliotek: pandas, numpy, matplotlib, scikit-learn",
@@ -16,6 +23,13 @@
     "Analiza danych na podstawie zbioru Titanic Dataset – przygotowanie danych, trenowanie modelu, tworzenie pliku submission.csv z wynikami"
   ],
   "Studia — DevOps CKA": [
+    "📅 Tydzień 11:",
+    "Nauka podstaw Kubernetesa",
+    "Uruchamianie podów w Kubernetesie przy użyciu kubectl run",
+    "Wyświetlanie logów kontenerów poleceniem kubectl logs",
+    "Edycja konfiguracji poda przy pomocy kubectl patch",
+    "Tworzenie i stosowanie konfiguracji w pliku YAML (kubectl apply -f)",
+    "Definiowanie zmiennych środowiskowych i etykiet w specyfikacji poda",
     "📅 Tydzień 10: ",
     "Usługi DevOps [CKA]",
     "Instalacja i konfiguracja środowiska Docker",
@@ -25,6 +39,14 @@
     "Praktyczne zastosowanie konteneryzacji do uruchamiania aplikacji"
   ],
   "Studia — Wirtualizacja": [
+    "📅 Tydzień 11:",
+    "Nauka podstaw Dockera",
+    "docker image pull [nazwa] – pobiera obraz z rejestru",
+    "docker image ls – wyświetla listę lokalnych obrazów",
+    "docker container run [opcje] [obraz] [polecenie] – tworzy i uruchamia nowy kontener",
+    "Opcje: -d (działanie w tle), -i (tryb interaktywny), -a (dołączenie do wyjścia), --name (nadanie nazwy), --rm (automatyczne usuwanie po zatrzymaniu)",
+    "docker container start [nazwa] – uruchamia istniejący kontener",
+    "docker container exec [opcje] [kontener] [polecenie] – wykonuje polecenie w działającym kontenerze",
     "📅 Tydzień 10: ",
     "Wirtualizacja i konteneryzacja",
     "Instalacja systemu Rocky Linux w VirtualBox",
@@ -32,6 +54,25 @@
     "Logowanie do maszyny przez SSH (PuTTY)",
     "Instalacja niezbędnych narzędzi: podman, kubectl, minikube",
     "Uruchomienie klastra Kubernetes na Rocky Linux"
+  ],
+  "Studia — Techniki cyfrowe": [
+    "📅 Tydzień 11:",
+    "Nauka elektroniki przez algebrę Boole'a i laboratoria",
+    "Podział i zasada działania układów cyfrowych – kombinacyjnych oraz sekwencyjnych",
+    "Różnice między układami synchronicznymi i asynchronicznymi",
+    "Podstawy algebry Boole'a wraz z aksjomatami i twierdzeniami (m.in. prawami de Morgana)",
+    "Działanie bramek logicznych: AND, OR, NOT, NAND, NOR",
+    "Pojęcie układu zupełnego oraz jego zastosowanie w realizacji dowolnej funkcji logicznej",
+    "Laboratoria z zadaniami praktycznymi"
+  ],
+  "Studia — Paradygmaty programowania": [
+    "📅 Tydzień 11:",
+    "Nauka programowania imperatywnego",
+    "Podstawy paradygmatu imperatywnego",
+    "Stosowanie zmiennych, instrukcji warunkowych i pętli",
+    "Implementacja prostych algorytmów w Pythonie i C",
+    "Zrozumienie pojęcia zmiany stanu programu",
+    "Utrwalenie zasad programowania krok po kroku"
   ],
 
   "Studia": [
@@ -66,6 +107,14 @@
     "Roadmapa MVP + metryki (sentiment, trend)"
   ],
   "Osobiście": [
+    "📅 Tydzień 11:",
+    "Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach",
+    "Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app",
+    "Własny, przetrenowany model SzychEmotion_v1_PL oparty o HuggingFace Transformers",
+    "Automatyzacja przepływu danych w plikach CSV i integracja z dashboardem w Streamlit",
+    "Ponad 22 000 rekordów w zbiorze treningowym – własnoręcznie oczyszczone i oznaczone dane",
+    "Setki nagłówków medialnych przeanalizowanych pod kątem emocji i wydźwięku sentymentalnego",
+    "Autorskie skrypty w Pythonie do ekstrakcji, tokenizacji i przetwarzania danych (pandas, transformers, regex)",
     "📅 Tydzień 10:",
     "Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)",
     "Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników",
@@ -149,6 +198,20 @@
     "Podstawy poleceń Linux (W trakcie)",
     "Windows Terminal/PowerShell fundamentals (W trakcie)",
     "SSH i podstawy networking (W trakcie)"
+  ],
+  "LinkedIn": [
+    "Profil LinkedIn: https://www.linkedin.com/in/jakub-szych/",
+    "Cotygodniowe posty o postępach w nauce DevOps/Data",
+    "Dzielenie się wiedzą i doświadczeniami",
+    "Budowanie społeczności wokół nauki IT"
+  ],
+  "Streamlit – Analiza emocji": [
+    "Aplikacja: https://szych-emotion.streamlit.app/",
+    "Analiza emocji i wydźwięku w polskich mediach",
+    "Codziennie aktualizowana strona z najnowszymi danymi",
+    "Model SzychEmotion_v1_PL (HuggingFace Transformers)",
+    "Dashboard z wizualizacjami i statystykami",
+    "Ponad 22 000 rekordów treningowych"
   ]
   
   

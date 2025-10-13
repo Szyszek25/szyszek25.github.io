@@ -60,30 +60,95 @@ Fundamenty pod projekt – Data Science / AI:
 - Tydzień 7: Research bibliotek (Transformers, spaCy, nltk)
 - Tydzień 7: Plan walidacji i prezentacji wyników
 
-Studia:
+Studia — Python:
+- Tydzień 11: Nauka podstaw Pythona
+- Tydzień 11: Typy podstawowe: int, float, bool, str
+- Tydzień 11: Pętle: for, while
+- Tydzień 11: Struktury danych: listy, krotki, słowniki, zbiory
+- Tydzień 11: Funkcje: definiowanie, parametry, funkcje anonimowe (lambda)
+- Tydzień 11: Konwersja typów: przekształcanie między różnymi typami danych
+- Tydzień 10: Praktyczne wykorzystanie bibliotek Pythona w analizie danych i uczeniu maszynowym
+- Tydzień 10: Obsługa bibliotek: pandas, numpy, matplotlib, scikit-learn
+- Tydzień 10: Wczytywanie i analiza danych z plików CSV
+- Tydzień 10: Czyszczenie i przygotowanie danych do modeli ML
+- Tydzień 10: Tworzenie modeli predykcyjnych i eksport wyników
+- Tydzień 10: Praca w środowisku Jupyter Notebook
+- Tydzień 10: Analiza danych na podstawie zbioru Titanic Dataset – przygotowanie danych, trenowanie modelu, tworzenie pliku submission.csv z wynikami
 
+Studia — DevOps CKA:
+- Tydzień 11: Nauka podstaw Kubernetesa
+- Tydzień 11: Uruchamianie podów w Kubernetesie przy użyciu kubectl run
+- Tydzień 11: Wyświetlanie logów kontenerów poleceniem kubectl logs
+- Tydzień 11: Edycja konfiguracji poda przy pomocy kubectl patch
+- Tydzień 11: Tworzenie i stosowanie konfiguracji w pliku YAML (kubectl apply -f)
+- Tydzień 11: Definiowanie zmiennych środowiskowych i etykiet w specyfikacji poda
+- Tydzień 10: Usługi DevOps [CKA]
+- Tydzień 10: Instalacja i konfiguracja środowiska Docker
+- Tydzień 10: Tworzenie i uruchamianie kontenerów z obrazów
+- Tydzień 10: Praca z podstawowymi poleceniami Docker CLI
+- Tydzień 10: Zrozumienie pojęć: kontener, obraz, rejestr
+- Tydzień 10: Praktyczne zastosowanie konteneryzacji do uruchamiania aplikacji
+
+Studia — Wirtualizacja:
+- Tydzień 11: Nauka podstaw Dockera
+- Tydzień 11: docker image pull [nazwa] – pobiera obraz z rejestru
+- Tydzień 11: docker image ls – wyświetla listę lokalnych obrazów
+- Tydzień 11: docker container run [opcje] [obraz] [polecenie] – tworzy i uruchamia nowy kontener
+- Tydzień 11: Opcje: -d (działanie w tle), -i (tryb interaktywny), -a (dołączenie do wyjścia), --name (nadanie nazwy), --rm (automatyczne usuwanie po zatrzymaniu)
+- Tydzień 11: docker container start [nazwa] – uruchamia istniejący kontener
+- Tydzień 11: docker container exec [opcje] [kontener] [polecenie] – wykonuje polecenie w działającym kontenerze
+- Tydzień 10: Wirtualizacja i konteneryzacja
+- Tydzień 10: Instalacja systemu Rocky Linux w VirtualBox
+- Tydzień 10: Konfiguracja maszyny wirtualnej (RAM, CPU, sieć, dysk)
+- Tydzień 10: Logowanie do maszyny przez SSH (PuTTY)
+- Tydzień 10: Instalacja niezbędnych narzędzi: podman, kubectl, minikube
+- Tydzień 10: Uruchomienie klastra Kubernetes na Rocky Linux
+
+Studia — Techniki cyfrowe:
+- Tydzień 11: Nauka elektroniki przez algebrę Boole'a i laboratoria
+- Tydzień 11: Podział i zasada działania układów cyfrowych – kombinacyjnych oraz sekwencyjnych
+- Tydzień 11: Różnice między układami synchronicznymi i asynchronicznymi
+- Tydzień 11: Podstawy algebry Boole'a wraz z aksjomatami i twierdzeniami (m.in. prawami de Morgana)
+- Tydzień 11: Działanie bramek logicznych: AND, OR, NOT, NAND, NOR
+- Tydzień 11: Pojęcie układu zupełnego oraz jego zastosowanie w realizacji dowolnej funkcji logicznej
+- Tydzień 11: Laboratoria z zadaniami praktycznymi
+
+Studia — Paradygmaty programowania:
+- Tydzień 11: Nauka programowania imperatywnego
+- Tydzień 11: Podstawy paradygmatu imperatywnego
+- Tydzień 11: Stosowanie zmiennych, instrukcji warunkowych i pętli
+- Tydzień 11: Implementacja prostych algorytmów w Pythonie i C
+- Tydzień 11: Zrozumienie pojęcia zmiany stanu programu
+- Tydzień 11: Utrwalenie zasad programowania krok po kroku
+
+Studia:
 - Tydzień 9: Powrót na uczelnię – sprawy kwaterunkowe i organizacyjne
 - Tydzień 9: Plan zarządzania czasem (blokowe uczenie, odpoczynek, priorytety)
 - Tydzień 9: Łączenie postępów z zadaniami na uczelni (od przyszłego tygodnia)
 - Tydzień 9: Start biuletynu – informatyka + dobrostan psychiczny; przedmioty: Praktyczne wykorzystanie bibliotek Pythona (pandas, numpy, matplotlib, scikit-learn, Titanic Dataset, Jupyter Notebook), Usługi DevOps [CKA] (Docker, obrazy, kontenery, CLI), Wirtualizacja i konteneryzacja (Rocky Linux, konfiguracja zasobów, SSH, podman/kubectl/minikube, klaster Kubernetes)
-Tydzień 10 - Studia: Praktyczne wykorzystanie bibliotek Pythona
-- Obsługa bibliotek: pandas, numpy, matplotlib, scikit-learn
-- Wczytywanie i analiza danych z plików CSV
-- Czyszczenie i przygotowanie danych do modeli ML
-- Tworzenie modeli predykcyjnych i eksport wyników
-- Praca w środowisku Jupyter Notebook
-- Analiza danych na podstawie zbioru Titanic Dataset – przygotowanie danych, trenowanie modelu, tworzenie pliku submission.csv z wynikami
 
-Tydzień 10 - Studia: Usługi DevOps [CKA]
-- Instalacja i konfiguracja środowiska Docker
-- Tworzenie i uruchamianie kontenerów z obrazów
-- Praca z podstawowymi poleceniami Docker CLI
-- Zrozumienie pojęć: kontener, obraz, rejestr
-- Praktyczne zastosowanie konteneryzacji do uruchamiania aplikacji
+Osobiście:
+- Tydzień 11: Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach
+- Tydzień 11: Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app
+- Tydzień 11: Własny, przetrenowany model SzychEmotion_v1_PL oparty o HuggingFace Transformers
+- Tydzień 11: Automatyzacja przepływu danych w plikach CSV i integracja z dashboardem w Streamlit
+- Tydzień 11: Ponad 22 000 rekordów w zbiorze treningowym – własnoręcznie oczyszczone i oznaczone dane
+- Tydzień 11: Setki nagłówków medialnych przeanalizowanych pod kątem emocji i wydźwięku sentymentalnego
+- Tydzień 11: Autorskie skrypty w Pythonie do ekstrakcji, tokenizacji i przetwarzania danych (pandas, transformers, regex)
+- Tydzień 10: Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)
+- Tydzień 10: Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników
+- Tydzień 10: Status: W trakcie
 
-Tydzień 10 - Studia: Wirtualizacja i konteneryzacja
-- Instalacja systemu Rocky Linux w VirtualBox
-- Konfiguracja maszyny wirtualnej (RAM, CPU, sieć, dysk)
-- Logowanie do maszyny przez SSH (PuTTY)
-- Instalacja niezbędnych narzędzi: podman, kubectl, minikube
-- Uruchomienie klastra Kubernetes na Rocky Linux
+LinkedIn:
+- Profil LinkedIn: https://www.linkedin.com/in/jakub-szych/
+- Cotygodniowe posty o postępach w nauce DevOps/Data
+- Dzielenie się wiedzą i doświadczeniami
+- Budowanie społeczności wokół nauki IT
+
+Streamlit – Analiza emocji:
+- Aplikacja: https://szych-emotion.streamlit.app/
+- Analiza emocji i wydźwięku w polskich mediach
+- Codziennie aktualizowana strona z najnowszymi danymi
+- Model SzychEmotion_v1_PL (HuggingFace Transformers)
+- Dashboard z wizualizacjami i statystykami
+- Ponad 22 000 rekordów treningowych

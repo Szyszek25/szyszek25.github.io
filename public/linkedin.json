@@ -1,6 +1,14 @@
 {
-	"lastUpdated": "2025-10-06T12:00:00Z",
+	"lastUpdated": "2025-10-13T12:00:00Z",
 	"posts": [
+		{
+			"id": 11,
+			"title": "Tydzień 11: emocje w mediach, biuletyn i studia",
+			"summary": "Tydzień 11. nauki DevOps/Data za mną! 🚀 W sobotę wystartowałem ze swoim pierwszym biuletynem, otwierając go artykułem o analizie emocji w polskich mediach. Projekt dostępny na https://szych-emotion.streamlit.app – własny model SzychEmotion_v1_PL, ponad 22 000 rekordów treningowych, codzienne aktualizacje. Na studiach: podstawy Pythona (typy, pętle, struktury danych), Docker (docker run, docker exec, YAML), Kubernetes (kubectl run, logs, patch, apply), elektronika cyfrowa (algebra Boole'a, bramki logiczne) i paradygmaty programowania (Python, C). Dzięki za feedback – merytoryczne treści dla wszystkich, nie tylko IT! Miłego tygodnia! 🤍",
+			"link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7383509195725357057/",
+			"publishDate": "2025-10-13T08:00:00Z",
+			"author": "Jakub Szych"
+		},
 		{
 			"id": 10,
 			"title": "Tydzień 10: NLP, studia i kontenery w praktyce",
