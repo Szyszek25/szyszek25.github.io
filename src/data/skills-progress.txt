@@ -1,3 +1,15 @@
+Analiza emocji i wydźwięku w polskich mediach:
+- Tydzień 11: Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach
+- Tydzień 11: Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app
+- Tydzień 11: Własny, przetrenowany model SzychEmotion_v1_PL oparty o HuggingFace Transformers
+- Tydzień 11: Automatyzacja przepływu danych w plikach CSV i integracja z dashboardem w Streamlit
+- Tydzień 11: Ponad 22 000 rekordów w zbiorze treningowym – własnoręcznie oczyszczone i oznaczone dane
+- Tydzień 11: Setki nagłówków medialnych przeanalizowanych pod kątem emocji i wydźwięku sentymentalnego
+- Tydzień 11: Autorskie skrypty w Pythonie do ekstrakcji, tokenizacji i przetwarzania danych (pandas, transformers, regex)
+- Tydzień 10: Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)
+- Tydzień 10: Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników
+- Tydzień 10: Status: W trakcie
+
 Azure:
 - Tydzień 7: Pogłębienie dokumentacji (Identity, Governance, Monitoring, IaC)
 - Tydzień 7: Testy praktyczne AZ-900 (analiza wyników)
@@ -126,15 +138,3 @@ Studia:
 - Tydzień 9: Plan zarządzania czasem (blokowe uczenie, odpoczynek, priorytety)
 - Tydzień 9: Łączenie postępów z zadaniami na uczelni (od przyszłego tygodnia)
 - Tydzień 9: Start biuletynu – informatyka + dobrostan psychiczny; przedmioty: Praktyczne wykorzystanie bibliotek Pythona (pandas, numpy, matplotlib, scikit-learn, Titanic Dataset, Jupyter Notebook), Usługi DevOps [CKA] (Docker, obrazy, kontenery, CLI), Wirtualizacja i konteneryzacja (Rocky Linux, konfiguracja zasobów, SSH, podman/kubectl/minikube, klaster Kubernetes)
-
-Analiza emocji i wydźwięku w polskich mediach:
-- Tydzień 11: Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach
-- Tydzień 11: Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app
-- Tydzień 11: Własny, przetrenowany model SzychEmotion_v1_PL oparty o HuggingFace Transformers
-- Tydzień 11: Automatyzacja przepływu danych w plikach CSV i integracja z dashboardem w Streamlit
-- Tydzień 11: Ponad 22 000 rekordów w zbiorze treningowym – własnoręcznie oczyszczone i oznaczone dane
-- Tydzień 11: Setki nagłówków medialnych przeanalizowanych pod kątem emocji i wydźwięku sentymentalnego
-- Tydzień 11: Autorskie skrypty w Pythonie do ekstrakcji, tokenizacji i przetwarzania danych (pandas, transformers, regex)
-- Tydzień 10: Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)
-- Tydzień 10: Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników
-- Tydzień 10: Status: W trakcie

@@ -1,4 +1,19 @@
 {
+  "Analiza emocji i wydźwięku w polskich mediach": [
+    "📅 Tydzień 11:",
+    "Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach",
+    "Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app",
+    "Własny, przetrenowany model SzychEmotion_v1_PL oparty o HuggingFace Transformers",
+    "Automatyzacja przepływu danych w plikach CSV i integracja z dashboardem w Streamlit",
+    "Ponad 22 000 rekordów w zbiorze treningowym – własnoręcznie oczyszczone i oznaczone dane",
+    "Setki nagłówków medialnych przeanalizowanych pod kątem emocji i wydźwięku sentymentalnego",
+    "Autorskie skrypty w Pythonie do ekstrakcji, tokenizacji i przetwarzania danych (pandas, transformers, regex)",
+    "📅 Tydzień 10:",
+    "Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)",
+    "Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników",
+    "Status: W trakcie"
+  ],
+
   "Kursy": [
     "Kurs AZ-900 Scott Duffy (Udemy) – ukończony",
     "Przygotowanie do egzaminu AZ-900 – w toku",
@@ -105,20 +120,6 @@
     "Stack wstępny: Python + (opcjonalnie) Azure Functions/Storage",
     "Szkic pipeline: pobieranie -> czyszczenie -> NLP -> insighty",
     "Roadmapa MVP + metryki (sentiment, trend)"
-  ],
-  "Analiza emocji i wydźwięku w polskich mediach": [
-    "📅 Tydzień 11:",
-    "Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach",
-    "Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app",
-    "Własny, przetrenowany model SzychEmotion_v1_PL oparty o HuggingFace Transformers",
-    "Automatyzacja przepływu danych w plikach CSV i integracja z dashboardem w Streamlit",
-    "Ponad 22 000 rekordów w zbiorze treningowym – własnoręcznie oczyszczone i oznaczone dane",
-    "Setki nagłówków medialnych przeanalizowanych pod kątem emocji i wydźwięku sentymentalnego",
-    "Autorskie skrypty w Pythonie do ekstrakcji, tokenizacji i przetwarzania danych (pandas, transformers, regex)",
-    "📅 Tydzień 10:",
-    "Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)",
-    "Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników",
-    "Status: W trakcie"
   ],
   "Azure": [
     "📅 Tydzień 7:",
