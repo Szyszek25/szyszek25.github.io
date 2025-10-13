@@ -10,6 +10,7 @@ const SkillsProgress = () => {
   const { skills, loading, error, refreshSkills } = useSkillsProgress();
 
   const skillIcons = {
+    'Analiza emocji i wydźwięku w polskich mediach': TrendingUp,
     'Kursy': BookOpen,
     'Azure': Cloud,
     'Docker': Layers, 
@@ -112,7 +113,7 @@ const SkillsProgress = () => {
             >
               {Object.entries(skills).map(([skillName, skillItems], index) => {
                 const IconComponent = skillIcons[skillName] || Code;
-                const isCourseColumn = skillName === 'Kursy' || skillName === 'Fundamenty pod projekt' || skillName === 'Fundamenty pod projekt – Data Science / AI' || skillName === 'Azure';
+                const isCourseColumn = skillName === 'Analiza emocji i wydźwięku w polskich mediach' || skillName === 'Kursy' || skillName === 'Fundamenty pod projekt' || skillName === 'Fundamenty pod projekt – Data Science / AI' || skillName === 'Azure';
                 
                 return (
                   <motion.div

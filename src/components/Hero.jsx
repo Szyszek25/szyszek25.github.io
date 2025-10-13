@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Cloud, Code, Database, Gamepad2, Github } from 'lucide-react';
+import { ArrowDown, Cloud, Code, Database, Gamepad2, Github, Linkedin, LineChart } from 'lucide-react';
 const GitHub = Github;
 
 const Hero = () => {
@@ -90,15 +90,15 @@ const Hero = () => {
             Student IT specjalizujący się w technologiach chmurowych, danych, a także emocjach i zachowniach człowieka. 
             Buduję umiejętności w Azure, Docker, CI/CD oraz Pythonie z użyciem modeli transformerowych i AI.
           </motion.p>
-          {/* CTA + GitHub + przyciski */}
+          {/* CTA + przyciski */}
           <motion.div
             className="flex flex-col gap-4 md:gap-6 items-center mb-16 md:mb-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            {/* Postępy w nauce */}
-            <div className="flex justify-center">
+            {/* Pierwszy rząd: Postępy w nauce + Skontaktuj */}
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center">
               <motion.button
                 onClick={() => scrollToSection('skills-progress')}
                 className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -107,10 +107,6 @@ const Hero = () => {
               >
                 📊 Postępy w nauce
               </motion.button>
-            </div>
-
-            {/* Skontaktuj + GitHub */}
-            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center">
               <motion.button
                 onClick={() => scrollToSection('contact')}
                 className="btn-primary text-lg md:text-xl px-6 md:px-8 py-3 md:py-4"
@@ -119,30 +115,52 @@ const Hero = () => {
               >
                 Skontaktuj się ze mną
               </motion.button>
+            </div>
+
+            {/* Drugi rząd: GitHub + LinkedIn + Analiza emocji + GameDev */}
+            <div className="flex flex-wrap gap-3 md:gap-4 items-center justify-center">
               <motion.a
                 href="https://github.com/szyszek25"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 inline-flex items-center space-x-2"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <GitHub className="w-4 h-4 md:w-5 md:h-5" />
                 <span>GitHub</span>
               </motion.a>
-            </div>
-
-            {/* GameDev Portfolio (mniejszy) */}
-            <div className="flex justify-center">
+              <motion.a
+                href="https://www.linkedin.com/in/jakub-szych/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Linkedin className="w-4 h-4 md:w-5 md:h-5" />
+                <span>LinkedIn</span>
+              </motion.a>
+              <motion.a
+                href="https://szych-emotion.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <LineChart className="w-4 h-4 md:w-5 md:h-5" />
+                <span>Analiza emocji</span>
+              </motion.a>
               <motion.a
                 href="https://szych.framer.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base px-4 py-2 inline-flex items-center space-x-2"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Gamepad2 className="w-4 h-4" />
+                <Gamepad2 className="w-4 h-4 md:w-5 md:h-5" />
                 <span>GameDev Portfolio</span>
               </motion.a>
             </div>

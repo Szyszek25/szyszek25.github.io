@@ -127,7 +127,7 @@ Studia:
 - Tydzień 9: Łączenie postępów z zadaniami na uczelni (od przyszłego tygodnia)
 - Tydzień 9: Start biuletynu – informatyka + dobrostan psychiczny; przedmioty: Praktyczne wykorzystanie bibliotek Pythona (pandas, numpy, matplotlib, scikit-learn, Titanic Dataset, Jupyter Notebook), Usługi DevOps [CKA] (Docker, obrazy, kontenery, CLI), Wirtualizacja i konteneryzacja (Rocky Linux, konfiguracja zasobów, SSH, podman/kubectl/minikube, klaster Kubernetes)
 
-Osobiście:
+Analiza emocji i wydźwięku w polskich mediach:
 - Tydzień 11: Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach
 - Tydzień 11: Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app
 - Tydzień 11: Własny, przetrenowany model SzychEmotion_v1_PL oparty o HuggingFace Transformers
@@ -138,17 +138,3 @@ Osobiście:
 - Tydzień 10: Analiza sentymentu – budowa fundamentów pod analizę emocji zawartych w tekście w Internecie (pierwszy artykuł w piątek)
 - Tydzień 10: Zadania praktyczne: przygotowanie datasetu, preprocessing (pandas, spaCy), baseline model (Naïve Bayes), walidacja i eksport wyników
 - Tydzień 10: Status: W trakcie
-
-LinkedIn:
-- Profil LinkedIn: https://www.linkedin.com/in/jakub-szych/
-- Cotygodniowe posty o postępach w nauce DevOps/Data
-- Dzielenie się wiedzą i doświadczeniami
-- Budowanie społeczności wokół nauki IT
-
-Streamlit – Analiza emocji:
-- Aplikacja: https://szych-emotion.streamlit.app/
-- Analiza emocji i wydźwięku w polskich mediach
-- Codziennie aktualizowana strona z najnowszymi danymi
-- Model SzychEmotion_v1_PL (HuggingFace Transformers)
-- Dashboard z wizualizacjami i statystykami
-- Ponad 22 000 rekordów treningowych

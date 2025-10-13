@@ -106,7 +106,7 @@
     "Szkic pipeline: pobieranie -> czyszczenie -> NLP -> insighty",
     "Roadmapa MVP + metryki (sentiment, trend)"
   ],
-  "Osobiście": [
+  "Analiza emocji i wydźwięku w polskich mediach": [
     "📅 Tydzień 11:",
     "Publikacja pierwszego biuletynu z artykułem o analizie emocji w polskich mediach",
     "Projekt analiza emocji uruchomiony publicznie: https://szych-emotion.streamlit.app",
@@ -198,20 +198,6 @@
     "Podstawy poleceń Linux (W trakcie)",
     "Windows Terminal/PowerShell fundamentals (W trakcie)",
     "SSH i podstawy networking (W trakcie)"
-  ],
-  "LinkedIn": [
-    "Profil LinkedIn: https://www.linkedin.com/in/jakub-szych/",
-    "Cotygodniowe posty o postępach w nauce DevOps/Data",
-    "Dzielenie się wiedzą i doświadczeniami",
-    "Budowanie społeczności wokół nauki IT"
-  ],
-  "Streamlit – Analiza emocji": [
-    "Aplikacja: https://szych-emotion.streamlit.app/",
-    "Analiza emocji i wydźwięku w polskich mediach",
-    "Codziennie aktualizowana strona z najnowszymi danymi",
-    "Model SzychEmotion_v1_PL (HuggingFace Transformers)",
-    "Dashboard z wizualizacjami i statystykami",
-    "Ponad 22 000 rekordów treningowych"
   ]
   
   
