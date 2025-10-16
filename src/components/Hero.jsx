@@ -118,12 +118,12 @@ const Hero = () => {
             </div>
 
             {/* Drugi rząd: GitHub + LinkedIn + Analiza emocji + GameDev */}
-            <div className="flex flex-wrap gap-3 md:gap-4 items-center justify-center">
+            <div className="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:gap-4 md:items-center md:justify-center w-full max-w-md md:max-w-none">
               <motion.a
                 href="https://github.com/szyszek25"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center justify-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -134,7 +134,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/jakub-szych/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center justify-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -145,7 +145,7 @@ const Hero = () => {
                 href="https://szych-emotion.streamlit.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center justify-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -156,7 +156,7 @@ const Hero = () => {
                 href="https://szych.framer.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center space-x-2"
+                className="btn-secondary text-base md:text-lg px-4 md:px-6 py-2 md:py-3 inline-flex items-center justify-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
