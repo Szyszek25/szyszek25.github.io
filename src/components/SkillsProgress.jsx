@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { Cloud, Code, Database, GitBranch, Terminal, Layers, TrendingUp, BookOpen } from 'lucide-react';
+import { useRef, useState } from 'react';
+import { Cloud, Code, Database, GitBranch, Terminal, Layers, TrendingUp, BookOpen, GraduationCap, Palmtree } from 'lucide-react';
 import { useSkillsProgress } from '../hooks/useSkillsProgress';
 
 const SkillsProgress = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { skills, loading, error, refreshSkills } = useSkillsProgress();
+  const [filter, setFilter] = useState('studia'); // 'wakacje', 'studia'
 
   const skillIcons = {
     'Analiza emocji i wydźwięku w polskich mediach': TrendingUp,
@@ -45,6 +46,54 @@ const SkillsProgress = () => {
     }
   };
 
+  // Filtrowanie kafelków
+  const getFilteredSkills = () => {
+    if (filter === 'wakacje') {
+      // Wakacje 2025: Tydzień 1-8 + Kursy
+      return Object.fromEntries(
+        Object.entries(skills).filter(([skillName, items]) => {
+          // Zawsze pokazuj Kursy
+          if (skillName === 'Kursy') return true;
+          
+          // Sprawdź czy zawiera tygodnie 1-8
+          return items.some(item => {
+            if (typeof item === 'string') {
+              const weekMatch = item.match(/Tydzień (\d+)/);
+              if (weekMatch) {
+                const weekNum = parseInt(weekMatch[1]);
+                return weekNum >= 1 && weekNum <= 8;
+              }
+            }
+            return false;
+          });
+        })
+      );
+    }
+    
+    if (filter === 'studia') {
+      // Studia i projekty: Tydzień 9+
+      return Object.fromEntries(
+        Object.entries(skills).filter(([skillName, items]) => {
+          // Sprawdź czy zawiera tydzień 9 lub wyższy
+          return items.some(item => {
+            if (typeof item === 'string') {
+              const weekMatch = item.match(/Tydzień (\d+)/);
+              if (weekMatch) {
+                const weekNum = parseInt(weekMatch[1]);
+                return weekNum >= 9;
+              }
+            }
+            return false;
+          });
+        })
+      );
+    }
+    
+    return skills;
+  };
+
+  const filteredSkills = getFilteredSkills();
+
   return (
     <section id="skills-progress" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
@@ -71,6 +120,44 @@ const SkillsProgress = () => {
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-6"></div>
           </motion.div>
+
+          {/* Filter Buttons */}
+          {!loading && !error && Object.keys(skills).length > 0 && (
+            <motion.div 
+              variants={itemVariants}
+              className="flex flex-wrap gap-3 justify-center mb-12"
+            >
+              <button
+                onClick={() => setFilter('studia')}
+                className={`flex flex-col items-center px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+                  filter === 'studia'
+                    ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500'
+                }`}
+              >
+                <div className="flex items-center space-x-2">
+                  <GraduationCap className="w-5 h-5" />
+                  <span>Studia i projekty</span>
+                </div>
+                <span className="text-xs mt-1 opacity-80">Chmury i analiza danych (Tydz. 9+)</span>
+              </button>
+              
+              <button
+                onClick={() => setFilter('wakacje')}
+                className={`flex flex-col items-center px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+                  filter === 'wakacje'
+                    ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500'
+                }`}
+              >
+                <div className="flex items-center space-x-2">
+                  <Palmtree className="w-5 h-5" />
+                  <span>Wakacje 2025</span>
+                </div>
+                <span className="text-xs mt-1 opacity-80">Cyberbezpieczeństwo i Chmury (Tydz. 1-8)</span>
+              </button>
+            </motion.div>
+          )}
 
           {/* Loading State */}
           {loading && (
@@ -106,12 +193,12 @@ const SkillsProgress = () => {
           )}
 
           {/* Skills Progress Grid */}
-          {!loading && !error && Object.keys(skills).length > 0 && (
+          {!loading && !error && Object.keys(filteredSkills).length > 0 && (
             <motion.div 
               variants={containerVariants}
               className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
-              {Object.entries(skills).map(([skillName, skillItems], index) => {
+              {Object.entries(filteredSkills).map(([skillName, skillItems], index) => {
                 const IconComponent = skillIcons[skillName] || Code;
                 const isCourseColumn = skillName === 'Analiza emocji i wydźwięku w polskich mediach' || skillName === 'Kursy' || skillName === 'Fundamenty pod projekt' || skillName === 'Fundamenty pod projekt – Data Science / AI' || skillName === 'Azure';
                 
@@ -187,7 +274,7 @@ const SkillsProgress = () => {
           )}
 
           {/* Summary Stats */}
-          {!loading && !error && Object.keys(skills).length > 0 && (
+          {!loading && !error && Object.keys(filteredSkills).length > 0 && (
             <motion.div 
               variants={itemVariants}
               className="mt-16 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl p-8 text-white"
@@ -195,15 +282,15 @@ const SkillsProgress = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold mb-2">
-                    {Object.keys(skills).length}
+                    {Object.keys(filteredSkills).length}
                   </div>
                   <div className="text-primary-100">
-                    Technologii
+                    {filter === 'wszystkie' ? 'Technologii' : 'Kategorii'}
                   </div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold mb-2">
-                    {Object.values(skills).flat().length}
+                    {Object.values(filteredSkills).flat().length}
                   </div>
                   <div className="text-primary-100">
                     Postępów
